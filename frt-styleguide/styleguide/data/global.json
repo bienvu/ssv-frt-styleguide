@@ -60,6 +60,10 @@
     {
       "name":"button",
       "group":"helper"
+    },
+    {
+      "name":"list-image1",
+      "group":"components"
     }
   ]
 }
