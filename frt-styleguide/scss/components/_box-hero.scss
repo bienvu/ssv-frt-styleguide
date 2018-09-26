@@ -1,0 +1,19 @@
+.box-hero {
+	position: relative;
+	height: 1000px;
+
+	&__item {
+		position: absolute;
+	}
+
+	&__content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	&--width-slider {
+		
+	}
+}
