@@ -64,6 +64,10 @@
     {
       "name":"box-image-text",
       "group":"components"
+    },
+    {
+      "name":"list-image",
+      "group":"components"
     }
   ]
 }
