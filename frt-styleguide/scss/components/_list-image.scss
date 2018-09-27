@@ -1,0 +1,15 @@
+.list-image {
+	background-color: #f8f8f8;
+
+	h2 {
+		text-align: center;
+	}
+	&__wrap {
+		display: flex;
+	}
+	&__item {
+		
+		width: calc(100% / 3);
+	}
+}
+
