@@ -12,19 +12,18 @@
   line-height: 1;
   min-width: rem(100px);
   outline: none;
-  padding: rem(15px 30px);
+  padding: rem(10px 30px);
   text-align: center;
   text-shadow: none;
   transition: all .3s ease;
-  background-color: $btn-color;
-  color: $white;
+  background-color: $btn-bg;
+  color: $btn-color;
   cursor: pointer;
   outline: 0;
 
   &:active,
   &:hover {
-    background-color: $btn-color-hover;
-    border-color: $btn-color-hover;
-    color: $white;
+    background-color: $btn-bg-hover;
+    color: $btn-color-hover;
   }
 }
