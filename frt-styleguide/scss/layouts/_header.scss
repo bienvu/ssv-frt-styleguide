@@ -1,23 +1,49 @@
 .header {
   display: flex;
-  justify-content: space-around;
-  
-  h1 {
-      padding: 30px;
-  }
-  &__menu {
-    ul {
-      display: flex;
-      .icon:before {
-        content: "\e901";
-        font-family: "iconmoon";
+  justify-content: space-between;
+  padding: 30px;
 
-      }
+  &__logo {
+    width: 30%;
+    img {
+      
     }
-    li {
-      list-style-type: none;
-      padding: 30px 15px;
-      color: #797979;
+    
+  }
+  &__content {
+    width: 65%;
+    padding: 30px;
+    .main-menu {
+      ul {
+        display: flex;
+        justtify-content: space-between;
+      }
+
+      li {
+        list-style-type: none;
+        padding: 0 24px;
+        color: #797979;
+
+        .expand {
+          position: relative;
+
+        }
+        .expand:hover .menu {
+  
+          display: block !important;
+        }
+        .menu {
+          position: absolute;
+          flex-wrap: nowrap;
+        }
+        .menu {
+          display: block !important;
+
+        }
+      }
+      a {
+        list-style-type: none;
+      }
     }
   }
 }
