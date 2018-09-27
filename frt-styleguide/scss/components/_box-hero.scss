@@ -1,21 +1,33 @@
 .box-hero {
   position: relative;
-  height: 1000px;
-
-  &__item {
-    position: absolute;
-  }
 
   &__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    line-height: 0;
+
+    img {
+      width: 100%;
+    }
   }
 
   &--width-slider {
-      .box-hero__item {
+      .box-hero {
+        height: 100vh;
 
+        &__item {
+          position: absolute;
+        }
       }
   }
 }
