@@ -5,9 +5,7 @@
 .box-image-text {
   margin: 0 auto;
   &__wrap {
-    display: flex;
-    
-    
+    display: flex;   
   }
   &__content {
     width: 40%;
@@ -28,8 +26,3 @@
     }
   }
 }
-
-
-
-
-
