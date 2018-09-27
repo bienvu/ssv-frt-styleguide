@@ -3,23 +3,33 @@
 }
 
 .box-image-text {
-
+  margin: 0 auto;
   &__wrap {
+    display: flex;
     
     
   }
   &__content {
-    
+    width: 40%;
   }
   &__image {
-    
+    position: relative;
+    width: 50%;
+    margin: 0 50px;
 
     img {
     	
-    	
+    }
+
+    &__item {
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 }
+
+
 
 
 
