@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  
+  h1 {
+      padding: 30px;
+  }
+  &__menu {
+    ul {
+      display: flex;
+      .icon:before {
+        content: "\e901";
+        font-family: "iconmoon";
+
+      }
+    }
+    li {
+      list-style-type: none;
+      padding: 30px 15px;
+      color: #797979;
+    }
+  }
+}
