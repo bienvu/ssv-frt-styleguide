@@ -33,13 +33,16 @@ input[type='submit'] {
   transition: all .3s ease-in-out;
   width: 100%;
   border-bottom: 1px solid rgba($primary-color,.5);
+
   &:focus {
     box-shadow: none;
   }
+
   &::placeholder {
     color: rgba($text-color,.5);
     text-transform: capitalize;
   }
+
   &:disabled {
     background: $gray;
   }
@@ -47,6 +50,7 @@ input[type='submit'] {
 
 input[type="text"] {
   @extend %form-text;
+
   &.error {
     background: rgba(red,.8);
   }

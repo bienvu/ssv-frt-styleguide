@@ -1,20 +1,26 @@
 // ICONS.
-
 %icons {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: 'name-icons-font';
   font-style: normal;
+  font-family: 'iconmoon';
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
   speak: none;
   text-transform: none;
+  color: $second-color;
+  background: $primary-color;
+  padding: 5px 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  display: flex;
+  height: 50px;
+  box-sizing: border-box;
+  justify-items: center;
 }
 
 [class^='icon-'],
 [class*=' icon-'] {
-  &:before {
     @extend %icons;
-  }
 }
