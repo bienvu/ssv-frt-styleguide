@@ -8,14 +8,28 @@
     transform: translate(-50%,-50%);
     text-align: center;
     z-index: 1;
+
+    @media only screen and (min-width: 480px) {
+      font-size: 30px;
+
+      .box-hero__title {
+        font-size: 30px;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      font-size: 50px;
+
+      .box-hero__title {
+        font-size: 50px;
+      }
+    }
   }
 
   &__title {
     margin-bottom: 30px;
+    white-space: nowrap;
 
-    @media only screen and (min-width: ) {
-      
-    }
   }
 
   &__image {
