@@ -1,13 +1,12 @@
-.box-gallery{ 
-
+.box-gallery{
   &__top{
-    line-height:0;
+    line-height: 0;
   }
 
   &__bot{
-    line-height:0;
-    display:flex;
-    justify-content:space-between;
-    margin-top:12px;
+    line-height: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
   }
 }
