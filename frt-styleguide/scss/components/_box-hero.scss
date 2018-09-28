@@ -7,6 +7,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    z-index: 1;
   }
 
   &__title {
@@ -18,15 +19,21 @@
 
     img {
       width: 100%;
+      heihgt: 100%;
     }
   }
 
   &--width-slider {
-      .box-hero {
+      &.box-hero {
         height: 100vh;
 
-        &__item {
+        .box-hero__image {
           position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
         }
       }
   }
