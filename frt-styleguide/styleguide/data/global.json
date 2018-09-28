@@ -60,6 +60,10 @@
     {
       "name":"button",
       "group":"helper"
+    },
+    {
+      "name":"box-filter",
+      "group":"components"
     }
   ]
 }
