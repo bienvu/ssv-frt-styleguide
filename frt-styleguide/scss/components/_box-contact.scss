@@ -1,0 +1,36 @@
+.box-contact {
+  margin-bottom: 30px;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__left {
+    width: 50%;
+  }
+  
+  &__content {
+    h2,
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__info {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+
+    h4 {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    padding-left: 5%;
+  }
+}
