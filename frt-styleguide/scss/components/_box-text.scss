@@ -1,25 +1,18 @@
 .box-text{
-    &--bg{
 
-    }
-    &--padding{
-        padding: 20px 0;
-    }
-    &__content{
+  &__link{
+     display:flex;
+     justify-content:center;
 
-    }
-    &__link{
-        display:flex;
-        justify-content:center;
-      a{
-        border:1px solid black;
-        padding:10px;
-        color:black;
+    a{
+      border:1px solid black;
+      padding:10px;
+      color:black;
       }
 
-      a:hover{
-        color:white;
-        background:black;
+    a:hover{
+      color:white;
+      background:black;
       }
     }
 }
