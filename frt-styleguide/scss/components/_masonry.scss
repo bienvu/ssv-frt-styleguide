@@ -1,0 +1,29 @@
+.masonry {
+  --column: 3;
+  $columns: 6;
+
+  @for $i from 1 through $columns {
+    &.column-#{$i} {
+      --column: $i;
+    }
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin-left: -10px;
+
+  &__list {
+    width: calc(100%/var(--column));
+    padding-left: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    line-height: 0;
+    margin-bottom: 10px;
+  }
+}
