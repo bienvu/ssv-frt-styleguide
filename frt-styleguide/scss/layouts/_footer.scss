@@ -19,14 +19,14 @@
     }
   }
   &__right {
-
+    margin: -10px 0;  
     .back-to-top {
       &:after {
         content: "\e900";
         font-family: "icomoon";
         font-size: 40px;
         line-height: 1;
-        transform: translateY(-27%);
+        vertical-align: middle;
       }
     }
   }
