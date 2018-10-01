@@ -4,46 +4,46 @@
   padding: 30px;
 
   &__logo {
-    width: 30%;
-    img {
-      
-    }
-    
+    width: 35%; 
   }
+
   &__content {
     width: 65%;
-    padding: 30px;
+    padding: 0 20px;
     .main-menu {
       ul {
         display: flex;
-        justtify-content: space-between;
-      }
+        justify-content: space-between;
 
-      li {
-        list-style-type: none;
-        padding: 0 24px;
-        color: #797979;
+        li {
+          list-style-type: none;
+          color: #797979;
 
-        .expand {
+           a {
+            list-style-type: none;
+          }
+          &:last-of-type {
+            &:before {
+              content: "\e901";
+              font-family: "icomoon";
+            }
+          }
+         }
+
+        .menu-extend {
           position: relative;
 
-        }
-        .expand:hover .menu {
-  
-          display: block !important;
-        }
-        .menu {
-          position: absolute;
-          flex-wrap: nowrap;
-        }
-        .menu {
-          display: block !important;
+          .menu {
+            position: absolute;
+            display: none;
+            width: 200%;
+          }
 
-        }
-      }
-      a {
-        list-style-type: none;
-      }
+          &:hover .menu {
+            display: block ;
+          }
+        } 
+      }   
     }
   }
 }
