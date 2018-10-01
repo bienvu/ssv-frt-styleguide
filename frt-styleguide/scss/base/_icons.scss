@@ -1,20 +1,47 @@
 // ICONS.
-
-%icons {
+%icons,
+.icon {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: 'name-icons-font';
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
   speak: none;
   text-transform: none;
+  color: $primary-color;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-items: center;
+  align-items: center;
+
+  &:after,
+  &:before {
+    content: "\e902";
+    font-family: "icomoon";
+    font-size: inherit;
+    font-weight: normal;
+    line-height: 1;
+  }
+
+  &--bg {
+    &:before,
+    &:after {
+      background: $black;
+      display: inline-block;
+      color: #fff;
+      opacity: .5;
+      transition: opacity .3s linear;
+    }
+
+    &:hover:before,
+    &:hover:after {
+      opacity: 1;
+    }
+  }
 }
 
 [class^='icon-'],
 [class*=' icon-'] {
-  &:before {
     @extend %icons;
-  }
 }
