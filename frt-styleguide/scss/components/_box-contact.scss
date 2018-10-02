@@ -1,18 +1,31 @@
 .box-contact {
   margin-bottom: 30px;
+  text-align: center;
+
+  @media only screen and (min-width: 767px) {
+    text-align: left;
+  }
 
   &__wrapper {
     display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 767px) {
+      flex-direction: row;
+    }
   }
 
   &__left {
-    width: 50%;
+    margin-bottom: 20px;
+    @media only screen and (min-width: 767px) {
+      width: 50%;
+    }
   }
   
   &__content {
-    h2,
+    h3,
     p {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
 
@@ -21,16 +34,22 @@
   }
 
   &__item {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
-    h4 {
+    h5 {
       text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    p{
       margin-bottom: 10px;
     }
   }
 
   &__right {
-    width: 50%;
-    padding-left: 5%;
+    @media only screen and (min-width: 767px) {
+      width: 50%;
+      padding-left: 5%;
+    }
   }
 }
