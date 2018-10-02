@@ -63,6 +63,7 @@
     },
     {
       "name":"gallery",
+      "name":"icon",
       "group":"components"
     }
   ]
