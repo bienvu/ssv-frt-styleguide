@@ -62,7 +62,7 @@
       "group":"helper"
     },
     {
-      "name":"box-contact",
+      "name":"masonry",
       "group":"components"
     }
   ]
