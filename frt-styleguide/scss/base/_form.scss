@@ -1,6 +1,7 @@
 form{
   display: flex;
   flex-direction: column;
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -58,6 +59,11 @@ input[type="text"] {
   &.error {
     background: rgba(red,.8);
   }
+}
+
+textarea {
+  @extend %form-text;
+  min-height: 100px;
 }
 
 select {
