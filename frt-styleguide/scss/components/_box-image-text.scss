@@ -10,8 +10,8 @@
     width: 40%;
 
     p {
-      @media only screen and (min-width: 767px) and (max-width: 1067px) {
-        ;
+      @media only screen and (min-width: 767px) {
+        font-size: 18px;
       }
     }
   }
