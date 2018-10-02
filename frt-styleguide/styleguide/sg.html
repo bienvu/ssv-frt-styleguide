@@ -505,7 +505,7 @@
       <div class="container">
         <p><a href="#A1">Link style A1. This is default link.</a>
         </p>
-        <p><a class="link--underline" href="#A2">Link style A2.</a>
+        <p><a class="link--underline icon-facebook" href="#A2">Link style A2.</a>
         </p>
         <p class="bg--teal"><a class="link--citrine-white" href="#A3">Link style A3.</a>
         </p>
@@ -518,7 +518,7 @@
           <h4 class="component--source--title">Markup</h4>
           <pre class="brush: php"><div class="container">
   <p><a href="#A1">Link style A1. This is default link.</a></p>
-  <p><a class="link--underline" href="#A2">Link style A2.</a></p>
+  <p><a class="link--underline icon-facebook" href="#A2">Link style A2.</a></p>
   <p class="bg--teal"><a class="link--citrine-white" href="#A3">Link style A3.</a></p>
 </div>
 </pre>
@@ -1055,47 +1055,57 @@
       </head>
 
       <body>
-
         <div class="box-feature">
-          <div class="box-feature__list ">
+          <div class="container">
+            <div class="box-feature__wrapper">
+              <div class="box-feature__update ">
 
-            <h5>SIGN UP</h5>
-            <br>
-            <h3>NEWS &amp; body UPDATES</h3>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <br>
+                <h6>SIGN UP</h6>
+                <br>
+                <h3>NEWS &amp; body UPDATES</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+
+                <form>
+                  <div class="form-item">
+                    <input type="text" placeholder="Name">
+
+                  </div>
+                  <div class="form-item">
+                    <input type="text" placeholder="Email">
+
+                  </div>
+
+                  <div class="form-item">
+                    <input type="submit" value="SUBMIT" class="btn btn--border">
+                  </div>
+                </form>
+              </div>
+
+              <div class="box-feature__follow">
+                <h6>STAY IN TOUCH</h6>
+                <br>
+                <h3>FOLLOW US</h3>
+                <br>
+                <p>Follow us on Facebook and Instagram to see all our latest products and new designs. Eiusmod tempor incididunt ut labt.</p>
+              </div>
+            </div>
           </div>
-
-          <form>
-            <div class="form__item">
-              <input type="text" placeholder="Name">
-
-            </div>
-            <div class="form__item">
-              <input type="text" placeholder="Email">
-
-            </div>
-
-            <div class="form__item">
-              <input type="submit" value="SUBMIT">
-            </div>
-          </form>
-
         </div>
-
-
-
-      </body>
-
-      </html>
     </div>
-    <div class="container">
-      <button class="show-code">Show/Hide Code</button>
-      <div class="component--source element-invisible">
-        <div class="component--html">
-          <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><!DOCTYPE html>
+
+
+    </body>
+
+    </html>
+  </div>
+  <div class="container">
+    <button class="show-code">Show/Hide Code</button>
+    <div class="component--source element-invisible">
+      <div class="component--html">
+        <h4 class="component--source--title">Markup</h4>
+        <pre class="brush: php"><!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8"> 
@@ -1104,43 +1114,53 @@
     <link rel="stylesheet" href="../css/styles.css">
   </head>
   <body> 
-    
     <div class="box-feature">
-      <div class="box-feature__list ">
+    <div class="container">
+    <div class="box-feature__wrapper">
+      <div class="box-feature__update ">
         
-          <h5>SIGN UP</h5>
+          <h6>SIGN UP</h6>
           <br>
           <h3>NEWS &amp; body UPDATES</h3>
           <br>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <br>
-        </div>
+
 
         <form>
-          <div class="form__item">
+          <div class="form-item">
             <input type="text" placeholder="Name">
 
           </div>
-          <div class="form__item">
+          <div class="form-item">
             <input type="text" placeholder="Email">
 
           </div>
           
-          <div class="form__item">
-            <input type="submit" value="SUBMIT">
+          <div class="form-item">
+            <input type="submit" value="SUBMIT" class="btn btn--border">
           </div>
         </form>
-      
+       </div>
+
+        <div class="box-feature__follow">
+          <h6>STAY IN TOUCH</h6>
+          <br>
+          <h3>FOLLOW US</h3>
+          <br>
+          <p>Follow us on Facebook and Instagram to see all our latest products and new designs. Eiusmod tempor incididunt ut labt.</p>
+        </div>
+      </div>
     </div>
-      
+
+    </div>
     
     
   </body>
 </html>
 </pre>
-        </div>
       </div>
     </div>
+  </div>
   </div>
   <script src="../js/lib/media.match.min.js"></script>
   <script src="../js/lib/enquire.min.js"></script>
