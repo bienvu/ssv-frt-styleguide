@@ -7,10 +7,9 @@
   box-shadow: none;
   display: inline-block;
   text-transform: uppercase;
-  font-size: rem(16px);
   line-height: 1;
   outline: none;
-  padding: 10px 15px;
+  padding: 8px 10px;
   text-align: center;
   text-shadow: none;
   transition: all .3s ease;
@@ -28,9 +27,13 @@
     padding: 10px 30px;
   }
 
-  &:active,
   &:hover {
     background-color: $btn-bg-hover;
     color: $btn-color-hover;
+  }
+
+  @media only screen and (min-width: 467px) {
+    
+    padding: 10px 15px;
   }
 }
