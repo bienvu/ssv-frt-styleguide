@@ -52,7 +52,7 @@ $susy-tablet: (
   column-width: false,
   debug: (
     image: $show-image,
-    color: rgba($gray, .25),
+    color: rgba($black, .25),
     output: background,
     toggle: top right,
   ),
@@ -65,7 +65,7 @@ $susy-desktop: (
   container: rem($container),
   debug: (
     image: $show-image,
-    color: rgba($silver, .25),
+    color: rgba($black, .25),
     output: background,
     toggle: top right,
   ),
@@ -78,7 +78,7 @@ $susy-desktop-wide: (
   container: rem($container-wide),
   debug: (
     image: $show-image,
-    color: rgba($silver, .25),
+    color: rgba($black, .25),
     output: background,
     toggle: top right,
   ),
@@ -91,7 +91,7 @@ $susy-desktop-superwide: (
   container: rem($container-superwide),
   debug: (
     image: $show-image,
-    color: rgba($silver, .25),
+    color: rgba($black, .25),
     output: background,
     toggle: top right,
   ),

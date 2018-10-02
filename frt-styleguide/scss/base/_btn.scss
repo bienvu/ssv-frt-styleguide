@@ -1,30 +1,36 @@
 %btn,
 .btn {
-  @include helvetica;
   appearance: none;
   background-image: none;
   border-radius: 0;
-  border: rem(1px) solid $btn-color;
+  border: none;
   box-shadow: none;
   display: inline-block;
   text-transform: uppercase;
   font-size: rem(16px);
   line-height: 1;
-  min-width: rem(100px);
   outline: none;
-  padding: rem(15px 30px);
+  padding: 10px 15px;
   text-align: center;
   text-shadow: none;
   transition: all .3s ease;
-  background-color: $btn-color;
-  color: $white;
+  background-color: $btn-bg;
+  color: $btn-color;
   cursor: pointer;
-  outline: 0;
+  min-width: 170px;
+  box-sizing: border-box;
+
+  &--border {
+    border: 1px solid $primary-color;
+  }
+
+  &--longer {
+    padding: 10px 30px;
+  }
 
   &:active,
   &:hover {
-    background-color: $btn-color-hover;
-    border-color: $btn-color-hover;
-    color: $white;
+    background-color: $btn-bg-hover;
+    color: $btn-color-hover;
   }
 }

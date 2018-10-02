@@ -21,7 +21,7 @@
 
 //Base
 @import 'base/fonts';
-// @import 'base/icons';
+@import 'base/icons';
 @import 'base/grid';
 @import 'base/extends';
 @import 'base/typography';
@@ -46,3 +46,4 @@
 
 // Pages
 @import 'components/masonry';
+// @import 'pages/index';
