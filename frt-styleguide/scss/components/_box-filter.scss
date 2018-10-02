@@ -3,14 +3,9 @@
 
   &__wrapper {
     display: flex;
-    
     border-bottom: 1px solid rgba($black, .5);
     justify-content: space-between;
     flex-direction: column;
-
-    h3 {
-      margin-bottom: 20px;
-    }
 
     @media only screen and (min-width: 467px) {
       padding-bottom: 5px;
@@ -20,13 +15,17 @@
       flex-direction: row;
       padding-bottom: 0;
       align-items: flex-start;
+    }
+  }
 
-      h3 {
+  &__title {
+     margin-bottom: 20px;
+
+     @media only screen and (min-width: 767px) {
         white-space: nowrap;
         margin: 0;
         width: 30%;
-      }
-    }
+     }
   }
 
   &__content {
@@ -34,14 +33,8 @@
     flex-direction: row;
     justify-content: flex-end;
     overflow: auto;
+
     a {
-      text-transform: lowercase;
-      // white-space: nowrap;
-
-      &::first-letter {
-        text-transform: uppercase;
-      }
-
       &.active {
         color: $white;
         background: $black;
