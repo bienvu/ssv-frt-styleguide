@@ -62,7 +62,7 @@
       "group":"helper"
     },
     {
-      "name":"list-image",
+      "name":"box-image-text",
       "group":"components"
     }
   ]
