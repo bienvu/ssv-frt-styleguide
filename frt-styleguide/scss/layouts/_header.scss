@@ -9,41 +9,6 @@
 
   &__content {
     width: 65%;
-    padding: 0 20px;
-    .main-menu {
-      ul {
-        display: flex;
-        justify-content: space-between;
-
-        li {
-          list-style-type: none;
-          color: #797979;
-
-           a {
-            list-style-type: none;
-          }
-          &:last-of-type {
-            &:before {
-              content: "\e901";
-              font-family: "icomoon";
-            }
-          }
-         }
-
-        .menu-extend {
-          position: relative;
-
-          .menu {
-            position: absolute;
-            display: none;
-            width: 200%;
-          }
-
-          &:hover .menu {
-            display: block ;
-          }
-        } 
-      }   
-    }
+    
   }
 }

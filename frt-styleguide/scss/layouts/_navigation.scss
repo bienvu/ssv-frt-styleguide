@@ -4,4 +4,52 @@
     margin-bottom: rem(10px);
   }
 
+
+}
+
+
+.main-menu {
+  padding: 30px 0;
+  align-content: center;
+
+  nav>ul {
+    display: flex;
+    justify-content: space-between;
+
+    >li {
+      list-style-type: none;
+      color: #797979;
+      padding: 0 10px;
+
+      a {
+        list-style-type: none;
+      }
+
+      &:last-of-type {
+        &:after {
+          content: "\e901";
+          font-family: "icomoon";
+        }
+      }
+      .box {
+        border: solid 1px;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+     }
+
+    .menu-extend {
+      position: relative;
+
+      .menu {
+        position: absolute;
+        display: none;
+        width: 200%;
+      }
+
+      &:hover .menu {
+        display: block ;
+      }
+    }
+  }
 }
