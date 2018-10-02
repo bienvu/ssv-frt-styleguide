@@ -10,10 +10,8 @@
   var $masonry = $('.masonry').imagesLoaded(function () {
     $masonry.masonry({
       itemSelector: ".masonry__item",
-      columnWidth: ".masonry__sizer",
-      percentPosition: true,
-      stager: 30,
-      gutter: ".gutter-sizer"
+      columnWidth: ".masonry__item",
+      percentPosition: true
     });
   });
 
