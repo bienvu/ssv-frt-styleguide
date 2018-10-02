@@ -26,8 +26,19 @@
     }
 
     @media only screen and (min-width: 768px) {
+      width: calc(100% / 2);
+      
+    }
+
+    @media only screen and (min-width: 1068px) {
       width: calc(100% / 3);
       
+    }
+  }
+
+  &--with-title {
+    .list-image__title {
+      text-align: center;
     }
   }
 }
