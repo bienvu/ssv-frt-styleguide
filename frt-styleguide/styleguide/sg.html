@@ -505,7 +505,7 @@
       <div class="container">
         <p><a href="#A1">Link style A1. This is default link.</a>
         </p>
-        <p><a class="link--underline" href="#A2">Link style A2.</a>
+        <p><a class="link--underline icon-facebook" href="#A2">Link style A2.</a>
         </p>
         <p class="bg--teal"><a class="link--citrine-white" href="#A3">Link style A3.</a>
         </p>
@@ -518,7 +518,7 @@
           <h4 class="component--source--title">Markup</h4>
           <pre class="brush: php"><div class="container">
   <p><a href="#A1">Link style A1. This is default link.</a></p>
-  <p><a class="link--underline" href="#A2">Link style A2.</a></p>
+  <p><a class="link--underline icon-facebook" href="#A2">Link style A2.</a></p>
   <p class="bg--teal"><a class="link--citrine-white" href="#A3">Link style A3.</a></p>
 </div>
 </pre>
@@ -878,29 +878,9 @@
   <div class="component--item" id="list-image">
     <h2 class="component--title">list image</h2>
     <div class="component--demo">
-      <div class="list-image list-image--with-title">
+      <div class="list-image list-image--2col-with-title">
         <h2 class="list-image__title">VIEW OUR PRODUCTS</h2>
         <div class="list-image__wrap">
-          <div class="list-image__item">
-            <img src="../../images/images1.jpeg" alt="">
-            <h3 class="list-image__title">ABCD</h3>
-          </div>
-          <div class="list-image__item">
-            <img src="../../images/images1.jpeg" alt="">
-            <h3 class="list-image__title">ABCD</h3>
-          </div>
-          <div class="list-image__item">
-            <img src="../../images/images1.jpeg" alt="">
-            <h3 class="list-image__title">ABCD</h3>
-          </div>
-          <div class="list-image__item">
-            <img src="../../images/images1.jpeg" alt="">
-            <h3 class="list-image__title">ABCD</h3>
-          </div>
-          <div class="list-image__item">
-            <img src="../../images/images1.jpeg" alt="">
-            <h3 class="list-image__title">ABCD</h3>
-          </div>
           <div class="list-image__item">
             <img src="../../images/images1.jpeg" alt="">
             <h3 class="list-image__title">ABCD</h3>
@@ -925,29 +905,9 @@
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><div class="list-image list-image--with-title" >
+          <pre class="brush: php"><div class="list-image list-image--2col-with-title" >
   <h2 class="list-image__title">VIEW OUR PRODUCTS</h2>
   <div class="list-image__wrap">
-    <div class="list-image__item">
-      <img src="../../images/images1.jpeg" alt="">
-      <h3 class="list-image__title">ABCD</h3>
-    </div>
-    <div class="list-image__item">
-      <img src="../../images/images1.jpeg" alt="">
-      <h3 class="list-image__title">ABCD</h3>
-    </div>
-    <div class="list-image__item">
-      <img src="../../images/images1.jpeg" alt="">
-      <h3 class="list-image__title">ABCD</h3>
-    </div>
-    <div class="list-image__item">
-      <img src="../../images/images1.jpeg" alt="">
-      <h3 class="list-image__title">ABCD</h3>
-    </div>
-    <div class="list-image__item">
-      <img src="../../images/images1.jpeg" alt="">
-      <h3 class="list-image__title">ABCD</h3>
-    </div>
     <div class="list-image__item">
       <img src="../../images/images1.jpeg" alt="">
       <h3 class="list-image__title">ABCD</h3>
@@ -973,6 +933,8 @@
   </div>
   <script src="../js/lib/media.match.min.js"></script>
   <script src="../js/lib/enquire.min.js"></script>
+  <script src="../js/lib/jquery.imagesloaded.min.js"></script>
+  <script src="../js/lib/jquery.masonry.min.js"></script>
   <script src="../js/script.js"></script>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shCore.js"></script>
