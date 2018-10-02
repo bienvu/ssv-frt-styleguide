@@ -59,28 +59,3 @@
 
 }(this, this.document, this.jQuery));
 
-//show masonry
-window.addEventListener('load', function() {
-  var parent = document.getElementsByClassName('masonry')[0];
-  console.log(parent);
-  var child = document.getElementsByClassName('masonry__item');
-  var columns = 5;
-  var length = child.length;
-  parent.classList.add('column-' + columns);
-
-  for(let column = 0; column < columns; column++) {
-    let temp = document.createElement('div');
-    temp.classList.add('masonry__list','column-' + (column + 1));
-    let rows = Math.floor(length / columns);
-    let residuals = length % columns;
-
-    if(residuals > column) {
-      rows++;
-    }
-
-    for(let row = 0; row < rows; row++) {
-      temp.appendChild(child[0]);
-    }
-    parent.appendChild(temp);
-  }
-});
