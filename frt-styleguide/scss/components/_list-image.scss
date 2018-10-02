@@ -1,14 +1,35 @@
 .list-image {
 	background-color: #f8f8f8;
 
-	h2 {
-		text-align: center;
+  }
+
+	&__title {
+		  text-align: center;
+      padding-bottom: 20px;
+
+      @media only screen and (min-width: 768px) {
+        font-size: 20px;
+      }
 	}
+
 	&__wrap {
 		display: flex;
+    margin: 0 20px;
+    flex-wrap: wrap;
 	}
+
 	&__item {
 		
-		width: calc(100% / 3);
+		width: 100%;
+    padding: 0 5px;
+
+    img {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: calc(100% / 3);
+      
+    }
 	}
 }
