@@ -4,12 +4,15 @@ form{
   &__item {
     display: flex;
     flex-direction: column;
-  }
-  label {
-    width: 100%;
-    padding: 10px 0;
-    text-transform: capitalize;
-    display: block;
+
+    label {
+      width: 100%;
+      padding: 10px 0;
+      text-transform: capitalize;
+      display: block;
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
   }
 }
 
@@ -19,7 +22,7 @@ input[type='submit'] {
 }
 
 %form-text {
-  @include helvetica;
+  // @include helvetica;
   appearance: none;
   background-color: $white;
   border-radius: 0;
@@ -29,22 +32,23 @@ input[type='submit'] {
   color: $text-color;
   font-size: 16px;
   font-weight: 400;
-  padding: 5px 5px 10px 0;
+  padding: 0 0 10px 0;
   transition: all .3s ease-in-out;
   width: 100%;
-  border-bottom: 1px solid rgba($primary-color,.5);
+  border-bottom: 1px solid rgba($primary-color, .5);
+  margin-bottom: 10px;
 
   &:focus {
     box-shadow: none;
   }
 
   &::placeholder {
-    color: rgba($text-color,.5);
+    color: rgba($text-color, .5);
     text-transform: capitalize;
   }
 
   &:disabled {
-    background: $gray;
+    background: rgba($text-color, .5);
   }
 }
 
@@ -62,9 +66,7 @@ select {
   box-shadow: none;
   padding: 5px;
   font-size: 16px;
-  align-items: left;
   text-align-last: center;
-  transtion: .3s;
   color: $text-color;
   background: $white;
 }
