@@ -16,7 +16,15 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 18px;
+
+  @media only screen and (min-width: 479px) {
+    font-size: 30px;
+  }
+
+  @media only screen and (min-width: 767px) {
+    font-size: 40px;
+  }
 }
 
 h3 {
@@ -44,8 +52,12 @@ h5 {
   }
 }
 
-h6 {
+h5 {
   font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
 }
 
 %link,
