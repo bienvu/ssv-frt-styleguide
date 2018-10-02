@@ -62,6 +62,10 @@
       "group":"helper"
     },
     {
+      "name":"box-hero",
+      "group":"components"
+    },
+    {
       "name":"cta",
       "group":"components"
     }
