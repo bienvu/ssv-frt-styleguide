@@ -64,6 +64,10 @@
     {
       "name":"list-image1",
       "group":"components"
+    },
+    {
+      "name":"box-feature",
+      "group":"components"
     }
   ]
 }
