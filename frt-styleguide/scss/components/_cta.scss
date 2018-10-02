@@ -1,0 +1,18 @@
+.cta {
+  background: url('https://picsum.photos/1400/700');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__content {
+    h2 {
+      margin-bottom: 30px;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}
