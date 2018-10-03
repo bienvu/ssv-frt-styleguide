@@ -1,0 +1,24 @@
+.box-image-text {
+  margin: 0 auto;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;  
+  }
+
+  &__content {
+    width: 40%;
+  }
+
+  &__image {
+    position: relative;
+    width: 60%;
+    margin-right: -65px;
+
+    &__item {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
