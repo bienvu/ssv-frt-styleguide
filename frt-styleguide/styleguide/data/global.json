@@ -11,7 +11,7 @@
       "title":"Helper Classes"
     },
     {
-      "name":"component",
+      "name":"components",
       "title":"Components"
     }
   ],
@@ -60,6 +60,38 @@
     {
       "name":"button",
       "group":"helper"
+    },
+    {
+      "name":"box-gallery",
+      "group":"components"
+    },
+    {
+      "name":"box-image-text",
+      "group":"components"
+    },
+    {
+      "name":"box-feature",
+      "group":"components"
+    },
+    {
+      "name":"cta",
+      "group":"components"
+    },
+    {
+      "name":"box-filter",
+      "group":"components"
+    },
+    {
+      "name":"masonry",
+      "group":"components"
+    },
+    {
+      "name":"box-contact",
+      "group":"components"
+    },
+    {
+      "name":"box-text",
+      "group":"components"
     },
     {
       "name":"gallery",
