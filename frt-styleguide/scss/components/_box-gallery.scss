@@ -1,0 +1,60 @@
+.box-gallery{
+  &__top{
+    line-height: 0;
+     position: relative;
+    .arrow-top{
+      position: absolute;
+      right: 20px;    
+      bottom: 20px;
+
+      &:before{
+
+        content: "\e98b";
+        font-family: "icomoon";
+        font-size: 25px;
+        font-weight: bold;
+        color: #fff;
+
+      }
+    }
+  }
+
+  &__bot{
+    line-height: 0;
+    display: flex;
+    margin-top: 25px;
+    position: relative;
+    justify-content: space-between;
+
+    .arrow-left{
+      position: absolute;
+      left: 10px;
+      top: 50%;
+
+      &:before{
+
+        content: "\e900";
+        font-family: "icomoon";
+        font-size: 25px;
+        font-weight: bold;
+        color: #fff;
+
+      }
+    }
+
+    .arrow-right{
+      position: absolute;
+      right: 10px;
+      top: 50%;
+
+      &:before{
+ 
+        content: "\e902";
+        font-family: "icomoon";
+        font-size: 25px;
+        font-weight: bold;
+        color: #fff; 
+      }
+    }
+  }
+}
