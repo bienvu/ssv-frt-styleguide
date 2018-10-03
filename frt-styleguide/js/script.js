@@ -5,7 +5,17 @@
     mobileOnly = "screen and (max-width:47.9375em)", // 767px.
     mobileLandscape = "(min-width:30em)", // 480px.
     tablet = "(min-width:48em)"; // 768px.
-  // Add  functionality here.
+
+  // Add  functionality masonry.
+  var $masonry = $('.masonry').imagesLoaded(function () {
+    $masonry.masonry({
+      itemSelector: ".masonry__item",
+      columnWidth: ".masonry__item",
+      percentPosition: true
+    });
+  });
+
+  console.log($masonry);
 
   // Table responsive
   Drupal.behaviors.tableResponsive = {
