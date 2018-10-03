@@ -17,6 +17,7 @@
   <body>
     {% block header %}
       {% include 'navigation.twig' %}
+      {% include 'header.twig' %}
       <h1>{% block title %}{% endblock %}</h1>
     {% endblock %}
     {% block content %}{% endblock %}
@@ -25,6 +26,8 @@
     {% block footer_scripts %}
       <script src="../js/lib/media.match.min.js"></script>
       <script src="../js/lib/enquire.min.js"></script>
+      <script src="../js/lib/jquery.imagesloaded.min.js"></script>
+      <script src="../js/lib/jquery.masonry.min.js"></script>
       <script src="../js/script.js"></script>
     {% endblock %}
   </body>

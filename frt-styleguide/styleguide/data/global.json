@@ -62,11 +62,39 @@
       "group":"helper"
     },
     {
-      "name":"list-image1",
+      "name":"list-image",
+      "group":"components"
+    },
+    {
+      "name":"box-image-text",
       "group":"components"
     },
     {
       "name":"box-feature",
+      "group":"components"
+    },
+    {
+      "name":"box-hero",
+      "group":"components"
+    },
+    {
+      "name":"cta",
+      "group":"components"
+    },
+    {
+      "name":"box-filter",
+      "group":"components"
+    },
+    {
+      "name":"box-masonry",
+      "group":"components"
+    },
+    {
+      "name":"box-contact",
+      "group":"components"
+    },
+    {
+      "name":"box-text",
       "group":"components"
     }
   ]
