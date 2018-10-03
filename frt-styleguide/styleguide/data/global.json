@@ -92,6 +92,10 @@
     {
       "name":"box-text",
       "group":"components"
+    },
+    {
+      "name":"gallery",
+      "group":"components"
     }
   ]
 }
