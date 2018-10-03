@@ -1,14 +1,9 @@
 .list-image {
-  background-color: #f8f8f8;
-
   &__title {
     text-align: center;
     padding-bottom: 20px;
-
-    @media only screen and (min-width: 768px) {
-      font-size: 20px;
     }
-  }
+  
 
   &__wrap {
     display: flex;
@@ -17,8 +12,6 @@
   }
 
   &__item {
-    
-    width: 100%;
     padding: 0 5px;
 
     img {
@@ -29,14 +22,8 @@
       width: calc(100% / 2);
     }
 
-    @media only screen and (min-width: 1068px) {
+    @media only screen and (min-width: 1024px) {
       width: calc(100% / 3);
-    }
-  }
-
-  &--with-title {
-    .list-image__title {
-      text-align: center;
     }
   }
 }
