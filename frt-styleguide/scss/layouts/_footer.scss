@@ -1,0 +1,43 @@
+.footer {
+  padding: 40px 0;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+
+    .main-menu {
+      margin: 0 -43px;
+      align-items: center;
+      ul {
+        display: flex;
+      }
+      li {
+        list-style-type: none;
+      }
+      a {
+        padding: 0 20px;
+      }
+    }
+  }
+  &__right {
+    margin: -10px 0;  
+    .back-to-top {
+      &:after {
+        content: "\e900";
+        font-family: "icomoon";
+        font-size: 40px;
+        line-height: 1;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+      margin: 0 -5px;
+
+    }
+  }
+}
