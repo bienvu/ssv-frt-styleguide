@@ -8,17 +8,36 @@
 
   &__content {
     width: 40%;
+
+    a {
+      border: solid 1px;
+      background: #333132;
+      color: #fff;
+      padding: 10px 50px;
+    }
   }
 
   &__image {
-    position: relative;
+    
     width: 60%;
     margin-right: -65px;
 
-    &__item {
-      position: absolute;
-      top: 0;
-      left: 0;
+    &__wrap {
+      position: relative;
+      margin-top: 25px;
+
+      img {
+        
+      }
+
+      .sub-image {
+        position: absolute;
+        top: 330px;
+        left: -100px;
+        background: #fff;
+        box-sizing: border-box;
+        width: 50%;
+      }
     }
   }
 }
