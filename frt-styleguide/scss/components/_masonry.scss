@@ -1,0 +1,26 @@
+.masonry {
+  margin-left: -40px;
+
+  &__item {
+    width: 50%;
+    padding-left: 40px;
+
+    @media only screen and (min-width: 768px) {
+      width: calc(100% / 3);
+    }
+
+    @media only screen and (min-width: 1280px) {
+      width: calc(100% / 4);
+    }
+  }
+  &__item {
+    line-height: 0;
+    margin-bottom: 40px;
+    // @media only screen and (min-width: 767px) {
+    //   width: calc(100% / 3);
+    // } 
+    img {
+      width: 100%;
+    }
+  }
+}

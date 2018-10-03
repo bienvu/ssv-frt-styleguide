@@ -1,0 +1,21 @@
+$primary-color: #fff;
+$primary-border: #000;
+$primary-background: #000;
+.box-text{
+
+  &__link{
+     display: flex;
+     justify-content: center;
+
+    a{
+      border: 1px solid $primary-border;
+      padding: 10px;
+      color: black;
+      }
+
+    a:hover{
+      color: $primary-color;
+      background:$primary-background;
+      }
+    }
+}
