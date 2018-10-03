@@ -62,7 +62,7 @@
       "group":"helper"
     },
     {
-      "name":"list-image",
+      "name":"box-gallery",
       "group":"components"
     },
     {
@@ -71,10 +71,6 @@
     },
     {
       "name":"box-feature",
-      "group":"components"
-    },
-    {
-      "name":"box-hero",
       "group":"components"
     },
     {
