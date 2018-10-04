@@ -51,15 +51,21 @@ h4 {
 }
 
 h5 {
-  @include gotham;
-  font-weight: 400;
   font-size: 14px;
 }
 
 h6 {
+  font-size: 12px;
+}
+
+.heading--bold {
+  @include gotham;
+  font-weight: 400;
+}
+
+.heading--small {
   @include gotham;
   font-weight: 500;
-  font-size: 12px;
 }
 
 %link,
