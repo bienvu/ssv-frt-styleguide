@@ -21,8 +21,28 @@
       width: 100%;
     }
 
+    @media only screen and (min-width: 768px) {
+      width: calc(100% / 2);
+    }
+
     @media only screen and (min-width: 1024px) {
       width: calc(100% / 3);
+    }
+  }
+
+  &--with-title {
+    .list-image__title {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .list-image__link {
+      text-align: center;
+      a {
+        border: solid 1px;
+        background: #fff;
+        padding: 5px 20px;
+      }
     }
   }
 }
