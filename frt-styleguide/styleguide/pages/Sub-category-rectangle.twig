@@ -20,8 +20,11 @@
       {% include '../layouts/navigation.twig' %}
     {% endblock %}
     <main>
+      {% include '../components/box-filter.twig' %}
       {% include '../components/list-image1.twig' %}
       {% include '../components/list-image.twig' %}
+      {% include '../components/box-text.twig' %}
+      {% include '../components/box-contact.twig' %}
     </main>
     {% block content %}{% endblock %}
     {% block footer %}
