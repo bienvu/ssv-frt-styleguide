@@ -96,6 +96,10 @@
     {
       "name":"gallery",
       "group":"components"
+    },
+    {
+      "name":"list-image",
+      "group":"components"
     }
   ]
 }
