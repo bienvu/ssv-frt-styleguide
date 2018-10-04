@@ -9,5 +9,11 @@
   &__bottom {
     display: flex;
     justify-content: space-between;
+
+    &__popover-content {
+      img {
+        width: 100%;
+      }
+    }
   }
 }
