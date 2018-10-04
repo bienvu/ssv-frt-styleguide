@@ -15,41 +15,33 @@
     }
   }
 
+  &__list {
+    margin-bottom: 33px;
+  }
+
   &__left {
     margin-bottom: 20px;
     @media only screen and (min-width: 768px) {
       width: 50%;
     }
   }
-  
-  &__content {
-    h3,
-    p {
-      margin-bottom: 10px;
-    }
-  }
-
-  &__info {
-    margin-bottom: 20px;
-  }
 
   &__item {
     margin-bottom: 20px;
 
-    h5 {
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-
     p{
       margin-bottom: 10px;
+
+      span {
+        margin: 0 13px;
+      }
     }
   }
 
   &__right {
     @media only screen and (min-width: 768px) {
       width: 50%;
-      padding-left: 5%;
+      padding-left: 190px;
     }
   }
 }
