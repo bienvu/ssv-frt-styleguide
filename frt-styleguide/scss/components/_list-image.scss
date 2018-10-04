@@ -25,12 +25,16 @@
       width: 100%;
     }
 
-    @media only screen and (min-width: 1068px) {
+    @media only screen and (min-width: 768px) {
       width: calc(100% / 2);
+    }
+
+    @media only screen and (min-width: 1068px) {
+      width: calc(100% / 3);
     }
   }
 
-  &--2col-with-title {
+  &--with-title {
     .list-image__title {
       text-align: center;
     }

@@ -55,7 +55,4 @@
 
   $(".sub").children('a').click(frameScrollAnimate);
 
-  SyntaxHighlighter.all()
-
 }(this, this.document, this.jQuery));
-
