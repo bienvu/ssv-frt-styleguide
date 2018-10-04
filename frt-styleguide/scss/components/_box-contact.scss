@@ -21,6 +21,7 @@
 
   &__left {
     margin-bottom: 20px;
+    
     @media only screen and (min-width: 768px) {
       width: 50%;
     }
@@ -30,8 +31,6 @@
     margin-bottom: 20px;
 
     p{
-      margin-bottom: 10px;
-
       span {
         margin: 0 13px;
       }
