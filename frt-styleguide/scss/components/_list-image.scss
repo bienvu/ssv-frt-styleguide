@@ -30,11 +30,40 @@
     .list-image__title {
       text-align: center;
       text-transform: uppercase;
+      font-weight: 500;
     }
 
     .list-image__item {
       @media only screen and (min-width: 768px) {
         width: calc(100% / 2);
+      }
+    }
+  }
+
+  &--2col-with-title {
+    .list-image__title {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .list-image__item {
+      @media only screen and (min-width: 768px) {
+        width: calc(100% / 2);
+      }
+    }
+  }
+
+  &--with-title {
+    .list-image__title {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .list-image__item {
+      @media only screen and (min-width: 768px) {
+        width: calc(100% / 3);
       }
     }
   }
