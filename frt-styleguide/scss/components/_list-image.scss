@@ -13,35 +13,28 @@
   }
 
   &__item {
-    
     width: 100%;
     padding: 0 5px;
+
 
     img {
       width: 100%;
     }
 
     @media only screen and (min-width: 768px) {
-      width: calc(100% / 2);
-    }
-
-    @media only screen and (min-width: 1024px) {
       width: calc(100% / 3);
     }
   }
 
-  &--with-title {
+  &--2col-with-title {
     .list-image__title {
       text-align: center;
       text-transform: uppercase;
     }
 
-    .list-image__link {
-      text-align: center;
-      a {
-        border: solid 1px;
-        background: #fff;
-        padding: 5px 20px;
+    .list-image__item {
+      @media only screen and (min-width: 768px) {
+        width: calc(100% / 2);
       }
     }
   }
