@@ -52,11 +52,13 @@ h4 {
 
 h5 {
   @include gotham;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
 }
 
 h6 {
+  @include gotham;
+  font-weight: 500;
   font-size: 12px;
 }
 
