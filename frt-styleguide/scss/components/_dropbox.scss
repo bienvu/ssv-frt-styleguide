@@ -1,0 +1,453 @@
+$primary-bg: #E6E6E6;
+$primary-color: #000;
+$primary-border: #000;
+$primary-color-button: #000;
+$primary-bg-button: #fff;
+$primary-color-button: #000;
+$primary-bg-button-hover: #000;
+$primary-color-button-hover: #fff;
+$primary-border-button: #000;
+$primary-bg-icon: #999;
+$primary-border-input: #ccc;
+$primary-bg-input: #E6E6E6; 
+
+.container{
+  //background: yellow;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+/*** philosophy ***/
+.philosophy{
+  padding: 50px 0;
+  h5,
+  h2{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  p{
+    margin-bottom: 0;
+  }
+}
+/***end philosophy ***/
+
+/* concept sketch*/
+.concept-sketch{
+  padding: 50px 0;
+  background: $primary-bg;
+
+  &--column{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  &__left,
+  &__right{
+    width: calc(100% / 2 - 20px);
+  }
+  &__left{
+    
+    padding: 135px 0;
+
+    h2{
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    p{
+      margin-bottom: 10px;
+    }
+    p:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
+  &__right{
+    display: flex;
+    line-height: 0;
+
+    img{
+      width: calc(100% / 2);
+
+    }
+  }
+}
+/*end concept sketch*/
+
+
+// scale
+.scale{
+
+  padding: 50px 0;
+  &__images{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    img{
+      width: calc(100% / 3 - 5px);
+      height: 300px;
+    }
+  }
+  &__text{
+    h2{
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+}
+//end scale
+
+
+//profile
+.profile{
+  background: $primary-bg;
+  padding: 50px 0;
+  &--column{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left,
+  &__right{
+    width: calc(100% / 2 - 20px);
+  }
+
+  &__left{
+    padding: 85px 0;
+    h2{
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    p{
+      margin-bottom: 10px;
+    }
+    p:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
+  &__right{
+    line-height: 0;
+  }
+}
+//end profile
+
+
+//manufacturing
+.manufacturing{
+
+  padding: 50px 0;
+  &__images{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    img{
+      width: calc(100% / 3 - 5px);
+      height: 300px;
+    }
+  }
+  &__text{
+    h2{
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+}
+//end manufacturing
+
+
+//polishing
+.polishing{
+  background: $primary-bg;
+  padding: 50px 0;
+  &--column{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left,
+  &__right{
+    width: calc(100% / 2 - 20px);
+  }
+
+  &__left{
+
+    padding: 85px 0;
+    h2{
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    p{
+      margin-bottom: 10px;
+    }
+    p:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
+  &__right{
+    line-height: 0;
+  }
+}
+//end polishing
+
+
+//complete
+.complete{
+
+  padding: 50px 0;
+  &__images{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    img{
+      width: calc(100% / 3 - 5px);
+      height: 300px;
+    }
+  }
+  &__text{
+    h2{
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    p{
+      margin-bottom: 10;
+    }
+  }
+  &__button{
+    display: flex;
+    a{
+      border: 1px solid $primary-border;
+      color: $primary-color-button;
+      padding: 10px 30px;
+      text-transform: uppercase;
+    }
+    a:first-of-type{
+      margin-right: 20px;
+    }
+    a:hover{
+      background: $primary-bg-button-hover;
+      color: $primary-color-button-hover;
+    }
+  }
+}
+//end complete
+
+
+//new
+.new{
+  padding: 50px 0;
+  background: $primary-bg;
+  &--column{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left,
+  &__right{
+    width: calc(100% / 2 - 130px);
+    h6,
+    h2{
+      text-transform: uppercase;
+    }
+    h6,
+    h2,
+    p{
+      margin-bottom: 10px;
+    }
+  }
+  &__left{
+    input[type=text],
+    input[type=email]
+    {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      border: 1px solid $primary-border-input;
+      background: $primary-bg-input;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      text-transform: capitalize;
+      width: 100%;
+      height: 30px;
+    }
+
+    input[type=submit]{
+      text-transform: uppercase;
+      background: $primary-bg-button;
+      color: $primary-color-button;
+      border: 1px solid $primary-border-button;
+      padding: 10px 50px;
+      margin-top: 45px;
+
+      &:hover{
+      background: $primary-bg-button-hover;
+      color: $primary-color-button-hover;
+      }
+    }
+  }
+
+  &__right{
+    .icon{
+
+      display: flex;
+      font-size: 50px;
+      
+      color: #fff;
+
+      .icon-left{
+        
+        &:before{
+          content: "\e902";
+          font-family: "dropbox";
+          margin-right: 10px;
+          background: $primary-bg-icon;
+
+        }
+
+        &:after{
+          content: "\e901";
+          font-family: "dropbox";
+          margin-right: 10px;
+          background: $primary-bg-icon;
+        }
+      }
+
+      .icon-right{
+        &:before{
+          content: "\e900";
+          font-family: "dropbox";
+          margin-right: 10px;
+          background: $primary-bg-icon;
+        }
+
+        &:after{
+          content: "\e900";
+          font-family: "dropbox";
+          margin-right: 10px;
+          background: $primary-bg-icon;
+        }
+      }
+    }
+  }
+}
+//end new
+
+//footer
+.footer{
+
+//footer top
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 30px 0;
+
+    &__menu{
+      width: 50%;
+      ul{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        h5{
+          margin-bottom: 0;
+          a{
+            color: $primary-color;
+          }
+        }
+      }
+      
+    }
+
+    &__back{
+      width: 20%;
+      ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        
+        li{
+          a{
+            color: $primary-color;
+          }
+        }
+
+        li:first-of-type{
+          margin-right: 20px;
+        }
+      }
+
+
+      .icon-back{
+
+        &:before{
+          content: "\e903";
+          font-family: "dropbox";
+         // margin-right: 50px;
+        }
+      }
+    }
+  }
+//end footer top
+
+  hr{
+    margin: 0;
+  }
+
+//footer bot
+  &__bot{
+    text-transform: uppercase;
+    padding: 50px 0;
+
+    .menu{
+
+      display: flex;
+      justify-content: space-between;
+
+      &__left{
+        width: 50%;
+      }
+      &__right{
+        width: 30%;
+      }
+
+      &__left{
+        ul{
+          list-style-type: none;
+          padding-left: 0;
+          li{
+            h6:first-of-type{
+              margin-bottom: 5px;
+              strong{
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+
+
+      &__right{
+        ul{
+          display: flex;
+          list-style-type: none;
+          padding-left: 0;
+          li{
+
+          }
+        }
+      }
+    }
+  }
+//end footer bot
+}
+//end footer
