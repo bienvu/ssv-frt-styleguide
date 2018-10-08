@@ -1,0 +1,46 @@
+.box-contact {
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__list {
+    margin-bottom: 33px;
+  }
+
+  &__left {
+    margin-bottom: 20px;
+    
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+
+    p{
+      span {
+        margin: 0 13px;
+      }
+    }
+  }
+
+  &__right {
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+      padding-left: 190px;
+    }
+  }
+}

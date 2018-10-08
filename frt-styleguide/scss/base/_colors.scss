@@ -4,18 +4,13 @@
 
 $black: #000;
 $white: #fff;
-$silver: #ccc;
-$pigeon-post: #aec9de;
-$pigeon-post-light: rgba($pigeon-post, .75);
 
-// Gray
-$gray: #808080;
-
-// Red
-$red: #8c1515;
+// $pigeon-post: #aec9de;
+// $pigeon-post-light: rgba($pigeon-post, .75);
 
 // Brand colors
-$primary-color: $red;
+$primary-color: #333132;
+$second-color : $white;
 $text-color: $black;
 
 // Link color
@@ -24,4 +19,6 @@ $link-color-hover: darken($primary-color, 15%);
 
 // Button color
 $btn-color: $primary-color;
-$btn-color-hover: darken($primary-color, 15%);
+$btn-bg: $second-color ;
+$btn-color-hover: $second-color;
+$btn-bg-hover: $primary-color;

@@ -21,7 +21,7 @@
 
 //Base
 @import 'base/fonts';
-// @import 'base/icons';
+@import 'base/icons';
 @import 'base/grid';
 @import 'base/extends';
 @import 'base/typography';
@@ -46,5 +46,20 @@
 
 // Pages
 // @import 'pages/index';
+
 //@import 'pages/hover';
 @import 'components/dropbox';
+
+
+//components
+@import 'components/box-image-text';
+@import 'components/list-image';
+@import 'components/box-feature';
+// @import 'components/box-hero';
+@import 'components/box-filter';
+@import 'components/cta';
+@import 'components/masonry';
+@import 'components/box-contact';
+@import 'components/box-text';
+@import 'components/box-gallery';
+@import 'components/gallery';

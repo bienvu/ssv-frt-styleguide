@@ -1,0 +1,15 @@
+.cta {
+  background: url($image-path+'cta.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__title {
+    font-size: 32px;
+    color: $second-color;
+  }
+}
