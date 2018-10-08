@@ -1,9 +1,27 @@
 .footer {
-  padding: 40px 0;
+
+  @media only screen and (min-width: 768px) {
+    padding: 40px 0;
+    font-size: 10px;
+
+  }
+  
 
   &__top {
-    display: flex;
-    justify-content: space-between;
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 30px;
+      border-bottom: 1px solid $primary-color;
+      margin-bottom: 20px;
+
+      .main-menu {
+        li {
+          margin-right: 20px;
+        }
+      }
+
+    }
   }
 
   &__bottom {
