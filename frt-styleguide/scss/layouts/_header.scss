@@ -1,0 +1,15 @@
+.header {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__logo {
+    width: 35%;
+  }
+
+  &__content {
+    width: 65%;
+  }
+}

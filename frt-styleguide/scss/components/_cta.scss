@@ -1,5 +1,5 @@
 .cta {
-  background: url('https://picsum.photos/1400/700');
+  background: url($image-path+'cta.jpg');
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -8,11 +8,8 @@
   align-items: center;
   text-align: center;
 
-  &__content {
-    h2 {
-      margin-bottom: 30px;
-      color: #fff;
-      font-weight: bold;
-    }
+  &__title {
+    font-size: 32px;
+    color: $second-color;
   }
 }

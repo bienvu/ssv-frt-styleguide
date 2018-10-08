@@ -7,57 +7,65 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+  @include didot;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: .96px;
+  line-height: 1.19;
+  margin-bottom: 10px;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 22px;
+  line-height: 1.18;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 32px;
+  }
 }
 
 h2 {
-  font-size: 18px;
-
-  @media only screen and (min-width: 480px) {
-    font-size: 30px;
-  }
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 30px;
 
   @media only screen and (min-width: 768px) {
-    font-size: 40px;
+    font-size: 28px; 
   }
 }
 
 h3 {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 18px;
 
   @media only screen and (min-width: 768px) {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 
 h4 {
-  font-size: 20px;
-
-  @media only screen and (min-width: 768px) {
-    font-size: 25px;
-  }
-}
-
-h5 {
-  font-size: 15px;
-
   @media only screen and (min-width: 768px) {
     font-size: 20px;
   }
-}
 
-h5 {
   font-size: 16px;
 }
 
-h6 {
+h5 {
   font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+.heading--bold {
+  @include gotham;
+  font-weight: 400;
+}
+
+.heading--small {
+  @include gotham;
+  font-weight: 500;
 }
 
 %link,
@@ -66,6 +74,7 @@ h6 {
   text-decoration: none;
   transition: all .3s ease;
   cursor: pointer;
+  font-size: 12px;
 
   &:active,
   &:hover {
@@ -87,7 +96,7 @@ a {
 }
 
 p {
-  margin-bottom: rem(30px);
+  margin-bottom: 20px;
 }
 
 em {
@@ -102,6 +111,10 @@ strong {
 sub {
   vertical-align: sub;
   font-size: smaller;
+}
+
+span {
+  margin: 0;
 }
 
 sup {
