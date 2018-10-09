@@ -103,6 +103,10 @@
     {
       "name":"list-image",
       "group":"components"
+    },
+    {
+      "name":"dropbox",
+      "group":"components"
     }
   ]
 }
