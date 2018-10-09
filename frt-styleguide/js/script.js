@@ -15,32 +15,27 @@
     });
   });
 
-  // Toggle menu mobile
-  // (function () {
-  //   document.addEventListener('DOMContentLoaded', function(event) {
-  //     var button = document.getElementsByClassName("button-menu")[0];
-  //     button.addEventListener('click', function(e){
-  //       this.classList.toggle("button-menu--animation");
-  //     });
-  //   });
-  // })();
-
   (function () {
     $('document').ready(function () {
+      //Toggle Menu
       $('.button-menu').click(function (e) {
         if ($(this).hasClass('is-show')) {
           $(this).removeClass('is-show');
           $(this).parent().next().slideUp();
-          $('body').css('overflow', 'auto');
         }else {
           $(this).addClass('is-show');
-          $(this).parent().next().slideDown(function() {
-          });
-          $('body').css('overflow', 'hidden');
+          $(this).parent().next().slideDown();
         }
-        return false;
+       
+        //body scroll hidden
+        if($('body').hasClass('no-scroll')) {
+          $('body').removeClass('no-scroll');
+        }else {
+          $('body').addClass('no-scroll');
+        }
       });
 
+      // toggle menu extend
       $('.menu-extend').click(function(e) {
         e.preventDefault();
         if($(this).hasClass('is-show')) {
@@ -52,26 +47,8 @@
         }
       });
 
-      if($(window).width() < 1024) {
-        $('.symbol')[1].classList.add('is-hidden');
-        console.log(1);
-      }else {
-        $('.symbol')[1].classList.remove('is-hidden');
-        console.log(0);
-      }
-
-      $(window).resize(function() {
-        setTimeout(function() {
-          if($(this).width() < 1024) {
-            $('.symbol')[1].classList.add('is-hidden');
-          }else {
-            $('.symbol')[1].classList.remove('is-hidden');
-            $('body').css('overflow', 'auto');
-          }
-        }, 300);
-      });
-
-      $('.icon-arrow-up').click(function(){
+      // scroll top
+      $('.js-scroll-top').click(function(){
         $('html, body').animate({scrollTop : 0},800);
         return false;
       });  

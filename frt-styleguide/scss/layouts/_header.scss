@@ -310,8 +310,8 @@
       display: none;
 
       &:before {
-        content: "";
         @include border-arrow(8px, bottom, #999898);
+        content: "";
         position: absolute;
         bottom: 100%;
         right: 24px;
@@ -326,7 +326,6 @@
         font-size: 12px;
         padding-bottom: 13px;
         padding-right: 20px;
-        line-height: 1;
 
         @media only screen and (min-width: 1024px) {
           width: 240px;
@@ -334,4 +333,8 @@
       }
     }
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
