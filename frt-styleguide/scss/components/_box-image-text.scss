@@ -26,7 +26,6 @@
 
     h2 {
       margin-bottom: 30px;
-      width: 80%;
 
       @media only screen and (min-width: 768px) {
         margin-bottom: 18px;
@@ -36,7 +35,7 @@
   }
 
   &__description {
-    margin-bottom: 25px;
+    margin-bottom: -10px;
 
     @media only screen and (min-width: 768px){ 
       margin-bottom: 32px;
@@ -52,20 +51,30 @@
     &__wrap {
       padding-left: 10px;
     }
+    img {
+      height: 225px;
+
+      @media only screen and (min-width: 768px) {
+        height: auto;
+      }
+    }
 
     @media only screen and (min-width: 768px) {
       position: relative;
       width: 60%;
-      margin-right: -113px;
+      margin-left: 190px;
       margin-top: -10px;
       line-height: 0;
+
     }
   
     .sub-image {
       position: absolute;
-      top: 191px;
+      top: 193px;
       width: 75%;
-      height: 66px;
+      padding: 12px;
+      box-sizing: border-box;
+      background: #fff;
 
       @media only screen and (min-width: 768px) {
         position: absolute;
@@ -73,8 +82,8 @@
         left: -36px;
         background: #fff;
         box-sizing: border-box;
-        height: auto;
-        width: auto;
+        width: 41%;
+        padding: 18px 20px;
       }
     }
   }
