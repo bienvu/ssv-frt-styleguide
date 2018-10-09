@@ -18,6 +18,7 @@
 
     h6 {
       margin-bottom: 14px;
+      margin-left: 2px;
 
       @media only screen and (min-width: 768px) {
         margin-bottom: 19px;
@@ -26,6 +27,14 @@
 
     h2 {
       margin-bottom: 28px;
+
+      .white-space {
+        display: block;
+
+        @media only screen and (min-width: 768px) {
+          display: none;
+        }
+      }
 
       @media only screen and (min-width: 768px) {
         margin-bottom: 17px;
