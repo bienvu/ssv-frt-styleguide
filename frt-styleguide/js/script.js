@@ -69,6 +69,11 @@
             $('body').css('overflow', 'auto');
           }
         }, 300);
+      });
+
+      $('.icon-arrow-up').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
       });  
     });
   })();

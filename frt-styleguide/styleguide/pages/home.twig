@@ -18,12 +18,18 @@
     {% block header %}
       {% include '../layouts/header.twig' %}
       {% include '../layouts/navigation.twig' %}
-      {% include '../layouts/box-feature.twig' %}
     {% endblock %}
     <main>
+      {% include '../components/box-text.twig' %}
+      {% include '../components/box-image-text.twig' %}
+      {% include '../components/list-image.twig' %}
+      {% include '../components/cta.twig' %}
+      {% include '../components/box-text.twig' %}
+      {% include '../components/box-contact.twig' %}
     </main>
     {% block content %}{% endblock %}
     {% block footer %}
+    {% include '../layouts/box-feature.twig' %}
     {% include '../layouts/footer.twig' %}
     {% endblock %}
     {% block footer_scripts %}
