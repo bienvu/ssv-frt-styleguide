@@ -11,7 +11,7 @@
   text-transform: none;
   color: $primary-color;
   box-sizing: border-box;
-  display: inline-flex;
+  display: flex;
   justify-items: center;
   align-items: center;
 
@@ -27,7 +27,6 @@
     &:before,
     &:after {
       background: $black;
-      display: inline-block;
       color: #fff;
       opacity: .5;
       transition: opacity .3s linear;

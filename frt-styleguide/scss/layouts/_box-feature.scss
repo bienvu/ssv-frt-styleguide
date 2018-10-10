@@ -8,7 +8,6 @@
     flex-wrap: wrap;
 
     @medio only screen and (min-width: 768px) {
-
       flex-wrap: nowrap;
     } 
   }
@@ -33,11 +32,12 @@
 
 .list-icon {
   font-size: 20px;
+  display: flex;
+
   .icon-facebook {
     &:before {
       content: "\e901";
       margin-right: 10px;
-      padding: 10px 13px;
     }
   }
 
@@ -45,7 +45,6 @@
     &:before {
       content: "\ea92";
       margin-right: 10px;
-      padding: 10px 10px;
     }
   }
 
@@ -53,14 +52,12 @@
     &:before {
       content: "\e900";
       margin-right: 10px;
-      padding: 10px 10px;
     }
   }
 
   .icon-linkedin {
     &:before {
       content: "\eac9";
-      padding: 10px 10px;
     }
   }
 }

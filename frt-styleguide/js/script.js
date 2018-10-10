@@ -14,8 +14,51 @@
       percentPosition: true
     });
   });
-  
 
+  // Toggle menu mobile
+  // (function () {
+  //   document.addEventListener('DOMContentLoaded', function(event) {
+  //     var button = document.getElementsByClassName("button-menu")[0];
+  //     button.addEventListener('click', function(e){
+  //       this.classList.toggle("button-menu--animation");
+  //     });
+  //   });
+  // })();
+
+  (function () {
+    $('document').ready(function () {
+      $('.button-menu').click(function (e) {
+        if ($(this).hasClass('is-show')) {
+          $(this).removeClass('is-show');
+          // $('.header').css('height', '65px');
+          // $('.header').css('overflow', 'hidden');
+          $(this).parent().next().slideUp();
+          $('body').css('overflow', 'auto');
+        }else {
+          $(this).addClass('is-show');
+          // $('.header').css('height', '100vh');
+          // $('.header').css('overflow', 'auto');
+          $(this).parent().next().slideDown(function() {
+            // $(this).css('display', 'flex');
+          });
+          $('body').css('overflow', 'hidden');
+        }
+        return false;
+      });
+
+      $('.menu-extend').click(function(e) {
+        e.preventDefault();
+        if($(this).hasClass('is-show')) {
+          $(this).removeClass('is-show');
+          $(this).children('.menu').slideUp();
+        }else {
+          $(this).addClass('is-show');
+          $(this).children('.menu').slideDown();
+        }
+      });
+    });
+  })();
+  
   // Table responsive
   // Drupal.behaviors.tableResponsive = {
   //   attach: function (context, settings) {
