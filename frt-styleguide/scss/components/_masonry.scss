@@ -27,6 +27,12 @@
         height: 44.66vw;
       }
     }
+
+    &:hover .masonry__bg,
+    &:hover .icon-resize{
+      display: block;
+      cursor: pointer;
+    }
   }
 
   &__image {
@@ -45,11 +51,6 @@
         height: 100%;
         width: auto;
       }
-    }
-
-    &:hover .masonry__bg,
-    &:hover .icon-resize{
-      display: block;
     }
   }
 
