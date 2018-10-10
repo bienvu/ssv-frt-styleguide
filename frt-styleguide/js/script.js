@@ -51,7 +51,28 @@
       $('.js-scroll-top').click(function(){
         $('html, body').animate({scrollTop : 0},800);
         return false;
-      });  
+      });
+
+      //banner 
+      $('.box-hero.box-hero--width-slider').slick({
+        dots: true,
+        // autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [{
+          breakpoint: 1024,
+          settings: {
+            dots: false,
+            arrows: false
+          }
+        }]
+      });
+
+      //scroll an element
+      $('.icon-scroll').click(function() {
+        $('html, body').animate({
+          scrollTop: $("#list-image").offset().top
+        }, 1000);
+      });
     });
   })();
   
