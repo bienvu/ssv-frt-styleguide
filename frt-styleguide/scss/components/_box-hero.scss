@@ -68,9 +68,17 @@
       }
     
       br {
+        &:nth-of-type(2){
+          display: none;
+        }
+
         @media only screen and (min-width: 768px) {
-          &:first-of-type {
+          &:not(:nth-of-type(2)){
             display: none;
+          }
+
+          &:nth-of-type(2) {
+            display: inline;
           }
         }
       }

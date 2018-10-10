@@ -56,7 +56,7 @@
       //banner 
       $('.box-hero.box-hero--width-slider').slick({
         dots: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 3000,
         responsive: [{
           breakpoint: 1024,

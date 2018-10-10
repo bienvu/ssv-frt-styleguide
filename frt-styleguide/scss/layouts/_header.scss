@@ -185,6 +185,7 @@
 
         &.menu-extend {
           position: relative;
+          z-index: 9;
 
           @media only screen and (min-width: 1024px) {
             text-align: left;
@@ -308,6 +309,7 @@
       box-shadow: inset 0 1px 3px 1px rgba($primary-color, .2);
       padding: 29px 12px 21px 20px;
       display: none;
+      z-index: 9;
 
       &:before {
         @include border-arrow(8px, bottom, #999898);
