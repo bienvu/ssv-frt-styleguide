@@ -20,6 +20,8 @@
       {% include '../layouts/navigation.twig' %}
     {% endblock %} -->
     <main>
+      {% include '../components/box-image-text.twig' %}
+      {% include '../components/list-image.twig' %}
       {% include '../components/box-text.twig' %}
       {% include '../components/box-image-text.twig' %}
       {% include '../components/list-image.twig' %}
@@ -29,7 +31,7 @@
     </main>
     {% block content %}{% endblock %}
     {% block footer %}
-    <!-- {% include '../layouts/footer.twig' %} -->
+      {% include '../layouts/footer.twig' %}
     {% endblock %}
     {% block footer_scripts %}
       <script src="../js/lib/media.match.min.js"></script>
