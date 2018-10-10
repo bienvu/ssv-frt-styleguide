@@ -11,13 +11,13 @@
   text-transform: none;
   color: $primary-color;
   box-sizing: border-box;
-  display: flex;
+  display: inline-flex;
   justify-items: center;
   align-items: center;
 
   &:after,
   &:before {
-    font-family: "icomoon";
+    font-family: "french-table";
     font-size: inherit;
     font-weight: normal;
     line-height: 1;
@@ -30,9 +30,9 @@
       color: #fff;
       opacity: .5;
       transition: opacity .3s linear;
-      height: 40px;
-      width: 40px;
-      line-height: 40px;
+      height: 38px;
+      width: 38px;
+      line-height: 38px;
       text-align: center;
     }
 
