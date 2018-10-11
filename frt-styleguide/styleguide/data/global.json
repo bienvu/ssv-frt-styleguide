@@ -108,6 +108,10 @@
     {
       "name":"list-image3",
       "group":"components"
+    },
+    {
+      "name":"box-hero",
+      "group":"components"
     }
   ]
 }

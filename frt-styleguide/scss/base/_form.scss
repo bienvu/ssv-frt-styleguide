@@ -71,7 +71,6 @@ input[type="text"] {
 
 textarea {
   @extend %form-text;
-  min-height: 100px;
 }
 
 select {

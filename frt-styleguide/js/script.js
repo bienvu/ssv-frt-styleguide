@@ -47,11 +47,44 @@
         }
       });
 
+      //toggle box-filter mobile
+      $('.box-filter__title').click(function() {
+        if($(this).hasClass('is-show')) {
+          $(this).removeClass('is-show');
+          $('.box-filter__list').slideUp();
+        }else {
+          $(this).addClass('is-show');
+          $('.box-filter__list').slideDown();
+        }
+      });
+
       // scroll top
       $('.js-scroll-top').click(function(){
         $('html, body').animate({scrollTop : 0},800);
         return false;
-      });  
+      });
+
+      //banner 
+      $('.js-slider').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [{
+          breakpoint: 1024,
+          settings: {
+            dots: false,
+            arrows: false
+          }
+        }]
+      });
+
+      //scroll an element
+      $('.js-scroll-down').click(function() {
+        var $next = $(this).parents('.box-hero').next().offset().top;
+        $('html, body').animate({
+          scrollTop: $next
+        }, 'slow');
+      });
     });
   })();
   

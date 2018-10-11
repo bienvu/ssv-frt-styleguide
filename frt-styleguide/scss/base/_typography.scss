@@ -6,7 +6,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+%typography {
   @include didot;
   font-weight: 700;
   text-transform: uppercase;
@@ -15,21 +16,33 @@ h6 {
   margin-bottom: 13px;
 }
 
-h1 {
+h1,
+%h1 {
   font-size: 22px;
-  line-height: 1.1875;
+  line-height: 1.1812;
 
   @media only screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.1875;
+  }
+
+  @media only screen and (min-width: 1024px) {
     font-size: 32px;
   }
 }
 
-h2 {
+h2,
+%h2 {
   font-size: 20px;
   line-height: 1.286;
   margin-bottom: 29px;
+  letter-spacing: .84px;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
+    font-size: 24px;
+  }
+
+  @media only screen and (min-width: 1024px) {
     font-size: 28px;
   }
 }
@@ -80,7 +93,7 @@ h6 {
   letter-spacing: 1.4px;
   display: inline-block;
   white-space: nowrap;
-  line-height: 1;
+  line-height: 1.286;
 
   @media only screen and(min-width: 1024px) {
     font-size: 12px;

@@ -14,10 +14,8 @@
   text-align: center;
   text-shadow: none;
   transition: all .3s ease;
-  background-color: $btn-bg;
-  color: $btn-color;
+  background: $btn-bg-mobile;
   cursor: pointer;
-  min-width: 193px;
   height: 40px;
   line-height: 40px;
   letter-spacing: 1.2px;
@@ -25,14 +23,12 @@
 
   @media only screen and (min-width: 768px) { 
     padding: 0 22px;
-  }
-
-  &--border {
-    border: 1px solid $primary-color !important;
+    background: $btn-bg;
+     min-width: 193px;
   }
 
   &--longer {
-    padding: 0 68px !important;
+    padding: 0 62px;
   }
 
     &:active,
@@ -41,5 +37,27 @@
         background-color: $btn-bg-hover;
         color: $btn-color-hover;
     }
+  }
+}
+
+%border--white,
+.border--white {
+  border: 1px solid $second-color;
+  line-height: 38px;
+  min-width: 225px;
+
+  &:hover {
+    border: 1px solid $primary-color;
+  }
+}
+
+%border--black,
+.border--black {
+  border: 1px solid $primary-color;
+  line-height: 38px;
+  min-width: 193px;
+
+  &:hover {
+    border: 1px solid $second-color;
   }
 }

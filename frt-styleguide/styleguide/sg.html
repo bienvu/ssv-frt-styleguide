@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/styles/shCore.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/styles/shThemeDefault.min.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css" />
   <link rel="stylesheet" href="../css/styles.css">
   <!-- Base js library from drupal -->
   <script src="script/jquery.min.js"></script>
@@ -780,7 +781,7 @@
                   tellus rutrum tellus. Sodales ut eu sem integer.</p>
               </div>
               <div class="box-image-text__link">
-                <a class="btn btn--border" href="#">LEARN MORE</a>
+                <a class="btn border--black" href="#">LEARN MORE</a>
               </div>
             </div>
           </div>
@@ -808,7 +809,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla ut morbi tincidunt augue interdum velit euismod in. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Sodales ut eu sem integer.</p>
         </div>
         <div class="box-image-text__link">
-          <a class="btn btn--border" href="#">LEARN MORE</a>
+          <a class="btn border--black" href="#">LEARN MORE</a>
         </div>
       </div>
     </div>
@@ -823,11 +824,16 @@
   <div class="component--item" id="cta">
     <h2 class="component--title">cta</h2>
     <div class="component--demo">
-      <div class="cta">
+      <div class="cta cta--width-slider">
+        <div class="cta__image">
+          <img src="../images/cta.jpg" alt="">
+        </div>
+
         <div class="cta__content">
           <h2 class="cta__title">HANDCRAFTED IN MELBOURNE</h2>
-          <p><a href="" class="btn btn--longer">VIEW OUR WORK</a>
-          </p>
+          <div class="cta__link">
+            <a href="#" class="btn">VIEW OUR WORK</a>
+          </div>
         </div>
       </div>
     </div>
@@ -836,10 +842,16 @@
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><div class="cta">
+          <pre class="brush: php"><div class="cta cta--width-slider">
+  <div class="cta__image">
+    <img src="../images/cta.jpg" alt="">
+  </div>
+
   <div class="cta__content">
     <h2 class="cta__title">HANDCRAFTED IN MELBOURNE</h2>
-    <p><a href="" class="btn btn--longer">VIEW OUR WORK</a></p>
+    <div class="cta__link">
+      <a href="#" class="btn">VIEW OUR WORK</a>
+    </div>
   </div>
 </div>
 </pre>
@@ -854,9 +866,9 @@
       <div class="box-filter">
         <div class="container">
           <div class="box-filter__wrapper">
-            <h3 class="box-filter__title">Lorem ipsum </h3>
+            <h2 class="box-filter__title">explore by style</h2>
 
-            <ul class="box-filter__content">
+            <ul class="box-filter__list">
               <li><a href="#" class="btn">Classic</a>
               </li>
               <li><a href="#" class="btn">Contemporary</a>
@@ -876,9 +888,9 @@
           <pre class="brush: php"><div class="box-filter">
   <div class="container">
     <div class="box-filter__wrapper">
-      <h3 class="box-filter__title">Lorem ipsum </h3>
+      <h2 class="box-filter__title">explore by style</h2>
 
-      <ul class="box-filter__content">
+      <ul class="box-filter__list">
         <li><a href="#" class="btn">Classic</a></li>
         <li><a href="#" class="btn">Contemporary</a></li>
         <li><a href="#" class="btn active">VIEW ALL</a></li>
@@ -1183,31 +1195,31 @@
                 <form action="" method="POST">
                   <div class="form-list">
                     <div class="form-item">
-                      <input type="text" placeholder="Name*">
+                      <textarea type="text" placeholder="Name*"></textarea>
                     </div>
 
                     <div class="form-item">
-                      <input type="text" placeholder="Email*">
+                      <textarea type="text" placeholder="Email*"></textarea>
                     </div>
 
                     <div class="form-item">
-                      <input type="text" placeholder="Phone">
-                    </div>
-                  </div>
-
-                  <div class="form-list">
-                    <div class="form-item">
-                      <input type="text" placeholder="Message">
-                    </div>
-
-                    <div class="form-item">
-                      <input type="text" placeholder="What is the first letter in the word tables?">
+                      <textarea type="tel" placeholder="Phone"></textarea>
                     </div>
                   </div>
 
                   <div class="form-list">
                     <div class="form-item">
-                      <input type="submit" class="btn--longer border--black">
+                      <textarea type="text" placeholder="Message"></textarea>
+                    </div>
+
+                    <div class="form-item">
+                      <textarea type="text" placeholder="What is the first letter in the word tables?"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-list">
+                    <div class="form-item">
+                      <input type="submit" class="btn--longer border--black"></input>
                     </div>
                   </div>
                 </form>
@@ -1284,31 +1296,31 @@
           <form action="" method="POST">
             <div class="form-list">
               <div class="form-item">
-                <input type="text"  placeholder="Name*">
+                <textarea type="text"  placeholder="Name*"></textarea>
               </div>
 
               <div class="form-item">
-                <input type="text"  placeholder="Email*">
+                <textarea type="text"  placeholder="Email*"></textarea>
               </div>
 
               <div class="form-item">
-                <input type="text"  placeholder="Phone">
+                <textarea type="tel"  placeholder="Phone"></textarea>
               </div>
             </div>
 
             <div class="form-list">
               <div class="form-item">
-                <input type="text"  placeholder="Message">
+                <textarea type="text"  placeholder="Message"></textarea>
               </div>
 
               <div class="form-item">
-                <input type="text"  placeholder="What is the first letter in the word tables?">
+                <textarea type="text"  placeholder="What is the first letter in the word tables?"></textarea>
               </div>
             </div>
             
             <div class="form-list">
               <div class="form-item">
-                <input type="submit" class="btn--longer border--black">
+                <input type="submit" class="btn--longer border--black"></input>
               </div>
             </div>
           </form>
@@ -1366,7 +1378,7 @@
             </p>
           </div>
           <div class="box-text__link">
-            <a class="btn btn--border" href="#">LEARN MORE ABOUT OUR DESIGN PROCESS</a>
+            <a class="btn border--black" href="#">LEARN MORE ABOUT OUR DESIGN PROCESS</a>
           </div>
         </div>
       </div>
@@ -1384,7 +1396,7 @@
       </p>
     </div>
     <div class="box-text__link">
-      <a class="btn btn--border" href="#">LEARN MORE ABOUT OUR DESIGN PROCESS</a>
+      <a class="btn border--black" href="#">LEARN MORE ABOUT OUR DESIGN PROCESS</a>
     </div>
   </div>
 </div>
@@ -1527,7 +1539,7 @@
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><div class="list-image" >
+          <pre class="brush: php"><div class="list-image">
   <h2 class="list-image__title">VIEW OUR COLLECTION</h2>
   <div class="list-image__wrap">
     <div class="list-image__item">
@@ -1784,6 +1796,205 @@
       </div>
     </div>
   </div>
+
+  <div class="component--item" id="box-hero">
+    <h2 class="component--title">box hero</h2>
+    <div class="component--demo">
+      <!-- box hero -->
+      <div class="box-hero box-hero--width-slider">
+        <div class="box-hero__inner js-slider">
+          <div class="box-hero__item">
+            <div class="box-hero__image">
+              <img src="../images/banner01.jpg" alt="">
+            </div>
+
+            <div class="box-hero__content">
+              <h2 class="box-hero__title">French Tables <br /> by <br /> Mark Alexander <br />  Design Artistry</h2>
+              <div class="box-hero__link">
+                <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-hero__item">
+            <div class="box-hero__image">
+              <img src="../images/banner02.jpg" alt="">
+            </div>
+
+            <div class="box-hero__content">
+              <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br />  DESIGN ARTISTRY</h2>
+
+              <div class="box-hero__link">
+                <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-hero__item">
+            <div class="box-hero__image">
+              <img src="../images/banner03.jpg" alt="">
+            </div>
+
+            <div class="box-hero__content">
+              <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br />  DESIGN ARTISTRY</h2>
+
+              <div class="box-hero__link">
+                <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-hero__item">
+            <div class="box-hero__image">
+              <img src="../images/banner04.jpg" alt="">
+            </div>
+
+            <div class="box-hero__content">
+              <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br /> DESIGN ARTISTRY</h2>
+
+              <div class="box-hero__link">
+                <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-hero__item">
+            <div class="box-hero__image">
+              <img src="../images/banner05.jpg" alt="">
+            </div>
+
+            <div class="box-hero__content">
+              <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br /> DESIGN ARTISTRY</h2>
+
+              <div class="box-hero__link">
+                <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-hero__item">
+            <div class="box-hero__image">
+              <img src="../images/banner06.jpg" alt="">
+            </div>
+
+            <div class="box-hero__content">
+              <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br /> DESIGN ARTISTRY</h2>
+
+              <div class="box-hero__link">
+                <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-element">
+          <i class="icon-scroll js-scroll-down"></i>
+        </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <button class="show-code">Show/Hide Code</button>
+      <div class="component--source element-invisible">
+        <div class="component--html">
+          <h4 class="component--source--title">Markup</h4>
+          <pre class="brush: php"><!-- box hero -->
+<div class="box-hero box-hero--width-slider">
+  <div class="box-hero__inner js-slider">
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner01.jpg" alt="">
+      </div>
+      
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">French Tables <br /> by <br /> Mark Alexander <br />  Design Artistry</h2>
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+        </div>
+      </div>    
+    </div>
+
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner02.jpg" alt="">
+      </div>
+      
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br />  DESIGN ARTISTRY</h2>
+
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner03.jpg" alt="">
+      </div>
+      
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br />  DESIGN ARTISTRY</h2>
+
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner04.jpg" alt="">
+      </div>
+      
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br /> DESIGN ARTISTRY</h2>
+
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner05.jpg" alt="">
+      </div>
+      
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br /> DESIGN ARTISTRY</h2>
+
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner06.jpg" alt="">
+      </div>
+      
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br /> DESIGN ARTISTRY</h2>
+
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-element">
+    <i class="icon-scroll js-scroll-down"></i>
+  </div>
+</div>
+
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="footer text--small">
     <div class="container">
       <div class="footer__top">
@@ -1826,6 +2037,7 @@
   <script src="../js/lib/enquire.min.js"></script>
   <script src="../js/lib/jquery.imagesloaded.min.js"></script>
   <script src="../js/lib/jquery.masonry.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
   <script src="../js/script.js"></script>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shCore.js"></script>

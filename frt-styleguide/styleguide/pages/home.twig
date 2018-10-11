@@ -15,20 +15,17 @@
     {% endblock %}
   </head>
   <body>
-    <!-- {% block header %}
+    {% block header %}
       {% include '../layouts/header.twig' %}
       {% include '../layouts/navigation.twig' %}
-    {% endblock %} -->
+    {% endblock %}
     <main>
-      {% include '../components/box-image-text.twig' %}
-      {% include '../components/list-image.twig' %}
-      {% include '../components/box-text.twig' %}
+      {% include '../components/box-hero.twig' %}
       {% include '../components/box-image-text.twig' %}
       {% include '../components/list-image.twig' %}
       {% include '../components/cta.twig' %}
       {% include '../components/box-text.twig' %}
       {% include '../components/box-contact.twig' %}
-      {% include '../components/masonry.twig' %}
     </main>
     {% block content %}{% endblock %}
     {% block footer %}
@@ -39,6 +36,7 @@
       <script src="../js/lib/enquire.min.js"></script>
       <script src="../js/lib/jquery.imagesloaded.min.js"></script>
       <script src="../js/lib/jquery.masonry.min.js"></script>
+      <script src="../js/lib/slick.min.js"></script>
       <script src="../js/script.js"></script>
     {% endblock %}
   </body>
