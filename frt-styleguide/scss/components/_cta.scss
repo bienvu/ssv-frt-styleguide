@@ -55,7 +55,7 @@
 
   &__link {
     a {
-      @extend %border--white;
+      @extend .btn--border-white;
       color: $second-color;
       padding: 0 26px;
 
