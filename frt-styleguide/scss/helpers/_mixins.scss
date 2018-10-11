@@ -100,3 +100,23 @@
   box-shadow: 0 0 rem(5px) rgba($color, 1);
   outline: 0 none;
 }
+
+@mixin border-arrow($size, $place, $color) {
+  border-bottom: $size solid transparent;
+  border-top: $size solid transparent;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+
+  @if ($place == top) {
+    border-top: $size solid $color;
+  }
+  @else if($place == bottom) {
+    border-bottom: $size solid $color;
+  }
+  @else if($place == left) {
+    border-left: $size solid $color;
+  }
+  @else {
+    border-right: $size solid $color;
+  }
+}

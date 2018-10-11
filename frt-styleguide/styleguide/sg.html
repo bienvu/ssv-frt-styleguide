@@ -20,50 +20,66 @@
 
 <body>
   <div class="header">
-    <div class="container">
-      <div class="header__wrap">
-        <div class="header__logo">
-          <img src="../../images/logo.svg">
-        </div>
-        <div class="header__content">
-          <div class="main-menu">
-            <nav>
-              <ul>
-                <li class="menu-extend"><a href="#">TABLES</a>
-                  <ul class="menu">
-                    <li><a href="#">DINING CHAIRS</a>
-                    </li>
-                    <li><a href="#">SIDEBOARDS</a>
-                    </li>
-                    <li><a href="#">WORK</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="#">DINING CHAIRS</a>
-                </li>
-                <li><a href="#">SIDEBOARDS</a>
-                </li>
-                <li><a href="#">WORK</a>
-                </li>
-                <li><a href="#">ABOUT</a>
-                </li>
-                <li><a href="#">CONTACT</a>
-                </li>
-                <li><a class="box" href="#">BOOK A CONSULTATION</a>
-                </li>
-                <li>
-                  <a class="search-icon" href="#"></a>
-                  <div class="box-search">
-                    <form action="">
+    <div class="header__logo">
+      <a href="#" class="logo">
+        <img src="../images/logo.svg">
+      </a>
+      <span class="button-menu">
+          <span class="button-menu__row"></span>
+      <span class="button-menu__row"></span>
+      <span class="button-menu__row"></span>
+      </span>
+    </div>
 
-                    </form>
-                  </div>
-                </li>
+    <div class="header__menu">
+      <ul class="main-menu">
+        <li class="menu-extend">
+          <a href="#">TABLES</a>
+          <ul class="menu">
+            <li><a href="#">Rectangle Dining Tables</a>
+            </li>
+            <li><a href="#">Round Dining Tables</a>
+            </li>
+            <li><a href="#">Extension Tables</a>
+            </li>
+            <li><a href="#">Coffee Tables</a>
+            </li>
+          </ul>
+        </li>
 
-              </ul>
-            </nav>
-          </div>
+        <li><a href="#">DINING CHAIRS</a>
+        </li>
+        <li><a href="#">SIDEBOARDS</a>
+        </li>
+        <li><a href="#">WORK</a>
+        </li>
+
+        <li class="menu-extend">
+          <a href="#">ABOUT</a>
+          <ul class="menu">
+            <li><a href="#">French Tables</a>
+            </li>
+            <li><a href="#">Design Process</a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="#">CONTACT</a>
+        </li>
+        <li><a class="book-link" href="#">BOOK A CONSULTATION</a>
+        </li>
+      </ul>
+
+      <div class="box-search">
+        <div class="form-search">
+          <form action="#">
+            <div class="form-item">
+              <input type="text" placeholder="SEARCH">
+            </div>
+          </form>
         </div>
+
+        <a href="#" class="icon-search"></a>
       </div>
     </div>
   </div>
@@ -341,207 +357,13 @@
   <div class="component--item" id="table">
     <h2 class="component--title">table</h2>
     <div class="component--demo">
-      <div class="container">
-        <h1>Table with short content</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-            <tr>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-            <tr>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-          </tbody>
-        </table>
-        <br>
-        <br>
-        <h1>Table without thead</h1>
-        <table>
-          <tbody>
-            <tr>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-            <tr>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-            <tr>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-          </tbody>
-        </table>
-        <br>
-        <br>
-        <h1>Table with long content</h1>
-        <table border="1" cellpadding="1" cellspacing="1" style="width: 1059px;">
-          <thead>
-            <tr>
-              <th style="width: 241px; vertical-align: top;">Lorem Ipsum is simply</th>
-              <th style="width: 220px; vertical-align: top;">Lorem Ipsum is simply</th>
-              <th style="width: 254px; vertical-align: top;">Lorem Ipsum is simply</th>
-              <th style="width: 288px; vertical-align: top;">Lorem Ipsum is simply</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="width: 241px; vertical-align: top;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
-              <td style="width: 220px; vertical-align: top;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
-              <td style="width: 254px; vertical-align: top;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
-              <td style="width: 288px; vertical-align: top;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </div>
     <div class="container">
       <button class="show-code">Show/Hide Code</button>
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><div class="container">
-  <h1>Table with short content</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-      </tr>
-      <tr>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-      </tr>
-      <tr>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <br>
-  <h1>Table without thead</h1>
-  <table>
-    <tbody>
-      <tr>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-      </tr>
-      <tr>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-      </tr>
-      <tr>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <br>
-  <h1>Table with long content</h1>
-  <table border="1" cellpadding="1" cellspacing="1" style="width: 1059px;">
-    <thead>
-      <tr>
-        <th style="width: 241px; vertical-align: top;">Lorem Ipsum is simply</th>
-        <th style="width: 220px; vertical-align: top;">Lorem Ipsum is simply</th>
-        <th style="width: 254px; vertical-align: top;">Lorem Ipsum is simply</th>
-        <th style="width: 288px; vertical-align: top;">Lorem Ipsum is simply</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="width: 241px; vertical-align: top;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
-        <td style="width: 220px; vertical-align: top;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
-        <td style="width: 254px; vertical-align: top;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
-        <td style="width: 288px; vertical-align: top;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</pre>
+          <pre class="brush: php"></pre>
         </div>
       </div>
     </div>
@@ -926,45 +748,13 @@
   <div class="component--item" id="box-gallery">
     <h2 class="component--title">box gallery</h2>
     <div class="component--demo">
-      <div class="box-gallery">
-        <div class="box-gallery__top">
-          <img src="/images/1307.jpeg" alt="anh top">
-          <a href="" class="arrow-top"></a>
-        </div>
-
-        <div class="box-gallery__bot">
-          <img src="/images/140.jpeg" alt="anh bot 1">
-          <img src="/images/140.jpeg" alt="anh bot 2">
-          <img src="/images/140.jpeg" alt="anh bot 3">
-          <img src="/images/140.jpeg" alt="anh bot 4">
-
-          <a href="" class=" arrow-left"></a>
-          <a href="" class="arrow-right"></a>
-        </div>
-      </div>
     </div>
     <div class="container">
       <button class="show-code">Show/Hide Code</button>
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><div class="box-gallery">
-  <div class="box-gallery__top">
-    <img src="/images/1307.jpeg" alt="anh top">
-    <a href="" class="arrow-top"></a>
-  </div>
-
-  <div class="box-gallery__bot">
-    <img  src="/images/140.jpeg" alt="anh bot 1">
-    <img src="/images/140.jpeg" alt="anh bot 2" >
-    <img src="/images/140.jpeg" alt="anh bot 3">
-    <img src="/images/140.jpeg" alt="anh bot 4">
-
-     <a href="" class=" arrow-left"></a>
-    <a href="" class="arrow-right"></a>  
-  </div>
-</div>
-</pre>
+          <pre class="brush: php"></pre>
         </div>
       </div>
     </div>
@@ -976,17 +766,21 @@
       <div class="box-image-text">
         <div class="container">
           <div class="box-image-text__wrap">
-            <div class="box-image-text__content">
-              <h3 class="box-image-text__sub-title">WELCOME</h3>
-              <h2 class="box-image-text__title">ULLAMCORPER<br>MALESUADA PROIN<br>LIBERO NYNC.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aut quia dolor quo, ab consequuntur atque aspernatur blanditiis asperiores quisquam libero nemo a quidem eligendi harum numquam praesentium ducimus, quos. Soluta necessitatibus
-                quam provident nihil eveniet voluptatibus dignissimos pariatur velit perspiciatis voluptas.</p>
-              <a href="#">LEARN MORE</a>
-            </div>
             <div class="box-image-text__image">
               <div class="box-image-text__image__wrap">
-                <img src="../../images/Layer-011.jpg" alt="">
-                <img class="sub-image" src="../images/Sub-image.svg" alt="">
+                <img class="main-image" src="../images/Layer-011.jpg" alt="">
+              </div>
+              <img class="sub-image" src="../images/Sub-image.svg" alt="">
+            </div>
+            <div class="box-image-text__content">
+              <h6 class="box-image-text__sub-title text--small">WELCOME</h6>
+              <h2 class="box-image-text__title">ULLAMCORPER<br> MALES<span class="white-space"></span>UADA PROIN<br> LIBERO NUNC<br> <span class="text">IPSUM TEMPOR</span></h2>
+              <div class="box-image-text__description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla ut morbi tincidunt augue interdum velit euismod in. Fermentum et sollicitudin ac orci phasellus egestas
+                  tellus rutrum tellus. Sodales ut eu sem integer.</p>
+              </div>
+              <div class="box-image-text__link">
+                <a class="btn btn--border" href="#">LEARN MORE</a>
               </div>
             </div>
           </div>
@@ -1001,16 +795,20 @@
           <pre class="brush: php"><div class="box-image-text">
   <div class="container">
     <div class="box-image-text__wrap">
-      <div class="box-image-text__content">
-        <h3 class="box-image-text__sub-title">WELCOME</h3>
-        <h2 class="box-image-text__title">ULLAMCORPER<br>MALESUADA PROIN<br>LIBERO NYNC.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt aut quia dolor quo, ab consequuntur atque aspernatur blanditiis asperiores quisquam libero nemo a quidem eligendi harum numquam praesentium ducimus, quos. Soluta necessitatibus quam provident nihil eveniet voluptatibus dignissimos pariatur velit perspiciatis voluptas.</p>
-        <a href="#">LEARN MORE</a>
-      </div>
-      <div class="box-image-text__image">
+      <div class="box-image-text__image"> 
         <div class="box-image-text__image__wrap">
-          <img src ="../../images/Layer-011.jpg" alt="">
+          <img class="main-image" src ="../images/Layer-011.jpg" alt="">
+        </div> 
           <img class="sub-image" src="../images/Sub-image.svg" alt=""> 
+      </div>
+      <div class="box-image-text__content">
+        <h6 class="box-image-text__sub-title text--small">WELCOME</h6>
+        <h2 class="box-image-text__title">ULLAMCORPER<br> MALES<span class="white-space"></span>UADA PROIN<br> LIBERO NUNC<br> <span class="text">IPSUM TEMPOR</span></h2>
+        <div class="box-image-text__description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla ut morbi tincidunt augue interdum velit euismod in. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Sodales ut eu sem integer.</p>
+        </div>
+        <div class="box-image-text__link">
+          <a class="btn btn--border" href="#">LEARN MORE</a>
         </div>
       </div>
     </div>
@@ -1020,134 +818,6 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="component--item" id="box-feature">
-    <h2 class="component--title">box feature</h2>
-    <div class="component--demo">
-      <!DOCTYPE html>
-      <html>
-
-      <head>
-        <meta charset="utf-8">
-        <title>box-contact1</title>
-        <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" href="../css/styles.css">
-      </head>
-
-      <body>
-        <div class="box-feature">
-          <div class="container">
-            <div class="box-feature__wrapper">
-              <div class="box-feature__update ">
-
-                <h6>SIGN UP</h6>
-                <br>
-                <h3>NEWS &amp; body UPDATES</h3>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                <form>
-                  <div class="form-item">
-                    <input type="text" placeholder="Name">
-
-                  </div>
-                  <div class="form-item">
-                    <input type="text" placeholder="Email">
-
-                  </div>
-
-                  <div class="form-item">
-                    <input type="submit" value="SUBMIT" class="btn btn--border">
-                  </div>
-                </form>
-              </div>
-
-              <div class="box-feature__follow">
-                <h6>STAY IN TOUCH</h6>
-                <br>
-                <h3>FOLLOW US</h3>
-                <br>
-                <p>Follow us on Facebook and Instagram to see all our latest products and new designs. Eiusmod tempor incididunt ut labt.</p>
-                <div class="list-icon">
-                  <a href="" class="icon-facebook icon--bg"></a>
-                  <a href="" class="icon-instagram icon--bg"></a>
-                  <a href="" class="icon-youtube icon--bg"></a>
-                  <a href="" class="icon-linkedin icon--bg"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    </body>
-
-    </html>
-  </div>
-  <div class="container">
-    <button class="show-code">Show/Hide Code</button>
-    <div class="component--source element-invisible">
-      <div class="component--html">
-        <h4 class="component--source--title">Markup</h4>
-        <pre class="brush: php"><!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8"> 
-    <title>box-contact1</title>
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="../css/styles.css">
-  </head>
-  <body> 
-    <div class="box-feature">
-    <div class="container">
-    <div class="box-feature__wrapper">
-      <div class="box-feature__update ">
-        
-          <h6>SIGN UP</h6>
-          <br>
-          <h3>NEWS &amp; body UPDATES</h3>
-          <br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-       
-        <form>
-          <div class="form-item">
-            <input type="text" placeholder="Name">
-
-          </div>
-          <div class="form-item">
-            <input type="text" placeholder="Email">
-
-          </div>
-          
-          <div class="form-item">
-            <input type="submit" value="SUBMIT" class="btn btn--border">
-          </div>
-        </form>
-       </div>
-
-        <div class="box-feature__follow">
-          <h6>STAY IN TOUCH</h6>
-          <br>
-          <h3>FOLLOW US</h3>
-          <br>
-          <p>Follow us on Facebook and Instagram to see all our latest products and new designs. Eiusmod tempor incididunt ut labt.</p>
-          <div class="list-icon">
-            <a href="" class="icon-facebook icon--bg"></a>
-             <a href="" class="icon-instagram icon--bg"></a>
-              <a href="" class="icon-youtube icon--bg"></a>
-               <a href="" class="icon-linkedin icon--bg"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div> 
-    </div> 
-  </body>
-</html>
-</pre>
-      </div>
-    </div>
-  </div>
   </div>
 
   <div class="component--item" id="cta">
@@ -1227,124 +897,129 @@
     <div class="component--demo">
       <div class="masonry">
         <div class="masonry__item">
-          <img src="https://picsum.photos/200/300/?random
-" alt="">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Classic_01.jpg" alt="FrenchTables Gallery Classic">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
+
         <div class="masonry__item">
-          <img src="https://picsum.photos/300/200/?random
-" alt="">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Classic_02.jpg" alt="FrenchTables Gallery Classic">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/150/150/?random
-" alt="">
+
+        <div class="masonry__item masonry__item--height2">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_03.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
+
         <div class="masonry__item">
-          <img src="https://picsum.photos/150/300/?random
-" alt="">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_04.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
+
         <div class="masonry__item">
-          <img src="https://picsum.photos/200/200/?random
-" alt="">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_05.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
+
         <div class="masonry__item">
-          <img src="https://picsum.photos/200/300/?random
-" alt="">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_06.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/300/200/?random
-" alt="">
+
+        <div class="masonry__item masonry__item--height2">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_07.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
+
         <div class="masonry__item">
-          <img src="https://picsum.photos/150/150/?random
-" alt="">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_08.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
+
         <div class="masonry__item">
-          <img src="https://picsum.photos/150/300/?random
-" alt="">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_09.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/300/150/?random
-" alt="">
+
+        <div class="masonry__item masonry__item--height2">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_10.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/200/300/?random
-" alt="">
+
+        <div class="masonry__item masonry__item--height2">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Classic_11.jpg" alt="FrenchTables Gallery Classic">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
+
         <div class="masonry__item">
-          <img src="https://picsum.photos/300/200/?random
-" alt="">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_12.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
+
         <div class="masonry__item">
-          <img src="https://picsum.photos/150/150/?random
-" alt="">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_13.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
+
         <div class="masonry__item">
-          <img src="https://picsum.photos/150/300/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/200/200/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/200/300/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/300/200/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/150/150/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/150/300/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/300/150/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/200/300/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/300/200/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/150/150/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/150/300/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/200/200/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/200/300/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/300/200/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/150/150/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/150/300/?random
-" alt="">
-        </div>
-        <div class="masonry__item">
-          <img src="https://picsum.photos/300/150/?random
-" alt="">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Classic_14.jpg" alt="FrenchTables Gallery Classic">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -1354,66 +1029,121 @@
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
           <pre class="brush: php"><div class="masonry">
-  <div class="masonry__item"><img src="https://picsum.photos/200/300/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/300/200/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/150/150/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/150/300/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/200/200/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/200/300/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/300/200/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/150/150/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/150/300/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/300/150/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/200/300/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/300/200/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/150/150/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/150/300/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/200/200/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/200/300/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/300/200/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/150/150/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/150/300/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/300/150/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/200/300/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/300/200/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/150/150/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/150/300/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/200/200/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/200/300/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/300/200/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/150/150/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/150/300/?random
-" alt=""></div>
-  <div class="masonry__item"><img src="https://picsum.photos/300/150/?random
-" alt=""></div>
+  <div class="masonry__item">
+   <div class="masonry__image"> 
+      <img src="../images/FrenchTables_Gallery_Classic_01.jpg" alt="FrenchTables Gallery Classic">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item">
+    <div class="masonry__image">
+     <img src="../images/FrenchTables_Gallery_Classic_02.jpg" alt="FrenchTables Gallery Classic">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item masonry__item--height2">
+   <div class="masonry__image"> 
+      <img src="../images/FrenchTables_Gallery_Contemporary_03.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item">
+   <div class="masonry__image"> 
+      <img src="../images/FrenchTables_Gallery_Contemporary_04.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item">
+   <div class="masonry__image">
+      <img src="../images/FrenchTables_Gallery_Contemporary_05.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item">
+   <div class="masonry__image">
+      <img src="../images/FrenchTables_Gallery_Contemporary_06.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item masonry__item--height2">
+   <div class="masonry__image">
+      <img src="../images/FrenchTables_Gallery_Contemporary_07.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item">
+   <div class="masonry__image">
+      <img src="../images/FrenchTables_Gallery_Contemporary_08.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item">
+   <div class="masonry__image">
+      <img src="../images/FrenchTables_Gallery_Contemporary_09.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item masonry__item--height2">
+  <div class="masonry__image">  <img src="../images/FrenchTables_Gallery_Contemporary_10.jpg" alt="FrenchTables Gallery Contemporary">
+</div>    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item masonry__item--height2">
+   <div class="masonry__image"> <img src="../images/FrenchTables_Gallery_Classic_11.jpg" alt="FrenchTables Gallery Classic">
+   </div> <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item">
+   <div class="masonry__image"> <img src="../images/FrenchTables_Gallery_Contemporary_12.jpg" alt="FrenchTables Gallery Contemporary"></div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item">
+   <div class="masonry__image"> <img src="../images/FrenchTables_Gallery_Contemporary_13.jpg" alt="FrenchTables Gallery Contemporary"></div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item">
+    <div class="masonry__image"><img src="../images/FrenchTables_Gallery_Classic_14.jpg" alt="FrenchTables Gallery Classic"></div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
 </div>
 </pre>
         </div>
@@ -1625,7 +1355,6 @@
     <div class="component--demo">
       <div class="box-text">
         <div class="container">
-
           <div class="box-text__content">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Frigilla ut morbi tincidunt augue interdum vetlit euimod in. Frementum et sollicitudin ac orci phasellus egestas tellus rutrum
@@ -1634,11 +1363,9 @@
               vetlit euimod in.
             </p>
           </div>
-
           <div class="box-text__link">
-            <a href="#">LEARN MORE ABOUT OUR DESIGN PROCESS</a>
+            <a class="btn btn--border" href="#">LEARN MORE ABOUT OUR DESIGN PROCESS</a>
           </div>
-
         </div>
       </div>
     </div>
@@ -1649,17 +1376,14 @@
           <h4 class="component--source--title">Markup</h4>
           <pre class="brush: php"><div class="box-text">
   <div class="container">
-
     <div class="box-text__content">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Frigilla ut morbi tincidunt  augue interdum vetlit euimod in. Frementum et sollicitudin ac orci phasellus egestas    tellus rutrum tellus. Sodales ut eu sem integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Frigilla ut morbi tincidunt augue interdum vetlit euimod in. Frementum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Sodales ut eu sem integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Frigilla ut morbi tincidunt augue interdum vetlit euimod in.
       </p>
     </div>
-
     <div class="box-text__link">
-      <a href="#">LEARN MORE ABOUT OUR DESIGN PROCESS</a>
+      <a class="btn btn--border" href="#">LEARN MORE ABOUT OUR DESIGN PROCESS</a>
     </div>
-
   </div>
 </div>
 </pre>
@@ -1779,18 +1503,16 @@
     <h2 class="component--title">list image</h2>
     <div class="component--demo">
       <div class="list-image">
-        <div class="container">
-          <h2 class="list-image__title">VIEW OUR PRODUCTS</h2>
-          <div class="list-image__wrap">
-            <div class="list-image__item">
-              <img src="../../images/image01.jpg" alt="">
-            </div>
-            <div class="list-image__item">
-              <img src="../../images/image02.jpg" alt="">
-            </div>
-            <div class="list-image__item">
-              <img src="../../images/image03.jpg" alt="">
-            </div>
+        <h2 class="list-image__title">VIEW OUR COLLECTION</h2>
+        <div class="list-image__wrap">
+          <div class="list-image__item">
+            <img src="../images/image01.jpg" alt="">
+          </div>
+          <div class="list-image__item">
+            <img src="../images/image02.jpg" alt="">
+          </div>
+          <div class="list-image__item">
+            <img src="../images/image03.jpg" alt="">
           </div>
         </div>
       </div>
@@ -1801,18 +1523,16 @@
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
           <pre class="brush: php"><div class="list-image" >
-  <div class="container">
-    <h2 class="list-image__title">VIEW OUR PRODUCTS</h2>
-    <div class="list-image__wrap">
-      <div class="list-image__item">
-        <img src="../../images/image01.jpg" alt="">
-      </div>
-      <div class="list-image__item">
-        <img src="../../images/image02.jpg" alt="">
-      </div>
-      <div class="list-image__item">
-        <img src="../../images/image03.jpg" alt="">
-      </div>
+  <h2 class="list-image__title">VIEW OUR COLLECTION</h2>
+  <div class="list-image__wrap">
+    <div class="list-image__item">
+      <img src="../images/image01.jpg" alt="">
+    </div>
+    <div class="list-image__item">
+      <img src="../images/image02.jpg" alt="">
+    </div>
+    <div class="list-image__item">
+      <img src="../images/image03.jpg" alt="">
     </div>
   </div>
 </div>
@@ -1821,44 +1541,40 @@
       </div>
     </div>
   </div>
-  <div class="footer">
+  <div class="footer text--small">
     <div class="container">
       <div class="footer__top">
-        <div class="main-menu">
-          <nav>
-            <ul>
-              <li><a href="#">HOME</a>
-              </li>
-              <li><a href="#">TABLES</a>
-              </li>
-              <li><a href="#">DINING CHAIRS</a>
-              </li>
-              <li><a href="#">SIDEBOARDS</a>
-              </li>
-              <li><a href="#">WORK</a>
-              </li>
-              <li><a href="#">ABOUT</a>
-              </li>
-              <li><a href="#">CONTACT</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__right">
-          <a class="back-to-top" href="#">BACK TO TOP</a>
+        <div class="scroll-up">
+          <a class="icon-arrow-up text--small js-scroll-top" href="#">BACK TO TOP</a>
         </div>
 
+        <ul class="main-menu">
+          <li><a href="#">HOME</a>
+          </li>
+          <li><a href="#">TABLES</a>
+          </li>
+          <li><a href="#">DINING CHAIRS</a>
+          </li>
+          <li><a href="#">SIDEBOARDS</a>
+          </li>
+          <li><a href="#">WORK</a>
+          </li>
+          <li><a href="#">ABOUT</a>
+          </li>
+          <li><a href="#">CONTACT</a>
+          </li>
+        </ul>
       </div>
 
       <div class="footer__bottom">
-        <div class="footer__bottom__text">
-          <p>FRENCH TABLES &copy; 2018 ALL RIGHTS RESERVED <span>AUSTRALIA | INTERNATIONAL</span>
+        <div class="footer__content">
+          <p>FRENCH TABLES &copy; 2018 ALL RIGHTS RESERVED <span class="text--bold">AUSTRALIA <span class="symbol">|</span> INTERNATIONAL</span>
           </p>
-          <P>PRIVACY POLICY | STRATEGY, DESIGN & DEVELOPMENT BY SENTIUS</P>
+          <p>PRIVACY POLICY <span class="symbol symbol-change">|</span>STRATEGY, DESIGN & DEVELOPMENT BY SENTIUS</p>
         </div>
 
-        <div class="footer__bottom__popover-content">
-          <img src="../../images/Sub-image.svg" alt="">
+        <div class="footer__image">
+          <img src="../images/logo-footer.svg" alt="">
         </div>
       </div>
     </div>
