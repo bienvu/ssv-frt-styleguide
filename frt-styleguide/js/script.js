@@ -47,6 +47,17 @@
         }
       });
 
+      //toggle box-filter mobile
+      $('.box-filter__title').click(function() {
+        if($(this).hasClass('is-show')) {
+          $(this).removeClass('is-show');
+          $('.box-filter__list').slideUp();
+        }else {
+          $(this).addClass('is-show');
+          $('.box-filter__list').slideDown();
+        }
+      });
+
       // scroll top
       $('.js-scroll-top').click(function(){
         $('html, body').animate({scrollTop : 0},800);
