@@ -9,7 +9,7 @@
   &__wrap {
     @media only screen and (min-width: 768px) {
       display: flex;
-      margin: 0 20px;
+      padding: 0 29px;
       flex-wrap: wrap;
     }
   }
@@ -17,7 +17,7 @@
   &__item {
     @media only screen and (min-width: 768px) {
       width: 100%;
-      padding: 0 5px;
+      padding: 0 9px;
       position: relative;
 
       &:hover {
@@ -31,12 +31,13 @@
       @media only screen and (min-width: 768px) {
         position: absolute;
         text-align: center;
-        top: 120px;
-        left: 120px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background: none;
         border: 1px solid #fff !important;
         color: #fff;
-        display: none;
+       
       }
     }
 
