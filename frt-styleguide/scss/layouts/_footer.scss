@@ -47,7 +47,6 @@
     margin-bottom: 61px;
 
     @media only screen and (min-width: 1024px) {
-      // padding-top: 18px;
       text-align: left;
       margin: 0;
     }
@@ -73,11 +72,18 @@
         margin: 0 10px 0px 1px;
         display: inline-block;
 
-        &.is-hidden {
+        &.symbol-change {
           visibility: hidden;
-          margin: 0;
           display: block;
-          margin-bottom: -6px;
+          margin-bottom: -8px;
+        }
+
+        @media only screen and (min-width: 768px) {
+          &.symbol-change {
+            display: inline-block;
+            visibility: visible;
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -112,7 +118,6 @@
     padding-right: 30px;
     position: relative;
     font-size: 12px;
-    line-height: 1.2;
 
     &:after {
       content: "\e903";
