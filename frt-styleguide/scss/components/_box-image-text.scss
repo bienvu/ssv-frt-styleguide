@@ -1,6 +1,5 @@
 .box-image-text {
   &__wrap {
-
     @media only screen and (min-width: 768px) {
       display: flex;
       justify-content: space-between;
@@ -10,8 +9,6 @@
   }
 
   &__content {
-    
-
     @media only screen and (min-width: 768px) {
       width: 50%;
       padding-right: 112px;
