@@ -1,26 +1,77 @@
 .masonry {
-  margin-left: -40px;
+  padding: 0 20px;
+  margin-left: -5px;
 
-  &__item {
-    width: 50%;
-    padding-left: 40px;
-
-    @media only screen and (min-width: 768px) {
-      width: calc(100% / 3);
-    }
-
-    @media only screen and (min-width: 1280px) {
-      width: calc(100% / 4);
-    }
+  @media only screen and (min-width: 768px) {
+    padding: 0 30px;
+    margin-left: -15px;
   }
+
   &__item {
     line-height: 0;
-    margin-bottom: 40px;
-    // @media only screen and (min-width: 767px) {
-    //   width: calc(100% / 3);
-    // } 
-    img {
-      width: 100%;
+    padding: 0 0 5px 5px;
+    width: calc((100% - 40px) / 2);
+    height: 31.47vw;
+
+    @media only screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
+      height: 22.33vw;
+      padding: 0 0 15px 15px;
+      position: relative;
     }
+
+    &--height2 {
+      height: 62.93vw;
+
+      @media only screen and (min-width: 768px) {
+        height: 44.66vw;
+      }
+    }
+
+    &:hover .masonry__bg,
+    &:hover .icon-resize{
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  &__image {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      @media only screen and (min-width: 768px) {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    right: 0; left: 15px;
+    bottom: 15px; top: 0;
+    background: rgba($black, .5);
+    display: none;
+  }
+}
+
+.icon-resize {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 30px;
+  display: none;
+
+  &:before {
+    content: "\e907";
+    color: #fff;
   }
 }

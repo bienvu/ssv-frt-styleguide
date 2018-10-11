@@ -1,10 +1,12 @@
 
 .box-feature{
   text-align: center;
+  margin-bottom: 36px;
 
   @media only screen and (min-width: 768px) {
     text-align: left;
-    padding: 30px 0;
+    padding-top: 30px;
+    margin-bottom: 119px;
   } 
 
   &__wrap {
@@ -14,28 +16,10 @@
   }
 
   .container {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    
-    @media only screen and (min-width: 480px) {
-      @include container();
-    } 
-
-    @include susy-media(tablet) {
-      @include container($susy-tablet);
-    }
-
-    @include susy-media(desktop) {
-      @include container($susy-desktop);
-    }
-
-    @include susy-media(desktopWide) {
-      @include container($susy-desktop-wide);
-    }
-
-    @include susy-media(desktopSuperwide) {
-      @include container($susy-desktop-superwide);
+    @media screen and (max-width: 480px) {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
     }
   }
 
@@ -54,7 +38,7 @@
     background: #f2f2f2;
     padding: 36px 0 40px;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 480px) {
       width: 50%;
       background: transparent;
       padding: 0 0 0 9%;
@@ -63,17 +47,17 @@
 
   &__form {
     .form-item {
-
-      @media only screen and (min-width: 480px) {
-        margin: auto;
-      }
+      margin: 0 auto;
 
       @media only screen and (min-width: 768px) {
         margin-left: 0;
+
+        &:first-of-type {
+          margin-bottom: 9px;
+        }
       }
 
       &:last-of-type {
-        margin: 0 auto;
 
         @media only screen and (min-width: 768px) {
           margin: 0;
@@ -81,7 +65,7 @@
       }
 
       input[type="text"] {
-        letter-spacing: initial;
+        width: 300px;
 
         @media only screen and (min-width: 480px) {
           width: 400px;
@@ -103,10 +87,8 @@
   }
 
   &__title {
-    line-height: 1.2;
-
     @media only screen and (min-width: 768px) {
-      margin-bottom: 21px;
+      margin-bottom: 19px;
     }
   }
 
@@ -123,6 +105,7 @@
 
     @media only screen and (min-width: 768px) {
       display: block;
+      margin-bottom: 18px;
     }
   }
 }
