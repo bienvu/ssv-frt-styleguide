@@ -65,7 +65,7 @@
       });
 
       //banner 
-      $('.box-hero.box-hero--width-slider').slick({
+      $('.js-slider').slick({
         dots: true,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -80,8 +80,10 @@
 
       //scroll an element
       $('.js-scroll-down').click(function() {
-        var $nextItem = $(this).parent().next().offset().top - 63;
-        $("html, body").animate({scrollTop: $nextItem}, "slow");
+        var $next = $(this).parents('.box-hero').next().offset().top;
+        $('html, body').animate({
+          scrollTop: $next
+        }, 'slow');
       });
     });
   })();
