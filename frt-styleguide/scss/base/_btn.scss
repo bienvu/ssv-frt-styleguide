@@ -16,7 +16,6 @@
   transition: all .3s ease;
   background: $btn-bg-mobile;
   cursor: pointer;
-  min-width: 193px;
   height: 40px;
   line-height: 40px;
   letter-spacing: 1.2px;
@@ -25,14 +24,7 @@
   @media only screen and (min-width: 768px) { 
     padding: 0 22px;
     background: $btn-bg;
-  }
-
-  &--border {
-    border: 1px solid $primary-color;
-
-    &:hover {
-      border: 1px solid $second-color;
-    }
+     min-width: 193px;
   }
 
   &--longer {
@@ -45,5 +37,23 @@
         background-color: $btn-bg-hover;
         color: $btn-color-hover;
     }
+  }
+}
+
+%border--white {
+  border: 1px solid $second-color;
+  line-height: 38px;
+
+  &:hover {
+    border: 1px solid $primary-color;
+  }
+}
+
+%border--black {
+  border: 1px solid $primary-color;
+  line-height: 38px;
+
+  &:hover {
+    border: 1px solid $second-color;
   }
 }
