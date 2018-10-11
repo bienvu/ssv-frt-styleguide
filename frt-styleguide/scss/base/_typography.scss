@@ -15,11 +15,17 @@ h6 {
   margin-bottom: 13px;
 }
 
-h1 {
+h1,
+%h1 {
   font-size: 22px;
-  line-height: 1.1875;
+  line-height: 1.1812;
 
   @media only screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.1875;
+  }
+
+  @media only screen and (min-width: 1024px) {
     font-size: 32px;
   }
 }

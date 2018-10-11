@@ -14,8 +14,8 @@
   text-align: center;
   text-shadow: none;
   transition: all .3s ease;
-  background-color: $btn-bg;
-  color: $btn-color;
+  background: $btn-bg-mobile;
+  color: $btn-color-mobile;
   cursor: pointer;
   min-width: 193px;
   height: 40px;
@@ -25,14 +25,20 @@
 
   @media only screen and (min-width: 768px) { 
     padding: 0 22px;
+    background: $btn-bg;
+    color: $btn-color;
   }
 
   &--border {
-    border: 1px solid $primary-color !important;
+    border: 1px solid $second-color;
+
+    &:hover {
+      border: 1px solid $primary-color;
+    }
   }
 
   &--longer {
-    padding: 0 68px !important;
+    padding: 0 62px;
   }
 
     &:active,
