@@ -79,10 +79,9 @@
       });
 
       //scroll an element
-      $('.icon-scroll').click(function() {
-        $('html, body').animate({
-          scrollTop: $("#list-image").offset().top
-        }, 1000);
+      $('.js-scroll-down').click(function() {
+        var $nextItem = $(this).parent().next().offset().top - 63;
+        $("html, body").animate({scrollTop: $nextItem}, "slow");
       });
     });
   })();
