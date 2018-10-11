@@ -70,10 +70,6 @@
       "group":"components"
     },
     {
-      "name":"box-feature",
-      "group":"components"
-    },
-    {
       "name":"cta",
       "group":"components"
     },
@@ -99,6 +95,18 @@
     },
     {
       "name":"list-image",
+      "group":"components"
+    },
+    {
+      "name":"list-image1",
+      "group":"components"
+    },
+    {
+      "name":"list-image2",
+      "group":"components"
+    },
+    {
+      "name":"list-image3",
       "group":"components"
     }
   ]
