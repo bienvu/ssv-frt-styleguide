@@ -65,7 +65,7 @@
       });
 
       //banner 
-      $('.box-hero.box-hero--width-slider').slick({
+      $('.js-slider').slick({
         dots: true,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -79,10 +79,11 @@
       });
 
       //scroll an element
-      $('.icon-scroll').click(function() {
+      $('.js-scroll-down').click(function() {
+        var $next = $(this).parents('.box-hero').next().offset().top;
         $('html, body').animate({
-          scrollTop: $("#list-image").offset().top
-        }, 1000);
+          scrollTop: $next
+        }, 'slow');
       });
     });
   })();

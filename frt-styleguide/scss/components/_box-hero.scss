@@ -6,6 +6,10 @@
     height: calc(100vh - 85px);
   }
 
+  &__inner {
+    height: 100%;
+  }
+
   &--width-slider {
     .box-hero__image {
       height: 100%;
