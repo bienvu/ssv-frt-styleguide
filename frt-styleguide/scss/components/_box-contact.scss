@@ -1,6 +1,6 @@
 .box-contact {
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
 
   @media only screen and (min-width: 768px) {
     text-align: left;
@@ -15,32 +15,155 @@
     }
   }
 
+  &__subtitle {
+    margin-bottom: 4px;
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__info {
+    p {
+      @media only screen and (min-width: 768px) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+
   &__list {
-    margin-bottom: 33px;
+    margin-bottom: 68px;
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 38px;
+    }
   }
 
   &__left {
-    margin-bottom: 20px;
-    
+    width: 100%;
+    margin-bottom: 45px;
+
     @media only screen and (min-width: 768px) {
-      width: 50%;
+      width: 55%;
+      margin-bottom: 19px;
     }
   }
 
   &__item {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 3px;
+    }
 
     p{
+      margin-left: -1px;
+
+      @media only screen and (min-width: 768px) {
+        margin-left: 1px;
+      }
+
       span {
         margin: 0 13px;
+
+        @media only screen and (min-width: 768px) {
+          margin: 0 13px;
+        }
       }
+    }
+  }
+
+  &__form {
+    input[type='submit'] {
+      @extend .btn;
+      @extend .btn--border-black;
+    }
+    
+    p {
+      display: none;
+
+      @media only screen and (min-width: 768px) {
+        margin-left: 2px;
+        margin-bottom: 19px;
+        display: block;
+      }
+    }
+
+    form {
+      margin-top: 18px;
+
+      @media only screen and (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
+
+    .form-list {
+
+      &:nth-of-type(1){
+        margin-bottom: 16px;
+
+        @media only screen and (min-width: 768px) {
+          margin-bottom: 15px;
+        }
+      }
+
+      &:nth-of-type(2){
+        margin-bottom: 17px;
+
+        @media only screen and (min-width: 768px) {
+          margin-bottom: 28px;
+        }
+      }
+    }
+
+    .form-item {
+      textarea {
+        @media only screen and (min-width: 768px) {
+          margin-bottom: -25px;
+        }
+      }
+
+      @media only screen and (min-width: 768px) {
+        margin-left: 2px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 12px;
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 17px;
     }
   }
 
   &__right {
     @media only screen and (min-width: 768px) {
-      width: 50%;
-      padding-left: 190px;
+      width: 45%;
+      padding-left: 74px;
     }
+  }
+
+  &__info {
+
+    br {
+      @media only screen and (min-width: 768px) {
+        display: inline;
+      }
+    }
+
+    p {
+      @media only screen and (min-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.break {
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: inline;
   }
 }
