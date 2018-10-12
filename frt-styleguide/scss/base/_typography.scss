@@ -6,66 +6,105 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-weight: normal;
+h6,
+%typography {
+  @include didot;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: .96px;
+  line-height: 1.19;
+  margin-bottom: 13px;
 }
 
-h1 {
-  font-size: 50px;
-}
-
-h2 {
-  font-size: 18px;
-
-  @media only screen and (min-width: 480px) {
-    font-size: 30px;
-  }
+h1,
+%h1 {
+  font-size: 22px;
+  line-height: 1.1812;
 
   @media only screen and (min-width: 768px) {
-    font-size: 40px;
+    font-size: 26px;
+    line-height: 1.1875;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 32px;
+  }
+}
+
+h2,
+%h2 {
+  font-size: 20px;
+  line-height: 1.286;
+  margin-bottom: 18px;
+  letter-spacing: .84px;
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 24px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 28px;
   }
 }
 
 h3 {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 18px;
 
   @media only screen and (min-width: 768px) {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 
 h4 {
-  font-size: 20px;
-
-  @media only screen and (min-width: 768px) {
-    font-size: 25px;
-  }
-}
-
-h5 {
-  font-size: 15px;
-
   @media only screen and (min-width: 768px) {
     font-size: 20px;
   }
-}
 
-h5 {
   font-size: 16px;
 }
 
-h6 {
+h5 {
   font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+  margin-bottom: 19px;
+}
+
+.text--bold {
+  @include gotham;
+  font-weight: 400;
+}
+
+.text--small {
+  @include gotham;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.text--long {
+  letter-spacing: 1.68px;
 }
 
 %link,
 .link {
+  @extend .text--small;
   color: $link-color;
   text-decoration: none;
   transition: all .3s ease;
   cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 1.286;
+
+  @media only screen and(min-width: 1024px) {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
 
   &:active,
   &:hover {
@@ -87,7 +126,7 @@ a {
 }
 
 p {
-  margin-bottom: rem(30px);
+  margin-bottom: 16px;
 }
 
 em {
@@ -102,6 +141,10 @@ strong {
 sub {
   vertical-align: sub;
   font-size: smaller;
+}
+
+span {
+  margin: 0;
 }
 
 sup {

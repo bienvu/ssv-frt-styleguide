@@ -1,57 +1,100 @@
 .box-filter {
-  margin-bottom: 30px;
-
   &__wrapper {
-    display: flex;
-    border-bottom: 1px solid rgba($black, .5);
-    justify-content: space-between;
-    flex-direction: column;
+    position: relative;
+    @extend %typography;
+    @extend %h2;
 
-    @media only screen and (min-width: 480px) {
-      padding-bottom: 5px;
-    }
-
-    @media only screen and (min-width: 768px) {
-      flex-direction: row;
-      padding-bottom: 0;
-      align-items: flex-start;
+    @media only screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 
   &__title {
-     margin-bottom: 20px;
+    @extend %link;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    margin: 0;
 
-     @media only screen and (min-width: 768px) {
-        white-space: nowrap;
-        margin: 0;
-        width: 30%;
-     }
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    overflow: auto;
-
-    a {
-      &.active {
-        color: $white;
-        background: $black;
-      }
+    @media only screen and (min-width: 1024px) {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      color: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      width: auto;
+      padding: 0;
+      cursor: none;
+      user-select: none
     }
 
-    @media only screen and (min-width: 768px) {
-      flex-wrap: wrap;
-      width: 70%;
-      
-      li {
-        margin: 0px 0px 10px 10px;
+    &:after {
+      @extend %icons;
+      content: "\e901";
+      font-size: 40px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @media only screen and (min-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+
+    &.is-show {
+      display: none;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      display: flex !important;
+      position: static;
+      justify-content: flex-end;
+    }
+
+    li {
+      &:first-of-type {
+        margin-left: none;
       }
 
-      a {
-        text-transform: uppercase;
-        border: 1px solid $black;
+      @media only screen and (min-width: 1024px) {
+        margin-left: 20px;
+      }
+
+      @media only screen and (min-width: 1366px) {
+        margin-left: 30px;
+      }
+
+      .btn {
+        text-align: left;
+        padding: 0 20px;
+        width: 100%;
+
+        @media only screen and (min-width: 1024px) {
+          border: 1px solid $primary-color;
+          text-align: center;
+          
+          &:hover {
+            border: 1px solid $second-color;
+          }
+        }
+
+        &.active {
+          color: $second-color;
+          background: $primary-color;
+        }
       }
     }
   }

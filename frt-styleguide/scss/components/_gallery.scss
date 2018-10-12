@@ -1,0 +1,119 @@
+$primary-border: #000;
+$primary-color: #000;
+
+.gallery{
+
+  &__A{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list{
+    width:calc(100% / 2 - 20px);
+  }
+
+/* gallery__left*/
+  &__images-top{
+    line-height: 0;
+    position: relative;
+
+    .arrow-top{
+      position: absolute;
+      right: 20px;    
+      bottom: 20px;
+
+      &:before{
+
+        content: "\e98b";
+        font-family: "project";
+        font-weight: bold;
+        color: #fff;
+
+      }
+    }
+  }
+
+  &__images-bot{
+    display: flex;
+    justify-content: space-between;
+    line-height: 0;
+    position: relative;
+    margin-top: 20px;
+     
+    img{
+      width:calc(100% / 4 - 8px);
+     }
+
+      .arrow-left{
+        position: absolute;
+        left: 10px;
+        top: 50%;
+
+      &:before{
+
+        content: "\e900";
+        font-family: "project";
+        font-size: 25px;
+        font-weight: bold;
+        color: #fff;
+
+      }
+    }
+
+    .arrow-right{
+      position: absolute;
+      right: 10px;
+      top: 50%;
+
+      &:before{
+ 
+        content: "\e902";
+        font-family: "project";
+        font-size: 25px;
+        font-weight: bold;
+        color: #fff; 
+      }
+    }
+  }
+/*  end gallery__left*/
+
+
+/* gallery__right*/
+  &__subtitle,
+  &__title{
+    text-transform: uppercase;
+  }
+
+  &__text{
+    p:last-of-type{
+      font-weight: bold;
+    }
+  }
+
+  &__button{
+    display: flex;
+    a{
+      border: 1px solid $primary-border;
+      padding: 10px 50px;
+      text-transform: uppercase;
+      color: $primary-color;
+    }
+    a:first-of-type{
+      margin-right: 20px;
+    }
+
+    a:hover{
+      color: red;
+    }
+
+    .icon{
+      &:before{
+        content: "\e901";
+        font-family: "project";
+        margin-right: 6px;
+
+      }
+    }
+  }
+/* end gallery__right*/
+}

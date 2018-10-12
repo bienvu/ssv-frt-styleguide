@@ -1,59 +1,131 @@
 .box-gallery{
-  &__top{
-    line-height: 0;
-     position: relative;
-    .arrow-top{
-      position: absolute;
-      right: 20px;    
-      bottom: 20px;
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 58px;
+  }
+  
+  &__wrapper {
+    @media only screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
 
-      &:before{
+  &__left{
+    @media only screen and (min-width: 768px) {
+      width: 55%;
+    }
+  }
 
-        content: "\e98b";
-        font-family: "icomoon";
-        font-size: 25px;
-        font-weight: bold;
-        color: #fff;
+  &__right{
+    @media only screen and (min-width: 768px) {
+      width: 45%;
+      padding-left: 29px;
+    }
+  }
 
+  &__thumnail {
+    height: 143px;
+    overflow: hidden;
+
+    &__item {
+      padding: 10px 5px;
+      overflow: hidden;
+      height: 100%;
+
+      @media only screen and (min-width: 768px) {
+        padding: 20px 11.5px;
+        position: relative;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: initial;
+
+        @media only screen and (min-width: 768px) {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+
+    .slick-track {
+      @media only screen and (min-width: 768px) {
+        left: -51px;
+      }
+    }
+
+    .slick-list {
+      margin: 0 -5px;
+
+      @media only screen and (min-width: 768px) {
+        margin: 0 0 0 -11.5px;
       }
     }
   }
 
-  &__bot{
-    line-height: 0;
-    display: flex;
-    margin-top: 25px;
-    position: relative;
-    justify-content: space-between;
+  &__slider {
+    overflow: hidden;
 
-    .arrow-left{
-      position: absolute;
-      left: 10px;
-      top: 50%;
+    @media only screen and (min-width: 768px) {
+      height: 435px;
+    }
+    &__item {
+      @media only screen and (min-width: 768px) {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+      }
+      img {
+        @media only screen and (min-width: 768px) {
+          max-width: initial;
+          position: absolute;
+          height: 100%;
+          width: auto;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+  
+  &__content {
+    overflow: hidden;
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 22px;
+    }
+  }
 
-      &:before{
+  &__link {
+    a {
+      display: block;
+      margin-bottom: 10px;
 
-        content: "\e900";
-        font-family: "icomoon";
-        font-size: 25px;
-        font-weight: bold;
-        color: #fff;
+      @media only screen and (min-width: 768px) {
+        margin-right: 29px;
+        display: inline-block;
+      }
 
+      @media only screen and (min-width: 768px) {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      @media only screen and (min-width: 1366px) {
+        margin-right: 29px;
+        display: inline-block;
       }
     }
 
-    .arrow-right{
-      position: absolute;
-      right: 10px;
-      top: 50%;
-
-      &:before{
- 
-        content: "\e902";
-        font-family: "icomoon";
-        font-size: 25px;
-        font-weight: bold;
-        color: #fff; 
+    .icon-share {
+      &:before {
+        content: "\e905";
+        margin-right: 12px;
       }
     }
   }

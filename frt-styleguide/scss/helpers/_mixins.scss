@@ -34,6 +34,13 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+@mixin gotham {
+  font-family: 'gotham', Helvetica, Arial, sans-serif;
+}
+
+@mixin didot {
+  font-family: 'didot', Helvetica, Arial, sans-serif;
+}
 //Single image background with retina support
 //USAGE:  @include background-image-retina('preloader', 'GIF', rem(20px), rem(20px));
 @mixin background-image-retina($image-1x, $image-2x, $width, $height) {
@@ -92,4 +99,24 @@
 @mixin focus ($color: $black) {
   box-shadow: 0 0 rem(5px) rgba($color, 1);
   outline: 0 none;
+}
+
+@mixin border-arrow($size, $place, $color) {
+  border-bottom: $size solid transparent;
+  border-top: $size solid transparent;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+
+  @if ($place == top) {
+    border-top: $size solid $color;
+  }
+  @else if($place == bottom) {
+    border-bottom: $size solid $color;
+  }
+  @else if($place == left) {
+    border-left: $size solid $color;
+  }
+  @else {
+    border-right: $size solid $color;
+  }
 }

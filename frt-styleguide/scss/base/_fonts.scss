@@ -2,8 +2,22 @@
 // Import all webfonts here
 //https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
 
-// For example:
-//@include font-face("icomoon", "fonts/icomoon", 700, normal);
+// For example
 // @include font-face(SourceSansPro, fonts/SourceSansPro-BoldItalic, 700, italic);
 // @include font-face(SourceSansPro, fonts/SourceSansPro-Regular, 400, normal);
-@include font-face('icomoon', 'fonts/icomoon');
+// @include font-face(SourceSansPro, fonts/SourceSansPro-Italic, 400, italic);
+
+// @include font-face(helvetical, fonts/SourceSansPro-Bold, 700, normal);
+// @include font-face(helvetical, fonts/SourceSansPro-BoldItalic, 700, italic);
+// @include font-face(helvetical, fonts/SourceSansPro-Regular, 400, normal);
+@include font-face('didot', 'fonts/Didot', 400, normal);
+@include font-face('didot', 'fonts/Didot-Bold', 700, normal);
+@include font-face('gotham', 'fonts/Gotham-Bold', 700, normal);
+@include font-face('gotham', 'fonts/Gotham-BoldItalic', 700, italic);
+@include font-face('gotham', 'fonts/Gotham-Book', 500, normal);
+@include font-face('gotham', 'fonts/Gotham-BookItalic', 500, italic);
+@include font-face('gotham', 'fonts/Gotham-Light', 300, normal);
+@include font-face('gotham', 'fonts/Gotham-LightItalic', 300, italic);
+@include font-face('gotham', 'fonts/Gotham-Medium', 400, normal);
+@include font-face('gotham', 'fonts/Gotham-MediumItalic', 400, italic);
+@include font-face('french-table', 'fonts/french-table', 400, normal);

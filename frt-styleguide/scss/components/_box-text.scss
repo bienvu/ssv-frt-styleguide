@@ -1,21 +1,32 @@
-$primary-color: #fff;
-$primary-border: #000;
-$primary-background: #000;
 .box-text{
 
+  &__content {
+    margin-bottom: 25px;
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 41px;
+    }
+  }
+
   &__link{
-     display: flex;
-     justify-content: center;
+    margin: 0;
 
-    a{
-      border: 1px solid $primary-border;
-      padding: 10px;
-      color: black;
-      }
+    @media only screen and (min-width: 768px) {
+      text-align: center;
+      margin-left: -19px;
+    }
+    
 
-    a:hover{
-      color: $primary-color;
-      background:$primary-background;
+    .btn {
+      padding: 0;
+      width: 100%;
+
+      @media only screen and (min-width: 768px) {
+      padding: 0 22px;
+      width: auto;
+      margin: 3px;
+
       }
     }
+  }
 }
