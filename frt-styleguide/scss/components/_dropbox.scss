@@ -9,19 +9,18 @@ body{
 /*** philosophy ***/
 .philosophy{
   padding: 13px 0;
-  @media only screen and (min-width: 768px){
-    padding: 54px 0;
-  }
   h5,
   h2{
     margin-bottom: 14px;
-    @media only screen and (min-width: 768px){
-      margin-bottom: 20px;
-    }
   }
 
-  p{
-    @media only screen and (min-width: 768px){
+  @media only screen and (min-width: 768px){
+    padding: 54px 0;
+    h5,
+    h2{
+      margin-bottom: 20px;
+    }
+    p{
       margin-bottom: 0;
     }
   }
@@ -32,9 +31,6 @@ body{
 .concept-sketch{
   background: $primary-bg;
   padding: 36px 0;
-  @media only screen and (min-width: 768px){
-    padding: 59px 0;
-  }
 
   &-column{
     &__left{
@@ -46,14 +42,8 @@ body{
       }
       p{
         margin-bottom: 21px;
-        @media only screen and (min-width: 768px){
-          margin-bottom: 14px;
-        }
         &:last-of-type{
           display: none;
-          @media only screen and (min-width: 768px){
-            margin-bottom: 0;
-          }
         }
       }
       h6{
@@ -66,8 +56,12 @@ body{
         }
       }
     }
+  }
 
-    @media only screen and (min-width: 768px){
+  @media only screen and (min-width: 768px){
+    padding: 59px 0;
+
+    &-column{
       justify-content: space-between;
       align-items: center;
       display: flex;
@@ -100,30 +94,18 @@ body{
 // scale
 .scale{
   padding: 41px 0;
-  @media only screen and (min-width: 768px){
-    padding: 60px 0;
-  }
+
   &__images{
     display:flex;
     justify-content: space-between;
     margin-bottom: 27px;
-    @media only screen and (min-width: 768px){
-      margin-bottom: 72px;
-    }
+
     img{
       width: calc(100% / 2 - 2px);
       height: 109px;
       line-height: 0;
       &:last-of-type{
         display: none;
-      }
-      @media only screen and (min-width: 768px){
-        width: calc(100% / 3 - 5px);
-        height: auto;
-        line-height: 0;
-        &:last-of-type{
-          display: inline-block;
-        }
       }
     }
   }
@@ -135,12 +117,6 @@ body{
       margin-bottom: 23px;
       span{
         display: none;
-        @media only screen and (min-width: 768px){
-          display: inline;
-        }
-      }
-      @media only screen and (min-width: 768px){
-        margin-bottom: 0;
       }
     }
     h6{
@@ -151,9 +127,40 @@ body{
           content: "\e900";
         }
       }
-      @media only screen and (min-width: 768px){
-          display: none;
+    }
+  }
+
+  @media only screen and (min-width: 768px){
+    padding: 60px 0;
+
+    &__images{
+
+      margin-bottom: 72px;
+
+      img{
+        width: calc(100% / 3 - 5px);
+        height: auto;
+        line-height: 0;
+        &:last-of-type{
+          display: inline-block;
         }
+      }
+    }
+
+    &__text{
+      h2{
+        margin-bottom: 20px;
+      }
+      p{
+        span{
+          display: inline;
+        }
+        margin-bottom: 0;
+      }
+
+      h6{
+        display: none;
+      }
     }
   }
 }
@@ -164,9 +171,6 @@ body{
 .profile{
   background: $primary-bg;
   padding: 36px 0;
-  @media only screen and (min-width: 768px){
-    padding: 59px 0;
-  }
 
   &-column{
     &__left{
@@ -178,14 +182,8 @@ body{
       }
       p{
         margin-bottom: 21px;
-        @media only screen and (min-width: 768px){
-          margin-bottom: 14px;
-        }
         &:last-of-type{
           display: none;
-          @media only screen and (min-width: 768px){
-            margin-bottom: 0;
-          }
         }
       }
       h6{
@@ -198,8 +196,12 @@ body{
         }
       }
     }
+  }
 
-    @media only screen and (min-width: 768px){
+  @media only screen and (min-width: 768px){
+    padding: 59px 0;
+
+    &-column{
       justify-content: space-between;
       align-items: center;
       display: flex;
@@ -232,30 +234,18 @@ body{
 //manufacturing
 .manufacturing{
   padding: 41px 0;
-  @media only screen and (min-width: 768px){
-    padding: 60px 0;
-  }
+
   &__images{
     display:flex;
     justify-content: space-between;
     margin-bottom: 27px;
-    @media only screen and (min-width: 768px){
-      margin-bottom: 72px;
-    }
+
     img{
       width: calc(100% / 2 - 2px);
       height: 109px;
       line-height: 0;
       &:last-of-type{
         display: none;
-      }
-      @media only screen and (min-width: 768px){
-        width: calc(100% / 3 - 5px);
-        height: auto;
-        line-height: 0;
-        &:last-of-type{
-          display: inline-block;
-        }
       }
     }
   }
@@ -267,12 +257,6 @@ body{
       margin-bottom: 23px;
       span{
         display: none;
-        @media only screen and (min-width: 768px){
-          display: inline;
-        }
-      }
-      @media only screen and (min-width: 768px){
-        margin-bottom: 0;
       }
     }
     h6{
@@ -283,9 +267,40 @@ body{
           content: "\e900";
         }
       }
-      @media only screen and (min-width: 768px){
-          display: none;
+    }
+  }
+
+  @media only screen and (min-width: 768px){
+    padding: 60px 0;
+
+    &__images{
+
+      margin-bottom: 72px;
+
+      img{
+        width: calc(100% / 3 - 5px);
+        height: auto;
+        line-height: 0;
+        &:last-of-type{
+          display: inline-block;
         }
+      }
+    }
+
+    &__text{
+      h2{
+        margin-bottom: 20px;
+      }
+      p{
+        span{
+          display: inline;
+        }
+        margin-bottom: 0;
+      }
+
+      h6{
+        display: none;
+      }
     }
   }
 }
@@ -296,9 +311,6 @@ body{
 .polishing{
   background: $primary-bg;
   padding: 36px 0;
-  @media only screen and (min-width: 768px){
-    padding: 59px 0;
-  }
 
   &-column{
     &__left{
@@ -310,14 +322,8 @@ body{
       }
       p{
         margin-bottom: 21px;
-        @media only screen and (min-width: 768px){
-          margin-bottom: 14px;
-        }
         &:last-of-type{
           display: none;
-          @media only screen and (min-width: 768px){
-            margin-bottom: 0;
-          }
         }
       }
       h6{
@@ -330,8 +336,12 @@ body{
         }
       }
     }
+  }
 
-    @media only screen and (min-width: 768px){
+  @media only screen and (min-width: 768px){
+    padding: 59px 0;
+
+    &-column{
       justify-content: space-between;
       align-items: center;
       display: flex;
@@ -364,30 +374,18 @@ body{
 //complete
 .complete{
   padding: 41px 0;
-  @media only screen and (min-width: 768px){
-    padding: 60px 0;
-  }
+
   &__images{
     display:flex;
     justify-content: space-between;
     margin-bottom: 27px;
-    @media only screen and (min-width: 768px){
-      margin-bottom: 72px;
-    }
+
     img{
       width: calc(100% / 2 - 2px);
       height: 109px;
       line-height: 0;
       &:last-of-type{
         display: none;
-      }
-      @media only screen and (min-width: 768px){
-        width: calc(100% / 3 - 5px);
-        height: auto;
-        line-height: 0;
-        &:last-of-type{
-          display: inline-block;
-        }
       }
     }
   }
@@ -399,12 +397,6 @@ body{
       margin-bottom: 23px;
       span{
         display: none;
-        @media only screen and (min-width: 768px){
-          display: inline;
-        }
-      }
-      @media only screen and (min-width: 768px){
-        margin-bottom: 36px;
       }
     }
     h6{
@@ -415,45 +407,11 @@ body{
           content: "\e900";
         }
       }
-      @media only screen and (min-width: 768px){
-          display: none;
-      }
     }
   }
 
   &__button{
     display: none;
-    @media only screen and (min-width: 768px){
-      display: inline-block;
-
-      a{
-        border: 1px solid $primary-border;
-        color: $primary-border;
-        padding: 10px 30px;
-        text-transform: uppercase;
-        @media only screen and (min-width: 768px){
-          padding: 12px 25px;
-        }
-        &:first-of-type{
-          margin-right: 20px;
-          @media only screen and (min-width: 768px){
-            border-left: none;
-            border-right: none;
-            border-top: none;
-          }
-        }
-        &:last-of-type{
-          @media only screen and (min-width: 768px){
-            border-top: none;
-          }
-        }
-
-        &:hover{
-          background: $primary-bg-border;
-          color: $primary-color-border;
-        }
-      }
-    }
   }
 
   h6{
@@ -464,9 +422,71 @@ body{
         content: "\e900";
       }
     }
-    @media only screen and (min-width: 768px){
-      display: none;
+  }
+
+  @media only screen and (min-width: 768px){
+    padding: 60px 0;
+
+    &__images{
+
+      margin-bottom: 72px;
+
+      img{
+        width: calc(100% / 3 - 5px);
+        height: auto;
+        line-height: 0;
+        &:last-of-type{
+          display: inline-block;
+        }
       }
+    }
+
+    &__text{
+      h2{
+        margin-bottom: 20px;
+      }
+      p{
+        span{
+          display: inline;
+        }
+        margin-bottom: 30px;
+      }
+
+      h6{
+        display: none;
+      }
+    }
+
+    &__button{
+      display: inline-block;
+
+      a{
+        border: 1px solid $primary-border;
+        color: $primary-border;
+        padding: 12px 25px;
+
+        &:first-of-type{
+          margin-right: 20px;
+          border-left: none;
+          border-right: none;
+          border-top: none;
+        }
+
+        &:last-of-type{
+            border-top: none;
+        }
+
+        &:hover{
+          background: $primary-bg-border;
+          color: $primary-color-border;
+        }
+      }
+    }
+
+    h6{
+      margin: 0;
+      display: none;
+    }
   }
 }
 //end complete
