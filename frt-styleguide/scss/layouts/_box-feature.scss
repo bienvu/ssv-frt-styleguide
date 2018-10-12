@@ -46,6 +46,11 @@
   }
 
   &__form {
+    input[type='submit'] {
+      @extend .btn;
+      @extend .btn--border-black;
+    }
+    
     .form-item {
       margin: 0 auto;
 
@@ -66,6 +71,7 @@
 
       input[type="text"] {
         width: 300px;
+        margin-bottom: 9px;
 
         @media only screen and (min-width: 480px) {
           width: 400px;
