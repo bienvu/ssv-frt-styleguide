@@ -1,23 +1,29 @@
 $primary-bg: #E6E6E6;
-$primary-color: #000;
 $primary-border: #000;
-$primary-color-button: #000;
-$primary-bg-button: #fff;
-$primary-color-button: #000;
-$primary-bg-button-hover: #000;
-$primary-color-button-hover: #fff;
-$primary-border-button: #000;
-$primary-border-input: #ccc;
-$primary-bg-input: #E6E6E6; 
-
+$primary-color-border:#fff;
+$primary-bg-border: #000;
+body{
+  margin: 0;
+  padding: 0;
+}
 /*** philosophy ***/
 .philosophy{
-  padding: 20px 0;
-  @media only screen and (min-width: 768px) {
-    padding: 50px 0;
+  padding: 13px 0;
+  @media only screen and (min-width: 768px){
+    padding: 54px 0;
   }
-  h5{
+  h5,
+  h2{
     margin-bottom: 14px;
+    @media only screen and (min-width: 768px){
+      margin-bottom: 20px;
+    }
+  }
+
+  p{
+    @media only screen and (min-width: 768px){
+      margin-bottom: 0;
+    }
   }
 }
 /***end philosophy ***/
@@ -25,31 +31,67 @@ $primary-bg-input: #E6E6E6;
 /* concept sketch*/
 .concept-sketch{
   background: $primary-bg;
-  padding: 20px 0;
-  @media only screen and (min-width: 768px) {
-    padding: 50px 0;
+  padding: 36px 0;
+  @media only screen and (min-width: 768px){
+    padding: 59px 0;
   }
 
-  &--column{
-    display: flex;
-    flex-direction: column;
-    order: 2;
-    @media only screen and (min-width: 768px) {
-    justify-content: space-between;
-    align-items: center;
+  &-column{
+    &__left{
+      margin-bottom: 19px;
     }
-  }
-
-  &__left,
-  &__right{
-    width: 100%;
-    @media only screen and (min-width: 768px) {
-      width: calc(100% / 2 - 20px);
+    &__right{
+      h2{
+        margin-bottom: 20px;
+      }
+      p{
+        margin-bottom: 21px;
+        @media only screen and (min-width: 768px){
+          margin-bottom: 14px;
+        }
+        &:last-of-type{
+          display: none;
+          @media only screen and (min-width: 768px){
+            margin-bottom: 0;
+          }
+        }
+      }
+      h6{
+        margin: 0;
+        a{
+          &:after{
+            font-family: "icomoon";
+            content: "\e900";
+          }
+        }
+      }
     }
-  }
 
-  &__right{
-    line-height: 0;
+    @media only screen and (min-width: 768px){
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+
+      &__left,
+      &__right{
+        width: calc(100% / 2 - 17px);
+      }
+
+      &__left{
+        line-height: 0;
+        order: 2;
+        margin: 0;
+      }
+
+      &__right{
+        a{
+          display: none;
+        }
+        p:last-of-type{
+          display: block;
+        }
+      }
+    }
   }
 }
 /*end concept sketch*/
@@ -57,33 +99,61 @@ $primary-bg-input: #E6E6E6;
 
 // scale
 .scale{
-  padding: 10px 0;
-  @media only screen and (min-width: 768px) {
-    padding: 50px 0;
+  padding: 41px 0;
+  @media only screen and (min-width: 768px){
+    padding: 60px 0;
   }
   &__images{
     display:flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    @media only screen and (min-width: 768px) {
-      justify-content: space-between;
-      margin-bottom: 50px; 
+    justify-content: space-between;
+    margin-bottom: 27px;
+    @media only screen and (min-width: 768px){
+      margin-bottom: 72px;
     }
     img{
-      width: 100%;
-      margin-bottom: 20px;
-      @media only screen and (min-width: 768px) {
+      width: calc(100% / 2 - 2px);
+      height: 109px;
+      line-height: 0;
+      &:last-of-type{
+        display: none;
+      }
+      @media only screen and (min-width: 768px){
         width: calc(100% / 3 - 5px);
-        margin-bottom: 10px;
+        height: auto;
+        line-height: 0;
+        &:last-of-type{
+          display: inline-block;
+        }
       }
     }
   }
   &__text{
     h2{
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     p{
-      margin-bottom: 0;
+      margin-bottom: 23px;
+      span{
+        display: none;
+        @media only screen and (min-width: 768px){
+          display: inline;
+        }
+      }
+      @media only screen and (min-width: 768px){
+        margin-bottom: 0;
+      }
+    }
+    h6{
+      margin: 0;
+      a{
+        &:after{
+          font-family: "icomoon";
+          content: "\e900";
+        }
+      }
+      @media only screen and (min-width: 768px){
+          display: none;
+        }
     }
   }
 }
@@ -93,32 +163,67 @@ $primary-bg-input: #E6E6E6;
 //profile
 .profile{
   background: $primary-bg;
-  padding: 20px 0;
-  @media only screen and (min-width: 768px) {
-    padding: 50px 0;
+  padding: 36px 0;
+  @media only screen and (min-width: 768px){
+    padding: 59px 0;
   }
 
-  &--column{
-    display: flex;
-    flex-wrap: wrap;
-
-    @media only screen and (min-width: 768px) {
-    justify-content: space-between;
-    align-items: center;
+  &-column{
+    &__left{
+      margin-bottom: 19px;
     }
-  }
-
-  &__left,
-  &__right{
-    width: 100%;
-    @media only screen and (min-width: 768px) {
-      width: calc(100% / 2 - 20px);
+    &__right{
+      h2{
+        margin-bottom: 20px;
+      }
+      p{
+        margin-bottom: 21px;
+        @media only screen and (min-width: 768px){
+          margin-bottom: 14px;
+        }
+        &:last-of-type{
+          display: none;
+          @media only screen and (min-width: 768px){
+            margin-bottom: 0;
+          }
+        }
+      }
+      h6{
+        margin: 0;
+        a{
+          &:after{
+            font-family: "icomoon";
+            content: "\e900";
+          }
+        }
+      }
     }
-  }
 
+    @media only screen and (min-width: 768px){
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
 
-  &__right{
-    line-height: 0;
+      &__left,
+      &__right{
+        width: calc(100% / 2 - 17px);
+      }
+
+      &__left{
+        line-height: 0;
+        order: 2;
+        margin: 0;
+      }
+
+      &__right{
+        a{
+          display: none;
+        }
+        p:last-of-type{
+          display: block;
+        }
+      }
+    }
   }
 }
 //end profile
@@ -126,34 +231,61 @@ $primary-bg-input: #E6E6E6;
 
 //manufacturing
 .manufacturing{
-  padding: 10px 0;
-  @media only screen and (min-width: 768px) {
-    padding: 50px 0;
+  padding: 41px 0;
+  @media only screen and (min-width: 768px){
+    padding: 60px 0;
   }
   &__images{
     display:flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    @media only screen and (min-width: 768px) {}
-      justify-content: space-between;
-      margin-bottom: 50px; 
+    justify-content: space-between;
+    margin-bottom: 27px;
+    @media only screen and (min-width: 768px){
+      margin-bottom: 72px;
+    }
     img{
-      width: 100%;
-      margin-bottom: 20px;
-      @media only screen and (min-width: 768px) {
+      width: calc(100% / 2 - 2px);
+      height: 109px;
+      line-height: 0;
+      &:last-of-type{
+        display: none;
+      }
+      @media only screen and (min-width: 768px){
         width: calc(100% / 3 - 5px);
-        margin-bottom: 10px;
+        height: auto;
+        line-height: 0;
+        &:last-of-type{
+          display: inline-block;
+        }
       }
     }
   }
   &__text{
     h2{
-      text-transform: uppercase;
-      margin-bottom: 10px;
-
+      margin-bottom: 20px;
     }
     p{
-      margin-bottom: 0;
+      margin-bottom: 23px;
+      span{
+        display: none;
+        @media only screen and (min-width: 768px){
+          display: inline;
+        }
+      }
+      @media only screen and (min-width: 768px){
+        margin-bottom: 0;
+      }
+    }
+    h6{
+      margin: 0;
+      a{
+        &:after{
+          font-family: "icomoon";
+          content: "\e900";
+        }
+      }
+      @media only screen and (min-width: 768px){
+          display: none;
+        }
     }
   }
 }
@@ -163,31 +295,67 @@ $primary-bg-input: #E6E6E6;
 //polishing
 .polishing{
   background: $primary-bg;
-  padding: 20px 0;
-  @media only screen and (min-width: 768px) {
-    padding: 50px 0;
+  padding: 36px 0;
+  @media only screen and (min-width: 768px){
+    padding: 59px 0;
   }
 
-  &--column{
-    display: flex;
-    flex-wrap: wrap;
-
-    @media only screen and (min-width: 768px) {
-    justify-content: space-between;
-    align-items: center;
+  &-column{
+    &__left{
+      margin-bottom: 19px;
     }
-  }
-
-  &__left,
-  &__right{
-    width: 100%;
-    @media only screen and (min-width: 768px) {
-      width: calc(100% / 2 - 20px);
+    &__right{
+      h2{
+        margin-bottom: 20px;
+      }
+      p{
+        margin-bottom: 21px;
+        @media only screen and (min-width: 768px){
+          margin-bottom: 14px;
+        }
+        &:last-of-type{
+          display: none;
+          @media only screen and (min-width: 768px){
+            margin-bottom: 0;
+          }
+        }
+      }
+      h6{
+        margin: 0;
+        a{
+          &:after{
+            font-family: "icomoon";
+            content: "\e900";
+          }
+        }
+      }
     }
-  }
-  
-  &__right{
-    line-height: 0;
+
+    @media only screen and (min-width: 768px){
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+
+      &__left,
+      &__right{
+        width: calc(100% / 2 - 17px);
+      }
+
+      &__left{
+        line-height: 0;
+        order: 2;
+        margin: 0;
+      }
+
+      &__right{
+        a{
+          display: none;
+        }
+        p:last-of-type{
+          display: block;
+        }
+      }
+    }
   }
 }
 //end polishing
@@ -195,55 +363,110 @@ $primary-bg-input: #E6E6E6;
 
 //complete
 .complete{
-  padding: 10px 0;
-  @media only screen and (min-width: 768px) {
-    padding: 50px 0;
+  padding: 41px 0;
+  @media only screen and (min-width: 768px){
+    padding: 60px 0;
   }
   &__images{
     display:flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    @media only screen and (min-width: 768px) {}
-      justify-content: space-between;
-      margin-bottom: 50px; 
+    justify-content: space-between;
+    margin-bottom: 27px;
+    @media only screen and (min-width: 768px){
+      margin-bottom: 72px;
+    }
     img{
-      width: 100%;
-      margin-bottom: 20px;
-      @media only screen and (min-width: 768px) {
+      width: calc(100% / 2 - 2px);
+      height: 109px;
+      line-height: 0;
+      &:last-of-type{
+        display: none;
+      }
+      @media only screen and (min-width: 768px){
         width: calc(100% / 3 - 5px);
-        margin-bottom: 10px;
+        height: auto;
+        line-height: 0;
+        &:last-of-type{
+          display: inline-block;
+        }
       }
     }
   }
   &__text{
-    h2,
+    h2{
+      margin-bottom: 20px;
+    }
     p{
-      margin-bottom: 10px;
+      margin-bottom: 23px;
+      span{
+        display: none;
+        @media only screen and (min-width: 768px){
+          display: inline;
+        }
+      }
+      @media only screen and (min-width: 768px){
+        margin-bottom: 36px;
+      }
+    }
+    h6{
+      margin: 0;
+      a{
+        &:after{
+          font-family: "icomoon";
+          content: "\e900";
+        }
+      }
+      @media only screen and (min-width: 768px){
+          display: none;
+      }
     }
   }
 
   &__button{
-    display: flex;
-    flex-wrap: wrap;
-    a{
-      border: 1px solid $primary-border;
-      color: $primary-color-button;
-      padding: 5px 15px;
-      text-transform: uppercase;
-      @media only screen and (min-width: 768px) {
+    display: none;
+    @media only screen and (min-width: 768px){
+      display: inline-block;
+
+      a{
+        border: 1px solid $primary-border;
+        color: $primary-border;
         padding: 10px 30px;
+        text-transform: uppercase;
+        @media only screen and (min-width: 768px){
+          padding: 12px 25px;
+        }
+        &:first-of-type{
+          margin-right: 20px;
+          @media only screen and (min-width: 768px){
+            border-left: none;
+            border-right: none;
+            border-top: none;
+          }
+        }
+        &:last-of-type{
+          @media only screen and (min-width: 768px){
+            border-top: none;
+          }
+        }
+
+        &:hover{
+          background: $primary-bg-border;
+          color: $primary-color-border;
+        }
       }
     }
-    a:first-of-type{
-      margin-right: 5px;
-      @media only screen and (min-width: 768px) {
-        margin-right: 20px;
+  }
+
+  h6{
+    margin: 0;
+    a{
+      &:after{
+        font-family: "icomoon";
+        content: "\e900";
       }
     }
-    a:hover{
-      background: $primary-bg-button-hover;
-      color: $primary-color-button-hover;
-    }
+    @media only screen and (min-width: 768px){
+      display: none;
+      }
   }
 }
 //end complete

@@ -11,7 +11,7 @@ $white: #fff;
 // Brand colors
 $primary-color: #333132;
 $second-color : $white;
-$text-color: $black;
+$text-color: $primary-color;
 
 // Link color
 $link-color: $primary-color;
@@ -22,3 +22,6 @@ $btn-color: $primary-color;
 $btn-bg: $second-color ;
 $btn-color-hover: $second-color;
 $btn-bg-hover: $primary-color;
+
+$btn-color-mobile: $second-color;
+$btn-bg-mobile: transparent ;

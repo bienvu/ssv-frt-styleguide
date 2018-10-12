@@ -73,10 +73,6 @@
       "group":"components"
     },
     {
-      "name":"box-feature",
-      "group":"components"
-    },
-    {
       "name":"cta",
       "group":"components"
     },
@@ -105,6 +101,7 @@
       "group":"components"
     },
     {
+
       "name":"dropbox",
       "group":"components"
     }

@@ -42,6 +42,8 @@
 @import 'layouts/layout';
 @import 'layouts/navigation';
 @import 'layouts/header';
+// @import 'layouts/footer';
+@import 'layouts/box-feature';
 @import 'layouts/footer';
 
 // Pages
@@ -53,10 +55,9 @@
 
 
 //components
+@import 'components/box-hero';
 @import 'components/box-image-text';
 @import 'components/list-image';
-@import 'components/box-feature';
-// @import 'components/box-hero';
 @import 'components/box-filter';
 @import 'components/cta';
 @import 'components/masonry';
