@@ -2,6 +2,10 @@
   height: 100vh;
   position: relative;
 
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 53px;
+  }
+
   &__image {
     position: relative;
     height: 100%;

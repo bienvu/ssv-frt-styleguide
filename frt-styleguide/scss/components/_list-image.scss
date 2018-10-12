@@ -1,4 +1,8 @@
 .list-image {
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 55px;
+  }
+
   &__title {
     @media only screen and (min-width: 768px) {
       text-align: center;
@@ -38,13 +42,13 @@
         background: none;
         border: 1px solid #fff !important;
         color: #fff;
-       
+        // display: none;
       }
     }
 
     img {
       @media only screen and (min-width: 768px) {
-        max-width: initial;
+        // max-width: initial;
       }
     }
 
@@ -57,8 +61,9 @@
 
     .list-image__item {
       .btn {
-        top: 130px;
-        left: 170px;
+        top: 40%;
+        left: 53%;
+        transform: translate(-50%, -50%);
       }
       @media only screen and (min-width: 768px) {
         width: calc(100% / 2);
@@ -68,10 +73,22 @@
 
   &--2col-with-title {
     .list-image__item {
+      padding-left: 20px;
+      overflow: hidden;
+
       .btn {
-        top: 130px;
-        left: 170px;
+        top: 40%;
+        left: 53%;
+        transform: translate(-50%, -50%);
       }
+
+    .list-image__wrap {
+      @media only screen and (min-width: 768px){
+        padding: 0;
+        margin-left: -16px;
+      }
+    }
+
       @media only screen and (min-width: 768px) {
         width: calc(100% / 2);
       }
@@ -80,9 +97,12 @@
 
   &--with-title {
     .list-image__item {
+
+
       .btn {
-        top: 100px;
-        left: 80px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       @media only screen and (min-width: 768px) {
