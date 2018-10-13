@@ -6,7 +6,6 @@
     <title>{{ site_title }} - {% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block head %}
-      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
       <link rel="stylesheet" href="../css/styles.css">
       <!-- Base js library from drupal -->
       <script src="script/jquery.min.js"></script>
@@ -26,8 +25,7 @@
       {% include '../components/list-image.twig' %}
       {% include '../components/box-text.twig' %}
       {% include '../components/cta.twig' %}
-      {% include '../components/box-contact.twig' %}
-      
+      {% include '../components/box-text.twig' %}
     </main>
     {% block content %}
       {% include '../layouts/box-feature.twig' %}
