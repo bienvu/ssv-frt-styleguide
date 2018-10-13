@@ -98,6 +98,18 @@
       "group":"components"
     },
     {
+      "name":"list-image1",
+      "group":"components"
+    },
+    {
+      "name":"list-image2",
+      "group":"components"
+    },
+    {
+      "name":"list-image3",
+      "group":"components"
+    },
+    {
       "name":"box-hero",
       "group":"components"
     }
