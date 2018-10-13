@@ -1,6 +1,7 @@
 .box-hero {
   position: relative;
   height: calc(100vh - 65px);
+  margin-bottom: 40px;
 
   @media only screen and (min-width: 1024px) {
     height: calc(100vh - 85px);
@@ -94,70 +95,6 @@
 
         @media only screen and (min-width: 768px) {
           padding: 0 62px;
-        }
-      }
-    }
-
-    .slick-list {
-      height: 100%;
-
-      .slick-track {
-        height: 100%;
-      }
-    }
-
-    .slick-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 1;
-      font-size: 0;
-      font-family: "french-table";
-      color: $white;
-      cursor: pointer;
-
-      &.slick-next {
-        right: 0;
-
-        &:before {
-          content: "\e908";
-          font-size: 60px;
-        }
-      }
-      
-      &.slick-prev {
-        left: 0;
-
-        &:before {
-          content: "\e909";
-          font-size: 60px;
-        }
-      }
-    }
-
-    .slick-dots { 
-      position: absolute;
-      bottom: 20px;
-      right: 10px;
-      display: flex;
-      font-size: 0;
-
-      li {
-        opacity: .5;
-        margin: 0 5px;
-
-        span {
-          width: 20px;
-          height: 20px;
-          padding: 5px;
-          background: $black;
-          border-radius: 50%;
-        }
-
-        &:hover,
-        &.slick-active {
-          opacity: 1;
-          cursor: pointer;
         }
       }
     }

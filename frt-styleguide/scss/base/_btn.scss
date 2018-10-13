@@ -15,25 +15,35 @@
   text-shadow: none;
   transition: all .3s ease;
   background: $btn-bg-mobile;
-  color: $btn-color-mobile;
   cursor: pointer;
-  min-width: 193px;
   height: 40px;
   line-height: 40px;
   letter-spacing: 1.2px;
   box-sizing: border-box;
 
-  @media only screen and (min-width: 768px) { 
+  @media only screen and (min-width: 768px) {
     padding: 0 22px;
     background: $btn-bg;
-    color: $btn-color;
+    min-width: 193px;
   }
 
-  &--border {
+  &--border-white {
     border: 1px solid $second-color;
+    line-height: 38px;
+    min-width: 225px;
 
     &:hover {
       border: 1px solid $primary-color;
+    }
+  }
+
+  &--border-black {
+    border: 1px solid $primary-color;
+    line-height: 38px;
+    min-width: 193px;
+
+    &:hover {
+      border: 1px solid $second-color;
     }
   }
 
@@ -41,11 +51,32 @@
     padding: 0 62px;
   }
 
-    &:active,
+  &--border-black {
+    border: 1px solid $primary-color;
+    line-height: 38px;
+    min-width: 193px;
+
     &:hover {
-      @media only screen and (min-width: 768px){
-        background-color: $btn-bg-hover;
-        color: $btn-color-hover;
+      border: 1px solid $second-color;
+    }
+  }
+
+  &--border-white {
+    border: 1px solid $second-color;
+    line-height: 38px;
+    min-width: 225px;
+
+    &:hover {
+      border: 1px solid $primary-color;
+    }
+  }
+
+
+  &:active,
+  &:hover {
+    @media only screen and (min-width: 768px){
+      background-color: $btn-bg-hover;
+      color: $btn-color-hover;
     }
   }
 }

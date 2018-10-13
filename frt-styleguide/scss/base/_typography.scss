@@ -6,7 +6,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+%typography {
   @include didot;
   font-weight: 700;
   text-transform: uppercase;
@@ -30,12 +31,18 @@ h1,
   }
 }
 
-h2 {
+h2,
+%h2 {
   font-size: 20px;
   line-height: 1.286;
-  margin-bottom: 29px;
+  margin-bottom: 18px;
+  letter-spacing: .84px;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
+    font-size: 24px;
+  }
+
+  @media only screen and (min-width: 1024px) {
     font-size: 28px;
   }
 }
@@ -62,6 +69,7 @@ h5 {
 
 h6 {
   font-size: 12px;
+  margin-bottom: 19px;
 }
 
 .text--bold {
@@ -72,6 +80,11 @@ h6 {
 .text--small {
   @include gotham;
   font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.text--long {
+  letter-spacing: 1.68px;
 }
 
 %link,
@@ -86,7 +99,7 @@ h6 {
   letter-spacing: 1.4px;
   display: inline-block;
   white-space: nowrap;
-  line-height: 1;
+  line-height: 1.286;
 
   @media only screen and(min-width: 1024px) {
     font-size: 12px;
@@ -113,7 +126,7 @@ a {
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 em {
@@ -140,6 +153,12 @@ sup {
 
 small {
   font-size: smaller;
+}
+
+br {
+  @media only screen and (min-width: 768px) {
+    display: inline;
+  }
 }
 
 abbr {

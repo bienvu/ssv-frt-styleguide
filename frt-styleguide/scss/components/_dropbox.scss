@@ -1,492 +1,258 @@
-$primary-bg: #E6E6E6;
-$primary-border: #000;
-$primary-color-border:#fff;
-$primary-bg-border: #000;
-body{
-  margin: 0;
-  padding: 0;
-}
-/*** philosophy ***/
-.philosophy{
-  padding: 13px 0;
-  h5,
-  h2{
-    margin-bottom: 14px;
-  }
-
-  @media only screen and (min-width: 768px){
-    padding: 54px 0;
-    h5,
-    h2{
-      margin-bottom: 20px;
-    }
-    p{
-      margin-bottom: 0;
-    }
-  }
-}
-/***end philosophy ***/
-
-/* concept sketch*/
-.concept-sketch{
-  background: $primary-bg;
-  padding: 36px 0;
-
-  &-column{
-    &__left{
-      margin-bottom: 19px;
-    }
-    &__right{
-      h2{
-        margin-bottom: 20px;
-      }
-      p{
-        margin-bottom: 21px;
-        &:last-of-type{
-          display: none;
-        }
-      }
-      h6{
-        margin: 0;
-        a{
-          &:after{
-            font-family: "icomoon";
-            content: "\e900";
-          }
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: 768px){
-    padding: 59px 0;
-
-    &-column{
-      justify-content: space-between;
-      align-items: center;
-      display: flex;
-
-      &__left,
-      &__right{
-        width: calc(100% / 2 - 17px);
-      }
-
-      &__left{
-        line-height: 0;
-        order: 2;
-        margin: 0;
-      }
-
-      &__right{
-        a{
-          display: none;
-        }
-        p:last-of-type{
-          display: block;
-        }
-      }
-    }
-  }
-}
-/*end concept sketch*/
-
-
-// scale
-.scale{
-  padding: 41px 0;
-
-  &__images{
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 27px;
-
-    img{
-      width: calc(100% / 2 - 2px);
-      height: 109px;
-      line-height: 0;
-      &:last-of-type{
-        display: none;
-      }
-    }
-  }
-  &__text{
-    h2{
-      margin-bottom: 20px;
-    }
-    p{
-      margin-bottom: 23px;
-      span{
-        display: none;
-      }
-    }
-    h6{
-      margin: 0;
-      a{
-        &:after{
-          font-family: "icomoon";
-          content: "\e900";
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: 768px){
-    padding: 60px 0;
-
-    &__images{
-
-      margin-bottom: 72px;
-
-      img{
-        width: calc(100% / 3 - 5px);
-        height: auto;
-        line-height: 0;
-        &:last-of-type{
-          display: inline-block;
-        }
-      }
-    }
-
-    &__text{
-      h2{
-        margin-bottom: 20px;
-      }
-      p{
-        span{
-          display: inline;
-        }
-        margin-bottom: 0;
-      }
-
-      h6{
-        display: none;
-      }
-    }
-  }
-}
-//end scale
-
-
-//profile
-.profile{
-  background: $primary-bg;
-  padding: 36px 0;
-
-  &-column{
-    &__left{
-      margin-bottom: 19px;
-    }
-    &__right{
-      h2{
-        margin-bottom: 20px;
-      }
-      p{
-        margin-bottom: 21px;
-        &:last-of-type{
-          display: none;
-        }
-      }
-      h6{
-        margin: 0;
-        a{
-          &:after{
-            font-family: "icomoon";
-            content: "\e900";
-          }
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: 768px){
-    padding: 59px 0;
-
-    &-column{
-      justify-content: space-between;
-      align-items: center;
-      display: flex;
-
-      &__left,
-      &__right{
-        width: calc(100% / 2 - 17px);
-      }
-
-      &__left{
-        line-height: 0;
-        order: 2;
-        margin: 0;
-      }
-
-      &__right{
-        a{
-          display: none;
-        }
-        p:last-of-type{
-          display: block;
-        }
-      }
-    }
-  }
-}
-//end profile
-
-
-//manufacturing
-.manufacturing{
-  padding: 41px 0;
-
-  &__images{
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 27px;
-
-    img{
-      width: calc(100% / 2 - 2px);
-      height: 109px;
-      line-height: 0;
-      &:last-of-type{
-        display: none;
-      }
-    }
-  }
-  &__text{
-    h2{
-      margin-bottom: 20px;
-    }
-    p{
-      margin-bottom: 23px;
-      span{
-        display: none;
-      }
-    }
-    h6{
-      margin: 0;
-      a{
-        &:after{
-          font-family: "icomoon";
-          content: "\e900";
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: 768px){
-    padding: 60px 0;
-
-    &__images{
-
-      margin-bottom: 72px;
-
-      img{
-        width: calc(100% / 3 - 5px);
-        height: auto;
-        line-height: 0;
-        &:last-of-type{
-          display: inline-block;
-        }
-      }
-    }
-
-    &__text{
-      h2{
-        margin-bottom: 20px;
-      }
-      p{
-        span{
-          display: inline;
-        }
-        margin-bottom: 0;
-      }
-
-      h6{
-        display: none;
-      }
-    }
-  }
-}
-//end manufacturing
-
-
-//polishing
-.polishing{
-  background: $primary-bg;
-  padding: 36px 0;
-
-  &-column{
-    &__left{
-      margin-bottom: 19px;
-    }
-    &__right{
-      h2{
-        margin-bottom: 20px;
-      }
-      p{
-        margin-bottom: 21px;
-        &:last-of-type{
-          display: none;
-        }
-      }
-      h6{
-        margin: 0;
-        a{
-          &:after{
-            font-family: "icomoon";
-            content: "\e900";
-          }
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: 768px){
-    padding: 59px 0;
-
-    &-column{
-      justify-content: space-between;
-      align-items: center;
-      display: flex;
-
-      &__left,
-      &__right{
-        width: calc(100% / 2 - 17px);
-      }
-
-      &__left{
-        line-height: 0;
-        order: 2;
-        margin: 0;
-      }
-
-      &__right{
-        a{
-          display: none;
-        }
-        p:last-of-type{
-          display: block;
-        }
-      }
-    }
-  }
-}
-//end polishing
-
-
-//complete
-.complete{
-  padding: 41px 0;
-
-  &__images{
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 27px;
-
-    img{
-      width: calc(100% / 2 - 2px);
-      height: 109px;
-      line-height: 0;
-      &:last-of-type{
-        display: none;
-      }
-    }
-  }
-  &__text{
-    h2{
-      margin-bottom: 20px;
-    }
-    p{
-      margin-bottom: 23px;
-      span{
-        display: none;
-      }
-    }
-    h6{
-      margin: 0;
-      a{
-        &:after{
-          font-family: "icomoon";
-          content: "\e900";
-        }
-      }
-    }
-  }
-
-  &__button{
-    display: none;
-  }
-
-  h6{
-    margin: 0;
-    a{
-      &:after{
-        font-family: "icomoon";
-        content: "\e900";
-      }
-    }
-  }
-
-  @media only screen and (min-width: 768px){
-    padding: 60px 0;
-
-    &__images{
-
-      margin-bottom: 72px;
-
-      img{
-        width: calc(100% / 3 - 5px);
-        height: auto;
-        line-height: 0;
-        &:last-of-type{
-          display: inline-block;
-        }
-      }
-    }
-
-    &__text{
-      h2{
-        margin-bottom: 20px;
-      }
-      p{
-        span{
-          display: inline;
-        }
-        margin-bottom: 30px;
-      }
-
-      h6{
-        display: none;
-      }
-    }
-
-    &__button{
-      display: inline-block;
-
-      a{
-        border: 1px solid $primary-border;
-        color: $primary-border;
-        padding: 12px 25px;
-
-        &:first-of-type{
-          margin-right: 20px;
-          border-left: none;
-          border-right: none;
-          border-top: none;
-        }
-
-        &:last-of-type{
-            border-top: none;
-        }
-
-        &:hover{
-          background: $primary-bg-border;
-          color: $primary-color-border;
-        }
-      }
-    }
-
-    h6{
-      margin: 0;
-      display: none;
-    }
-  }
-}
-//end complete
+// $primary-bg: #E6E6E6;
+// $primary-border: #000;
+// $primary-color-border:#fff;
+// $primary-bg-border: #000;
+//
+//
+// /* concept sketch*/
+// .concept-sketch{
+//   background: $primary-bg;
+//   padding: 36px 0;
+//
+//   &-column{
+//     &__left{
+//       margin-bottom: 19px;
+//     }
+//   }
+//
+//   @media only screen and (min-width: 768px){
+//     padding: 59px 0;
+//
+//     &-column{
+//       justify-content: space-between;
+//       align-items: center;
+//       display: flex;
+//
+//       &__left,
+//       &__right{
+//         width: calc(100% / 2 - 17px);
+//       }
+//
+//       &__left{
+//         line-height: 0;
+//         order: 2;
+//         margin: 0;
+//       }
+//
+//       &__right{
+//         a{
+//           display: none;
+//         }
+//         p:last-of-type{
+//           display: block;
+//         }
+//       }
+//     }
+//   }
+// }
+// /*end concept sketch*/
+//
+//
+// // scale
+// .scale{
+//   padding: 41px 0;
+//
+//   &__images{
+//     display:flex;
+//     justify-content: space-between;
+//     margin-bottom: 27px;
+//
+//     img{
+//       width: calc(100% / 2 - 2px);
+//       height: 109px;
+//       line-height: 0;
+//       &:last-of-type{
+//         display: none;
+//       }
+//     }
+//   }
+//
+//   @media only screen and (min-width: 768px){
+//     padding: 60px 0;
+//
+//     &__images{
+//
+//       margin-bottom: 72px;
+//
+//       img{
+//         width: calc(100% / 3 - 5px);
+//         height: auto;
+//         line-height: 0;
+//         &:last-of-type{
+//           display: inline-block;
+//         }
+//       }
+//     }
+//
+//   }
+// }
+// //end scale
+//
+//
+// //profile
+// .profile{
+//   background: $primary-bg;
+//   padding: 36px 0;
+//
+//   &-column{
+//     &__left{
+//       margin-bottom: 19px;
+//     }
+//     &__right{
+//     }
+//   }
+//
+//   @media only screen and (min-width: 768px){
+//     padding: 59px 0;
+//
+//     &-column{
+//       justify-content: space-between;
+//       align-items: center;
+//       display: flex;
+//
+//       &__left,
+//       &__right{
+//         width: calc(100% / 2 - 17px);
+//       }
+//
+//       &__left{
+//         line-height: 0;
+//         order: 2;
+//         margin: 0;
+//       }
+//
+//       &__right{
+//         a{
+//           display: none;
+//         }
+//         p:last-of-type{
+//           display: block;
+//         }
+//       }
+//     }
+//   }
+// }
+// //end profile
+//
+//
+// //manufacturing
+// .manufacturing{
+//   padding: 41px 0;
+//
+//   &__images{
+//     display:flex;
+//     justify-content: space-between;
+//     margin-bottom: 27px;
+//
+//     img{
+//       width: calc(100% / 2 - 2px);
+//       height: 109px;
+//       line-height: 0;
+//       &:last-of-type{
+//         display: none;
+//       }
+//     }
+//   }
+//
+//   @media only screen and (min-width: 768px){
+//     padding: 60px 0;
+//
+//     &__images{
+//
+//       margin-bottom: 72px;
+//
+//       img{
+//         width: calc(100% / 3 - 5px);
+//         height: auto;
+//         line-height: 0;
+//         &:last-of-type{
+//           display: inline-block;
+//         }
+//       }
+//     }
+//   }
+// }
+// //end manufacturing
+//
+//
+// //polishing
+// .polishing{
+//   background: $primary-bg;
+//   padding: 36px 0;
+//
+//   &-column{
+//     &__left{
+//       margin-bottom: 19px;
+//     }
+//   }
+//
+//   @media only screen and (min-width: 768px){
+//     padding: 59px 0;
+//
+//     &-column{
+//       justify-content: space-between;
+//       align-items: center;
+//       display: flex;
+//
+//       &__left,
+//       &__right{
+//         width: calc(100% / 2 - 17px);
+//       }
+//
+//       &__left{
+//         line-height: 0;
+//         order: 2;
+//         margin: 0;
+//       }
+//
+//       &__right{
+//         a{
+//           display: none;
+//         }
+//         p:last-of-type{
+//           display: block;
+//         }
+//       }
+//     }
+//   }
+// }
+// //end polishing
+//
+//
+// //complete
+// .complete{
+//   padding: 41px 0;
+//
+//   &__images{
+//     display:flex;
+//     justify-content: space-between;
+//     margin-bottom: 27px;
+//
+//     img{
+//       width: calc(100% / 2 - 2px);
+//       height: 109px;
+//       line-height: 0;
+//       &:last-of-type{
+//         display: none;
+//       }
+//     }
+//   }
+//
+//   @media only screen and (min-width: 768px){
+//     padding: 60px 0;
+//
+//     &__images{
+//       margin-bottom: 72px;
+//
+//       img{
+//         width: calc(100% / 3 - 5px);
+//         height: auto;
+//         line-height: 0;
+//         &:last-of-type{
+//           display: inline-block;
+//         }
+//       }
+//     }
+//   }
+// }
+// //end complete
