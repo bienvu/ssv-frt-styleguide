@@ -149,6 +149,12 @@ small {
   font-size: smaller;
 }
 
+br {
+  @media only screen and (min-width: 768px) {
+    display: inline;
+  }
+}
+
 abbr {
   border-bottom: 1px dotted $text-color;
   cursor: help;

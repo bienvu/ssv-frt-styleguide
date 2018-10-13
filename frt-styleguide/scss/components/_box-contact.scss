@@ -78,6 +78,7 @@
       @extend .btn;
       @extend .btn--border-black;
     }
+
     p {
       display: none;
 
@@ -95,7 +96,6 @@
         margin-top: 0;
       }
     }
-
 
     .form-list {
 
@@ -117,7 +117,6 @@
     }
 
     .form-item {
-
       textarea {
         @media only screen and (min-width: 768px) {
           margin-bottom: -25px;
@@ -146,14 +145,6 @@
   }
 
   &__info {
-    
-
-    br {
-      @media only screen and (min-width: 768px) {
-        display: inline;
-      }
-    }
-
     p {
       @media only screen and (min-width: 768px) {
         margin-bottom: 20px;
