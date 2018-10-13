@@ -35,7 +35,7 @@ h2,
 %h2 {
   font-size: 20px;
   line-height: 1.286;
-  margin-bottom: 29px;
+  margin-bottom: 18px;
   letter-spacing: .84px;
 
   @media only screen and (min-width: 1024px) {
@@ -69,6 +69,7 @@ h5 {
 
 h6 {
   font-size: 12px;
+  margin-bottom: 19px;
 }
 
 .text--bold {
@@ -79,6 +80,11 @@ h6 {
 .text--small {
   @include gotham;
   font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.text--long {
+  letter-spacing: 1.68px;
 }
 
 %link,
@@ -120,7 +126,7 @@ a {
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 em {
