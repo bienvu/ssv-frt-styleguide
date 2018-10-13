@@ -78,7 +78,7 @@
       @extend .btn;
       @extend .btn--border-black;
     }
-    
+
     p {
       display: none;
 
@@ -145,13 +145,6 @@
   }
 
   &__info {
-
-    br {
-      @media only screen and (min-width: 768px) {
-        display: inline;
-      }
-    }
-
     p {
       @media only screen and (min-width: 768px) {
         margin-bottom: 20px;

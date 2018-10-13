@@ -61,7 +61,8 @@ input[type='submit'] {
   }
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="tel"] {
   @extend %form-text;
 
   &.error {
@@ -71,7 +72,6 @@ input[type="text"] {
 
 textarea {
   @extend %form-text;
-  min-height: 100px;
 }
 
 select {

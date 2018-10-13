@@ -1,15 +1,72 @@
 .cta {
-  background: url($image-path+'cta.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 31px;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 53px;
+  }
+
+  &__image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: auto;
+      position: absolute;
+      max-width: initial;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+
+      @media only screen and (min-width: 480px) and (max-height: 480px) {
+        width: 100%;
+        height: auto;
+      }
+
+      @media only screen and (min-width: 768px) and (max-height: 480px) {
+        width: 100%;
+        height: auto;
+      }
+
+      @media only screen and (min-width: 1024px) and (max-height: 768px) {
+        width: 100%;
+        height: auto;
+      }
+
+      @media only screen and (min-width: 1366px) and (max-height: 1023px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $second-color;
+  }
 
   &__title {
-    font-size: 32px;
-    color: $second-color;
+    @extend %h1;
+  }
+
+  &__link {
+    a {
+      @extend .btn--border-white;
+      color: $second-color;
+      padding: 0 26px;
+
+      @media only screen and (min-width: 768px) {
+        color: $primary-color
+      }
+    }
   }
 }

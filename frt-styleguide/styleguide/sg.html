@@ -769,19 +769,19 @@
           <div class="box-image-text__wrap">
             <div class="box-image-text__image">
               <div class="box-image-text__image__wrap">
-                <img src="../images/Layer-011.jpg" alt="">
+                <img class="main-image" src="../images/Layer-011.jpg" alt="">
               </div>
               <img class="sub-image" src="../images/Sub-image.svg" alt="">
             </div>
             <div class="box-image-text__content">
               <h6 class="box-image-text__sub-title text--small">WELCOME</h6>
-              <h2 class="box-image-text__title">ULLAMCORPER MALES<span class="white-space"></span>UADA PROIN LIBERO NUNC.</h2>
+              <h2 class="box-image-text__title">ULLAMCORPER<br> MALES<span class="white-space"></span>UADA PROIN<br> LIBERO NUNC<br> <span class="text">IPSUM TEMPOR</span></h2>
               <div class="box-image-text__description">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla ut morbi tincidunt augue interdum velit euismod in. Fermentum et sollicitudin ac orci phasellus egestas
                   tellus rutrum tellus. Sodales ut eu sem integer.</p>
               </div>
               <div class="box-image-text__link">
-                <a class="btn btn--border" href="#">LEARN MORE</a>
+                <a class="btn btn--border-black" href="#">LEARN MORE</a>
               </div>
             </div>
           </div>
@@ -798,18 +798,18 @@
     <div class="box-image-text__wrap">
       <div class="box-image-text__image"> 
         <div class="box-image-text__image__wrap">
-          <img src ="../images/Layer-011.jpg" alt="">
+          <img class="main-image" src ="../images/Layer-011.jpg" alt="">
         </div> 
           <img class="sub-image" src="../images/Sub-image.svg" alt=""> 
       </div>
       <div class="box-image-text__content">
         <h6 class="box-image-text__sub-title text--small">WELCOME</h6>
-        <h2 class="box-image-text__title">ULLAMCORPER MALES<span class="white-space"></span>UADA PROIN LIBERO NUNC.</h2>
+        <h2 class="box-image-text__title">ULLAMCORPER<br> MALES<span class="white-space"></span>UADA PROIN<br> LIBERO NUNC<br> <span class="text">IPSUM TEMPOR</span></h2>
         <div class="box-image-text__description">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla ut morbi tincidunt augue interdum velit euismod in. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Sodales ut eu sem integer.</p>
         </div>
         <div class="box-image-text__link">
-          <a class="btn btn--border" href="#">LEARN MORE</a>
+          <a class="btn btn--border-black" href="#">LEARN MORE</a>
         </div>
       </div>
     </div>
@@ -824,11 +824,16 @@
   <div class="component--item" id="cta">
     <h2 class="component--title">cta</h2>
     <div class="component--demo">
-      <div class="cta">
+      <div class="cta cta--width-slider">
+        <div class="cta__image">
+          <img src="../images/cta.jpg" alt="">
+        </div>
+
         <div class="cta__content">
-          <h2 class="cta__title">HANDCRAFTED IN MELBOURNE</h2>
-          <p><a href="" class="btn btn--longer">VIEW OUR WORK</a>
-          </p>
+          <h2 class="cta__title">French Tables by Mark Alexander  Design Artistry</h2>
+          <div class="cta__link">
+            <a href="#" class="btn btn--longer ">VIEW TABLES</a>
+          </div>
         </div>
       </div>
     </div>
@@ -837,10 +842,16 @@
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><div class="cta">
+          <pre class="brush: php"><div class="cta cta--width-slider">
+  <div class="cta__image">
+    <img src="../images/cta.jpg" alt="">
+  </div>
+
   <div class="cta__content">
-    <h2 class="cta__title">HANDCRAFTED IN MELBOURNE</h2>
-    <p><a href="" class="btn btn--longer">VIEW OUR WORK</a></p>
+    <h2 class="cta__title">French Tables by Mark Alexander  Design Artistry</h2>
+    <div class="cta__link">
+      <a href="#" class="btn btn--longer ">VIEW TABLES</a>
+    </div>
   </div>
 </div>
 </pre>
@@ -855,9 +866,9 @@
       <div class="box-filter">
         <div class="container">
           <div class="box-filter__wrapper">
-            <h3 class="box-filter__title">Lorem ipsum </h3>
+            <h2 class="box-filter__title">explore by style</h2>
 
-            <ul class="box-filter__content">
+            <ul class="box-filter__list">
               <li><a href="#" class="btn">Classic</a>
               </li>
               <li><a href="#" class="btn">Contemporary</a>
@@ -877,9 +888,9 @@
           <pre class="brush: php"><div class="box-filter">
   <div class="container">
     <div class="box-filter__wrapper">
-      <h3 class="box-filter__title">Lorem ipsum </h3>
+      <h2 class="box-filter__title">explore by style</h2>
 
-      <ul class="box-filter__content">
+      <ul class="box-filter__list">
         <li><a href="#" class="btn">Classic</a></li>
         <li><a href="#" class="btn">Contemporary</a></li>
         <li><a href="#" class="btn active">VIEW ALL</a></li>
@@ -1356,7 +1367,7 @@
   <div class="component--item" id="box-text">
     <h2 class="component--title">box text</h2>
     <div class="component--demo">
-      <div class="box-text">
+      <div class="box-text box-text--2but">
         <div class="container">
           <div class="box-text__content">
             <p>
@@ -1367,7 +1378,11 @@
             </p>
           </div>
           <div class="box-text__link">
-            <a class="btn btn--border" href="#">LEARN MORE ABOUT OUR DESIGN PROCESS</a>
+            <a class="btn btn--border-black" href="#">LEARN MORE ABOUT OUR DESIGN PROCESS</a>
+            <div class="box-text__link__sub">
+              <a class="btn btn--border-black" href="#">BOOK A CONSULTATION</a>
+              <a class="btn btn--border-black" href="#">OUR DESIGN PROCESS</a>
+            </div>
           </div>
         </div>
       </div>
@@ -1377,7 +1392,7 @@
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><div class="box-text">
+          <pre class="brush: php"><div class="box-text box-text--2but">
   <div class="container">
     <div class="box-text__content">
       <p>
@@ -1385,7 +1400,11 @@
       </p>
     </div>
     <div class="box-text__link">
-      <a class="btn btn--border" href="#">LEARN MORE ABOUT OUR DESIGN PROCESS</a>
+      <a class="btn btn--border-black" href="#">LEARN MORE ABOUT OUR DESIGN PROCESS</a>
+      <div class="box-text__link__sub">
+        <a class="btn btn--border-black" href="#">BOOK A CONSULTATION</a>
+        <a class="btn btn--border-black" href="#">OUR DESIGN PROCESS</a>
+      </div>
     </div>
   </div>
 </div>
@@ -1506,16 +1525,21 @@
     <h2 class="component--title">list image</h2>
     <div class="component--demo">
       <div class="list-image">
-        <h2 class="list-image__title">VIEW OUR COLLECTION</h2>
-        <div class="list-image__wrap">
-          <div class="list-image__item">
-            <img src="../images/image01.jpg" alt="">
-          </div>
-          <div class="list-image__item">
-            <img src="../images/image02.jpg" alt="">
-          </div>
-          <div class="list-image__item">
-            <img src="../images/image03.jpg" alt="">
+        <div class="container">
+          <h2 class="list-image__title">VIEW OUR COLLECTION</h2>
+          <div class="list-image__wrap">
+            <div class="list-image__item">
+              <a class="btn btn--border" href="#">VIEW TABLES</a>
+              <img src="../images/image01.jpg" alt="">
+            </div>
+            <div class="list-image__item">
+              <a class="btn btn--border" href="#">VIEW CHAIRS</a>
+              <img src="../images/image02.jpg" alt="">
+            </div>
+            <div class="list-image__item">
+              <a class="btn btn--border" href="#">VIEW SIDEBOARDS</a>
+              <img src="../images/image03.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -1526,16 +1550,21 @@
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
           <pre class="brush: php"><div class="list-image">
-  <h2 class="list-image__title">VIEW OUR COLLECTION</h2>
-  <div class="list-image__wrap">
-    <div class="list-image__item">
-      <img src="../images/image01.jpg" alt="">
-    </div>
-    <div class="list-image__item">
-      <img src="../images/image02.jpg" alt="">
-    </div>
-    <div class="list-image__item">
-      <img src="../images/image03.jpg" alt="">
+  <div class="container">
+    <h2 class="list-image__title">VIEW OUR COLLECTION</h2>
+    <div class="list-image__wrap">
+      <div class="list-image__item">
+      <a class="btn btn--border" href="#">VIEW TABLES</a>
+        <img src="../images/image01.jpg" alt="">
+      </div>
+      <div class="list-image__item">
+       <a class="btn btn--border" href="#">VIEW CHAIRS</a>
+        <img src="../images/image02.jpg" alt="">
+      </div>
+      <div class="list-image__item">
+      <a class="btn btn--border" href="#">VIEW SIDEBOARDS</a>
+        <img src="../images/image03.jpg" alt="">
+      </div>
     </div>
   </div>
 </div>
@@ -1545,10 +1574,244 @@
     </div>
   </div>
 
+  <div class="component--item" id="list-image1">
+    <h2 class="component--title">list image1</h2>
+    <div class="component--demo">
+      <div class="list-image list-image--with-title">
+        <div class="container">
+          <div class="list-image__wrap">
+            <div class="list-image__item">
+              <img src="../images/image1.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">Curved Arm Dining Chair With Optional Ring Detail</h5>
+            </div>
+            <div class="list-image__item">
+              <img src="../images/image2.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+            </div>
+            <div class="list-image__item">
+              <img src="../images/image3.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+            </div>
+            <div class="list-image__item">
+              <img src="../images/image4.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+            </div>
+            <div class="list-image__item">
+              <img src="../images/image5.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+            </div>
+            <div class="list-image__item">
+              <img src="../images/image6.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+            </div>
+            <div class="list-image__item">
+              <img src="../images/image7.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+            </div>
+            <div class="list-image__item">
+              <img src="../images/image8.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">Rectangle Dining Table Product Titlet</h5>
+            </div>
+            <div class="list-image__item">
+              <img src="../images/image9.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+            </div>
+          </div>
+          <div class="list-image__link">
+            <a href="#">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <button class="show-code">Show/Hide Code</button>
+      <div class="component--source element-invisible">
+        <div class="component--html">
+          <h4 class="component--source--title">Markup</h4>
+          <pre class="brush: php"><div class="list-image list-image--with-title" >
+  <div class="container">
+    <div class="list-image__wrap">
+      <div class="list-image__item">
+        <img src="../images/image1.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">Curved Arm Dining Chair With Optional Ring Detail</h5>
+      </div>
+      <div class="list-image__item">
+        <img src="../images/image2.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+      </div>
+      <div class="list-image__item">
+        <img src="../images/image3.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+      </div>
+      <div class="list-image__item">
+        <img src="../images/image4.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+      </div>
+      <div class="list-image__item">
+        <img src="../images/image5.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+      </div>
+      <div class="list-image__item">
+        <img src="../images/image6.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+      </div>
+      <div class="list-image__item">
+        <img src="../images/image7.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+      </div>
+      <div class="list-image__item">
+        <img src="../images/image8.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">Rectangle Dining Table Product Titlet</h5>
+      </div>
+      <div class="list-image__item">
+        <img src="../images/image9.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+      </div>
+    </div>
+    <div class="list-image__link">
+      <a href="#">LEARN MORE</a>
+    </div>
+  </div>
+</div>
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component--item" id="list-image2">
+    <h2 class="component--title">list image2</h2>
+    <div class="component--demo">
+      <div class="list-image list-image--2col-with-title">
+        <div class="container">
+          <div class="list-image__wrap">
+            <div class="list-image__item">
+              <img src="../images/image13.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">Rectangle dining tables</h5>
+            </div>
+            <div class="list-image__item">
+              <img src="../images/image14.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">Round dining tables</h5>
+            </div>
+            <div class="list-image__item">
+              <img src="../images/image15.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">extension tables</h5>
+            </div>
+            <div class="list-image__item">
+              <img src="../images/image16.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">Coffee tables</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <button class="show-code">Show/Hide Code</button>
+      <div class="component--source element-invisible">
+        <div class="component--html">
+          <h4 class="component--source--title">Markup</h4>
+          <pre class="brush: php"><div class="list-image list-image--2col-with-title" >
+  <div class="container">
+    <div class="list-image__wrap">
+      <div class="list-image__item">
+        <img src="../images/image13.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">Rectangle dining tables</h5>
+      </div>
+      <div class="list-image__item">
+        <img src="../images/image14.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">Round dining tables</h5>
+      </div>
+      <div class="list-image__item">
+        <img src="../images/image15.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">extension tables</h5>
+      </div>
+      <div class="list-image__item">
+        <img src="../images/image16.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">Coffee tables</h5>
+      </div>
+    </div>
+  </div>
+</div></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component--item" id="list-image3">
+    <h2 class="component--title">list image3</h2>
+    <div class="component--demo">
+      <div class="list-image list-image--2c-with-title">
+        <div class="container">
+          <div class="list-image__wrap">
+            <div class="list-image__item">
+              <img src="../images/image11.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">cabinets</h5>
+            </div>
+            <div class="list-image__item">
+              <img src="../images/image12.jpg" alt="">
+              <a class="btn btn--border" href="#">VIEW MORE</a>
+              <h5 class="list-image__title">console</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <button class="show-code">Show/Hide Code</button>
+      <div class="component--source element-invisible">
+        <div class="component--html">
+          <h4 class="component--source--title">Markup</h4>
+          <pre class="brush: php"><div class="list-image list-image--2c-with-title" >
+  <div class="container">
+    <div class="list-image__wrap">
+      <div class="list-image__item">
+        <img src="../images/image11.jpg" alt="">
+        <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">cabinets</h5>
+      </div>
+      <div class="list-image__item">
+        <img src="../images/image12.jpg" alt="">
+         <a class="btn btn--border" href="#">VIEW MORE</a>
+        <h5 class="list-image__title">console</h5>
+      </div>
+    </div>
+  </div>
+</div></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="component--item" id="box-hero">
     <h2 class="component--title">box hero</h2>
     <div class="component--demo">
-      <!-- box hero -->
       <div class="box-hero box-hero--width-slider ">
         <div class="box-hero__inner js-slider">
           <div class="box-hero__item">
@@ -1566,7 +1829,7 @@
 
           <div class="box-hero__item">
             <div class="box-hero__image">
-              <img src="../images/banner02.jpg" alt="">z
+              <img src="../images/banner02.jpg" alt="">
             </div>
 
             <div class="box-hero__content">
@@ -1636,37 +1899,35 @@
         </div>
 
         <div class="scroll-element">
-          <span class="icon-scroll js-scroll-down"></span>
+          <i class="icon-scroll js-scroll-down"></i>
         </div>
       </div>
-
     </div>
     <div class="container">
       <button class="show-code">Show/Hide Code</button>
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><!-- box hero -->
-<div class="box-hero box-hero--width-slider ">
+          <pre class="brush: php"><div class="box-hero box-hero--width-slider ">
   <div class="box-hero__inner js-slider">
     <div class="box-hero__item">
       <div class="box-hero__image">
         <img src="../images/banner01.jpg" alt="">
       </div>
-      
+
       <div class="box-hero__content">
         <h2 class="box-hero__title">French Tables <br /> by <br /> Mark Alexander <br />  Design Artistry</h2>
         <div class="box-hero__link">
           <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
         </div>
-      </div>    
+      </div>
     </div>
 
     <div class="box-hero__item">
       <div class="box-hero__image">
-        <img src="../images/banner02.jpg" alt="">z
+        <img src="../images/banner02.jpg" alt="">
       </div>
-      
+
       <div class="box-hero__content">
         <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br />  DESIGN ARTISTRY</h2>
 
@@ -1680,7 +1941,7 @@
       <div class="box-hero__image">
         <img src="../images/banner03.jpg" alt="">
       </div>
-      
+
       <div class="box-hero__content">
         <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br />  DESIGN ARTISTRY</h2>
 
@@ -1694,7 +1955,7 @@
       <div class="box-hero__image">
         <img src="../images/banner04.jpg" alt="">
       </div>
-      
+
       <div class="box-hero__content">
         <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br /> DESIGN ARTISTRY</h2>
 
@@ -1708,7 +1969,7 @@
       <div class="box-hero__image">
         <img src="../images/banner05.jpg" alt="">
       </div>
-      
+
       <div class="box-hero__content">
         <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br /> DESIGN ARTISTRY</h2>
 
@@ -1722,7 +1983,7 @@
       <div class="box-hero__image">
         <img src="../images/banner06.jpg" alt="">
       </div>
-      
+
       <div class="box-hero__content">
         <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br /> DESIGN ARTISTRY</h2>
 
@@ -1734,10 +1995,9 @@
   </div>
 
   <div class="scroll-element">
-    <span class="icon-scroll js-scroll-down"></span>
+    <i class="icon-scroll js-scroll-down"></i>
   </div>
 </div>
-
 </pre>
         </div>
       </div>
