@@ -62,9 +62,6 @@
       "group":"helper"
     },
     {
-
-      "name":"dropbox",
-
       "name":"box-gallery",
       "group":"components"
     },
@@ -102,7 +99,7 @@
     },
     {
 
-      "name":"dropbox",
+      "name":"article-detail",
       "group":"components"
     }
   ]
