@@ -21,10 +21,10 @@
   letter-spacing: 1.2px;
   box-sizing: border-box;
 
-  @media only screen and (min-width: 768px) { 
+  @media only screen and (min-width: 768px) {
     padding: 0 22px;
     background: $btn-bg;
-     min-width: 193px;
+    min-width: 193px;
   }
 
   &--border-white {
@@ -50,6 +50,27 @@
   &--longer {
     padding: 0 62px;
   }
+
+  &--border-black {
+    border: 1px solid $primary-color;
+    line-height: 38px;
+    min-width: 193px;
+
+    &:hover {
+      border: 1px solid $second-color;
+    }
+  }
+
+  &--border-white {
+    border: 1px solid $second-color;
+    line-height: 38px;
+    min-width: 225px;
+
+    &:hover {
+      border: 1px solid $primary-color;
+    }
+  }
+
 
   &:active,
   &:hover {

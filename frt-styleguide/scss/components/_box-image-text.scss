@@ -1,4 +1,10 @@
 .box-image-text {
+  margin-bottom: 72px;
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    padding-top: 58px;
+  }
+
   &__wrap {
     @media only screen and (min-width: 768px) {
       display: flex;

@@ -1,6 +1,11 @@
 .cta {
   height: 100vh;
   position: relative;
+  margin-bottom: 31px;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 53px;
+  }
 
   &__image {
     position: relative;
@@ -51,5 +56,17 @@
 
   &__title {
     @extend %h1;
+  }
+
+  &__link {
+    a {
+      @extend .btn--border-white;
+      color: $second-color;
+      padding: 0 26px;
+
+      @media only screen and (min-width: 768px) {
+        color: $primary-color
+      }
+    }
   }
 }

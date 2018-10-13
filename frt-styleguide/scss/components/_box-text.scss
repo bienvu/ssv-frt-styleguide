@@ -1,4 +1,9 @@
 .box-text{
+  margin-bottom: 18px;
+  
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 83px;
+  }
 
   &__content {
     margin-bottom: 25px;
@@ -15,6 +20,12 @@
       text-align: center;
       margin-left: -19px;
     }
+
+    &__sub {
+      .btn {
+        display: none;
+      }
+    }
     
 
     .btn {
@@ -27,6 +38,12 @@
       margin: 3px;
 
       }
+    }
+  }
+
+  &--2but {
+    .box-text__link__sub {
+      display: inline-block;
     }
   }
 }
