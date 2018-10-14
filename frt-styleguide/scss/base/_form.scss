@@ -3,16 +3,12 @@ form{
   flex-direction: column;
   
   .form-list {
-    margin-bottom: 20px;
-
-    &:nth-last-of-type(2) {
-      margin-bottom: 30px;
-    }
+    margin-bottom: 44px;
   }
 
   .form-item {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 
     label {
       width: 100%;
@@ -34,19 +30,19 @@ input[type='submit'] {
   @include gotham;
   font-weight: 300;
   appearance: none;
-  background-color: $white;
+  background: transparent;
   border-radius: 0;
   border: none;
   outline: none;
   box-shadow: none;
   color: $text-color;
   font-size: 14px;
-  padding: 0 0 5px 0;
+  padding: 0 0 4px 0;
   transition: all .3s ease-in-out;
   width: 100%;
-  border-bottom: 1px solid rgba($primary-color, .5);
-  line-height: 1.86;
-  background: transparent;
+  border-bottom: 1px solid $primary-color;
+  line-height: 1.8571;
+  letter-spacing: 0;
 
   &:focus {
     box-shadow: none;
