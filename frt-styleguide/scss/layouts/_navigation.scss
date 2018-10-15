@@ -1,20 +1,21 @@
 // Navigation.
 .main-menu {
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1240px) {
     display: flex;
     margin-left: -14.5px;
+    align-items: center;
   }
 
   li {
-    margin-bottom: 6.4px;
-    
-    @media only screen and (min-width: 1024px) {
+    margin-bottom: 5.4px;
+
+    @media only screen and (min-width: 1240px) {
       margin-bottom: 0;
 
       a {
         padding: 0 14.5px;
       }
-    } 
+    }
   }
 
   &--has-child {
@@ -32,7 +33,7 @@
       > li {
         border-bottom: none;
 
-         // fix height: li 100% for hover
+        // fix height: li 100% for hover
         @media only screen and (min-width: 1240px) {
           height: 100%;
           display: flex;
@@ -44,7 +45,7 @@
             }
           }
         }
-        
+
         > a {
           height: 40px;
           display: flex;
@@ -73,12 +74,13 @@
         }
       }
     }
-     li {
+
+    li {
       @media only screen and (min-width: 1240px) {
         margin: 0 15px;
       }
 
-       a {
+      a {
         padding: 22.8px 0;
         @extend %h5;
 
@@ -86,7 +88,8 @@
           padding: 0;
         }
       }
-       &.menu-expend {
+
+      &.menu-expend {
         position: relative;
 
         >a {
@@ -131,7 +134,7 @@
             }
           }
 
-           li {
+          li {
             @media only screen and (min-width: 1240px) {
               margin: 0;
             }
@@ -139,14 +142,14 @@
             &:first-child {
               a {
                 padding-top: 8px;
-                
+
                 @media only screen and (min-width: 1240px) {
                   padding: 16px 0 13px;
                 }
               }
             }
 
-             &:last-child {
+            &:last-child {
               @media only screen and (min-width: 1240px) {
                 a {
                   border: none;
@@ -156,7 +159,7 @@
 
             a {
               padding: 13px 0;
-              
+
               @media only screen and (min-width: 1240px) {
                 padding: 16px 0 13px;
                 white-space: nowrap;
@@ -173,7 +176,7 @@
               display: block;
             }
 
-             a {
+            a {
               &:after {
                 transform: rotate(180deg);
               }
