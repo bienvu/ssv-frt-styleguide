@@ -78,6 +78,9 @@
         }]
       });
 
+      //lightbox gallery masonry
+      $(".masonry").lightGallery();
+
       // slider box-gallery
       $('.js-slider--default').slick({
         asNavFor: '.js-slider--thumnail',
@@ -118,15 +121,15 @@
     });
   })();
   
-  //Table responsive
-  Drupal.behaviors.tableResponsive = {
-    attach: function (context, settings) {
-      var $table = $('table', context);
-      if ($table.length &&
-        !$table.parent().hasClass('table-responsive')) {
-        $table.not($table.find('table')).wrap('<div class="table-responsive"></div>');
-      }
-    }
-  };
+  // //Table responsive
+  // Drupal.behaviors.tableResponsive = {
+  //   attach: function (context, settings) {
+  //     var $table = $('table', context);
+  //     if ($table.length &&
+  //       !$table.parent().hasClass('table-responsive')) {
+  //       $table.not($table.find('table')).wrap('<div class="table-responsive"></div>');
+  //     }
+  //   }
+  // };
 
 }(this, this.document, this.jQuery));
