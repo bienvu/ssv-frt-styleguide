@@ -44,6 +44,10 @@ input[type='submit'] {
   line-height: 1.8571;
   letter-spacing: 0;
 
+  &--oversize {
+    padding: 0 0 15px 0;
+  }
+
   &:focus {
     box-shadow: none;
   }
