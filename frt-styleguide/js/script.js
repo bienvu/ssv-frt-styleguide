@@ -18,7 +18,7 @@
   (function () {
     $('document').ready(function () {
       //Toggle Menu
-      $('.button-menu').click(function (e) {
+      $('.menu-bars').click(function (e) {
         if ($(this).hasClass('is-show')) {
           $(this).removeClass('is-show');
           $(this).parent().next().slideUp();
@@ -35,8 +35,8 @@
         }
       });
 
-      // toggle menu extend
-      $('.menu-extend').click(function(e) {
+      // toggle menu expend
+      $('.menu-expend').click(function(e) {
         e.preventDefault();
         if($(this).hasClass('is-show')) {
           $(this).removeClass('is-show');
