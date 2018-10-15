@@ -1,26 +1,33 @@
 .header {
   text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: #fff;
 
-  @media only screen and (min-width: 1024px) {
-    height: 91px;
+  @media only screen and (min-width: 1240px) {
+    height: 85px;
+    box-shadow: 0 1px 3px 1px rgba($primary-color, .2);
   }
 
   .container {
-    @media only screen and (max-width: 1023px) {
+    @media only screen and (max-width: 1239px) {
       margin: 0;
       width: 100%;
       padding: 0;
+      max-width: initial;
     }
 
-    @media only screen and (min-width: 1024px) {
-      width: 100%;
-      max-width: initial;
+    @media only screen and (min-width: 1240px) and (max-width: 1919px) {
       padding: 0 29px;
+      margin: 0;
+      max-width: initial;
     }
   }
 
   &__wrap {
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1240px) {
+      height: 85px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -34,7 +41,7 @@
     justify-content: space-between;
     height: 71px;
       
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1240px) {
       padding: 0;
     }
 
@@ -44,7 +51,7 @@
       img {
         width: 240px;
 
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 1240px) {
           width: 306px;
         }
       }
@@ -60,7 +67,7 @@
     background: $white;
     padding-top: 5px;
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1240px) {
       position: static;
       padding: 0;
       height: 100%;
@@ -72,18 +79,30 @@
   
 
     .main-menu {
-      margin-bottom: 34px;
+      margin-bottom: 35px;
 
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 1240px) {
         margin-bottom: 0;
       }
 
-      >li {
+      > li {
         &:last-child {
           display: none;
 
-          @media only screen and (min-width: 1024px) {
-            display: block;
+          @media only screen and (min-width: 1240px) {
+            display: flex;
+
+            &:hover {
+              a:before {
+                display: none;
+              }
+            }
+          }
+        }
+
+        &:first-child {
+          @media only screen and (min-width: 1240px) {
+            margin-left: 0;
           }
         }
       }
@@ -96,11 +115,18 @@
   padding: 0 20px;
   background: $bg-primary;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1240px) {
     padding: 0;
     background: $white;
     display: flex;
     align-items: center;
+    margin-right: 16px;
+  }
+
+  &:hover {
+    .form-search {
+      display: block;
+    }
   }
 
   .form-search {
@@ -108,6 +134,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+    @media only screen and (min-width: 1240px) {
+      position: absolute;
+      background: $white;
+      top: 100%;
+      width: 291px;
+      z-index: 99;
+      right: -22px;
+      padding: 0 25.5px;
+      box-shadow: inset 0 1px 3px 1px rgba($primary-color, .2);
+      display: none;
+
+      &:before {
+        @include border-arrow(9px, bottom, rgba($primary-color, .5));
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        right: 25.5px;
+      }
+    }
 
     .form-item {
       margin: 0;
@@ -116,6 +163,7 @@
       input[type="text"] {
         @extend %link;
         @extend %form-text--oversize;
+        cursor: auto;
         padding-right: 20px;
       }
     }
@@ -127,7 +175,7 @@
     top: calc(50% - 5px);
     transform: translateY(-50%);
 
-    @media only screen and (min-width: 1023px) {
+    @media only screen and (min-width: 1239px) {
       position: static;
       transform: none;
       display: flex;
@@ -140,6 +188,7 @@
       &:before {
         content: "\e906";
         font-size: 30px;
+        right: 0;
       }
     }
   }
@@ -149,7 +198,7 @@
   width: 27px;
   display: inline-block;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1240px) {
     display: none;
   }
 
@@ -157,7 +206,7 @@
     display: block;
     background: $primary-color;
     height: 3px;
-    transition: .5s;
+    transition: .2s;
     
     &:nth-child(2) {
       height: 2px;
@@ -170,7 +219,9 @@
 
   &.is-show {
     .menu-bars__row:nth-child(1) {
-      transform: translateY(5.5px) rotate(45deg);
+      height: 2px;
+      width: 20px;
+      transform: translateY(5px) rotate(-45deg);
     }
 
     .menu-bars__row:nth-child(2) {
@@ -178,7 +229,9 @@
     }
 
     .menu-bars__row:nth-child(3) {
-      transform: translateY(-5.5px) rotate(-45deg)
+      height: 2px;
+      width: 20px;
+      transform: translateY(-5px) rotate(45deg)
     }
   }
 }

@@ -35,8 +35,8 @@
         }
       });
 
-      // toggle menu extend
-      $('.menu-extend').click(function(e) {
+      // toggle menu expend
+      $('.menu-expend').click(function(e) {
         e.preventDefault();
         if($(this).hasClass('is-show')) {
           $(this).removeClass('is-show');
