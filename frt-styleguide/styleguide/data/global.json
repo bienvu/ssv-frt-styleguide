@@ -112,6 +112,10 @@
     {
       "name":"box-hero",
       "group":"components"
+    },
+    {
+      "name":"article-detail",
+      "group":"components"
     }
   ]
 }

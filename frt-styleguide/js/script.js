@@ -117,6 +117,7 @@
       });
     });
   })();
+
   
   //Table responsive
   Drupal.behaviors.tableResponsive = {
