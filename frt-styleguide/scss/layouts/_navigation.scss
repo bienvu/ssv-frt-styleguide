@@ -18,6 +18,10 @@
     } 
   }
 
+  .menu {
+    display: none;
+  }
+
   &--has-child {
     >li {
       border-bottom: 1px solid rgba($primary-color, .3);
