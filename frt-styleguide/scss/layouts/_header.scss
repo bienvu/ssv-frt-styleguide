@@ -124,8 +124,12 @@
   }
 
   &:hover {
+    .item-icon {
+      cursor: pointer;
+    }
+
     .form-search {
-      display: block;
+      display: flex;
     }
   }
 

@@ -170,6 +170,12 @@
           }
         }
 
+        &:hover {
+          .menu {
+            display: block;
+          }
+        }
+
         @media only screen and (max-width: 1239px) {
           &.is-show {
             .menu {
