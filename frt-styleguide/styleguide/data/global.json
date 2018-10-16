@@ -120,6 +120,10 @@
     {
       "name":"box-hero--width-slider",
       "group":"components"
+    },
+    {
+      "name":"article-detail",
+      "group":"components"
     }
   ]
 }
