@@ -40,10 +40,8 @@
         e.preventDefault();
         if($(this).hasClass('is-show')) {
           $(this).removeClass('is-show');
-          $(this).children('.menu').slideUp();
         }else {
           $(this).addClass('is-show');
-          $(this).children('.menu').slideDown();
         }
       });
 
@@ -64,7 +62,7 @@
         return false;
       });
 
-      //banner 
+      //slick for box-hero
       $('.js-slider').slick({
         dots: true,
         autoplay: true,
@@ -126,15 +124,15 @@
     });
   })();
   
-  //Table responsive
-  Drupal.behaviors.tableResponsive = {
-    attach: function (context, settings) {
-      var $table = $('table', context);
-      if ($table.length &&
-        !$table.parent().hasClass('table-responsive')) {
-        $table.not($table.find('table')).wrap('<div class="table-responsive"></div>');
-      }
-    }
-  };
+  // //Table responsive
+  // Drupal.behaviors.tableResponsive = {
+  //   attach: function (context, settings) {
+  //     var $table = $('table', context);
+  //     if ($table.length &&
+  //       !$table.parent().hasClass('table-responsive')) {
+  //       $table.not($table.find('table')).wrap('<div class="table-responsive"></div>');
+  //     }
+  //   }
+  // };
 
 }(this, this.document, this.jQuery));

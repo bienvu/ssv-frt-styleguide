@@ -108,6 +108,14 @@
     {
       "name":"list-image3",
       "group":"components"
+    },
+    {
+      "name":"masonry",
+      "group":"components"
+    },
+    {
+      "name":"box-hero--width-slider",
+      "group":"components"
     }
   ]
 }

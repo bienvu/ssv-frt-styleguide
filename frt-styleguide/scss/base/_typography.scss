@@ -21,7 +21,8 @@ h1,
   font-size: 22px;
   line-height: 1.1818;
   letter-spacing: .66px;
-
+  margin-bottom: 45px;
+  
   @media only screen and (min-width: 768px) {
     font-size: 26px;
   }
@@ -128,6 +129,12 @@ h6 {
     &:hover {
       color: $link-color-hover;
     }
+  }
+  
+  &--large {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    line-height: 1.2857;
   }
 
   &--large {

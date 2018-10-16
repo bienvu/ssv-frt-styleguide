@@ -20,66 +20,69 @@
 
 <body>
   <div class="header">
-    <div class="header__logo">
-      <a href="#" class="logo">
-        <img src="../images/logo.svg">
-      </a>
-      <span class="button-menu">
-          <span class="button-menu__row"></span>
-      <span class="button-menu__row"></span>
-      <span class="button-menu__row"></span>
-      </span>
-    </div>
-
-    <div class="header__menu">
-      <ul class="main-menu">
-        <li class="menu-extend">
-          <a href="#">TABLES</a>
-          <ul class="menu">
-            <li><a href="#">Rectangle Dining Tables</a>
-            </li>
-            <li><a href="#">Round Dining Tables</a>
-            </li>
-            <li><a href="#">Extension Tables</a>
-            </li>
-            <li><a href="#">Coffee Tables</a>
-            </li>
-          </ul>
-        </li>
-
-        <li><a href="#">DINING CHAIRS</a>
-        </li>
-        <li><a href="#">SIDEBOARDS</a>
-        </li>
-        <li><a href="#">WORK</a>
-        </li>
-
-        <li class="menu-extend">
-          <a href="#">ABOUT</a>
-          <ul class="menu">
-            <li><a href="#">French Tables</a>
-            </li>
-            <li><a href="#">Design Process</a>
-            </li>
-          </ul>
-        </li>
-
-        <li><a href="#">CONTACT</a>
-        </li>
-        <li><a class="book-link" href="#">BOOK A CONSULTATION</a>
-        </li>
-      </ul>
-
-      <div class="box-search">
-        <div class="form-search">
-          <form action="#">
-            <div class="form-item">
-              <input type="text" placeholder="SEARCH">
-            </div>
-          </form>
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header__logo">
+          <a href="#" class="logo">
+            <img src="../images/logo.svg">
+          </a>
+          <span class="menu-bars">
+          <span class="menu-bars__row"></span>
+          <span class="menu-bars__row"></span>
+          <span class="menu-bars__row"></span>
+          </span>
         </div>
 
-        <a href="#" class="icon-search"></a>
+        <div class="header__menu">
+          <ul class="main-menu main-menu--has-child">
+            <li class="menu-expend">
+              <a href="#">TABLES</a>
+              <ul class="menu">
+                <li><a href="#">Rectangle Dining Tables</a>
+                </li>
+                <li><a href="#">Round Dining Tables</a>
+                </li>
+                <li><a href="#">Extension Tables</a>
+                </li>
+                <li><a href="#">Coffee Tables</a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#">DINING CHAIRS</a>
+            </li>
+            <li><a href="#">SIDEBOARDS</a>
+            </li>
+            <li><a href="#">WORK</a>
+            </li>
+
+            <li class="menu-expend">
+              <a href="#">ABOUT</a>
+              <ul class="menu">
+                <li><a href="#">French Tables</a>
+                </li>
+                <li><a href="#">Design Process</a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#">CONTACT</a>
+            </li>
+            <li><a class="book-link btn btn--long btn--border-primary-v2" href="https://www.frenchtables/contact/">BOOK A CONSULTATION</a>
+            </li>
+          </ul>
+
+          <div class="box-search">
+            <form action="#" class="form-search">
+              <div class="form-item">
+                <input type="text" placeholder="SEARCH">
+              </div>
+            </form>
+
+            <div class="item-icon"><i href="#" class="icon-search"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1120,8 +1123,8 @@
   <div class="component--item" id="masonry">
     <h2 class="component--title">masonry</h2>
     <div class="component--demo">
-      <div class="masonry">
-        <div class="masonry__item">
+      <div class="masonry js-lightbox">
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Classic_01.jpg">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Classic_01.jpg" alt="FrenchTables Gallery Classic">
           </div>
@@ -1130,7 +1133,7 @@
           </div>
         </div>
 
-        <div class="masonry__item">
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Classic_02.jpg">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Classic_02.jpg" alt="FrenchTables Gallery Classic">
           </div>
@@ -1139,7 +1142,7 @@
           </div>
         </div>
 
-        <div class="masonry__item masonry__item--height2">
+        <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Contemporary_03.jpg">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Contemporary_03.jpg" alt="FrenchTables Gallery Contemporary">
           </div>
@@ -1148,7 +1151,7 @@
           </div>
         </div>
 
-        <div class="masonry__item">
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_04.jpg" alt="FrenchTables Gallery Contemporary">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Contemporary_04.jpg" alt="FrenchTables Gallery Contemporary">
           </div>
@@ -1157,7 +1160,7 @@
           </div>
         </div>
 
-        <div class="masonry__item">
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_05.jpg" alt="FrenchTables Gallery Contemporary">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Contemporary_05.jpg" alt="FrenchTables Gallery Contemporary">
           </div>
@@ -1166,7 +1169,7 @@
           </div>
         </div>
 
-        <div class="masonry__item">
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_06.jpg" alt="FrenchTables Gallery Contemporary">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Contemporary_06.jpg" alt="FrenchTables Gallery Contemporary">
           </div>
@@ -1175,7 +1178,7 @@
           </div>
         </div>
 
-        <div class="masonry__item masonry__item--height2">
+        <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Contemporary_07.jpg" alt="FrenchTables Gallery Contemporary">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Contemporary_07.jpg" alt="FrenchTables Gallery Contemporary">
           </div>
@@ -1184,7 +1187,7 @@
           </div>
         </div>
 
-        <div class="masonry__item">
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_08.jpg">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Contemporary_08.jpg" alt="FrenchTables Gallery Contemporary">
           </div>
@@ -1193,7 +1196,7 @@
           </div>
         </div>
 
-        <div class="masonry__item">
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_09.jpg">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Contemporary_09.jpg" alt="FrenchTables Gallery Contemporary">
           </div>
@@ -1202,7 +1205,7 @@
           </div>
         </div>
 
-        <div class="masonry__item masonry__item--height2">
+        <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Contemporary_10.jpg" alt="FrenchTables Gallery Contemporary">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Contemporary_10.jpg" alt="FrenchTables Gallery Contemporary">
           </div>
@@ -1211,7 +1214,7 @@
           </div>
         </div>
 
-        <div class="masonry__item masonry__item--height2">
+        <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Classic_11.jpg" alt="FrenchTables Gallery Classic">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Classic_11.jpg" alt="FrenchTables Gallery Classic">
           </div>
@@ -1220,7 +1223,7 @@
           </div>
         </div>
 
-        <div class="masonry__item">
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_12.jpg">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Contemporary_12.jpg" alt="FrenchTables Gallery Contemporary">
           </div>
@@ -1229,7 +1232,7 @@
           </div>
         </div>
 
-        <div class="masonry__item">
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_13.jpg">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Contemporary_13.jpg" alt="FrenchTables Gallery Contemporary">
           </div>
@@ -1238,7 +1241,7 @@
           </div>
         </div>
 
-        <div class="masonry__item">
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Classic_14.jpg">
           <div class="masonry__image">
             <img src="../images/FrenchTables_Gallery_Classic_14.jpg" alt="FrenchTables Gallery Classic">
           </div>
@@ -1253,8 +1256,8 @@
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><div class="masonry">
-  <div class="masonry__item">
+          <pre class="brush: php"><div class="masonry js-lightbox">
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Classic_01.jpg">
    <div class="masonry__image"> 
       <img src="../images/FrenchTables_Gallery_Classic_01.jpg" alt="FrenchTables Gallery Classic">
     </div>
@@ -1263,7 +1266,7 @@
     </div>
   </div>
 
-  <div class="masonry__item">
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Classic_02.jpg">
     <div class="masonry__image">
      <img src="../images/FrenchTables_Gallery_Classic_02.jpg" alt="FrenchTables Gallery Classic">
     </div>
@@ -1272,7 +1275,7 @@
     </div>
   </div>
 
-  <div class="masonry__item masonry__item--height2">
+  <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Contemporary_03.jpg">
    <div class="masonry__image"> 
       <img src="../images/FrenchTables_Gallery_Contemporary_03.jpg" alt="FrenchTables Gallery Contemporary">
     </div>
@@ -1281,7 +1284,7 @@
     </div>
   </div>
 
-  <div class="masonry__item">
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_04.jpg" alt="FrenchTables Gallery Contemporary">
    <div class="masonry__image"> 
       <img src="../images/FrenchTables_Gallery_Contemporary_04.jpg" alt="FrenchTables Gallery Contemporary">
     </div>
@@ -1290,7 +1293,7 @@
     </div>
   </div>
 
-  <div class="masonry__item">
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_05.jpg" alt="FrenchTables Gallery Contemporary">
    <div class="masonry__image">
       <img src="../images/FrenchTables_Gallery_Contemporary_05.jpg" alt="FrenchTables Gallery Contemporary">
     </div>
@@ -1299,7 +1302,7 @@
     </div>
   </div>
 
-  <div class="masonry__item">
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_06.jpg" alt="FrenchTables Gallery Contemporary">
    <div class="masonry__image">
       <img src="../images/FrenchTables_Gallery_Contemporary_06.jpg" alt="FrenchTables Gallery Contemporary">
     </div>
@@ -1308,7 +1311,7 @@
     </div>
   </div>
 
-  <div class="masonry__item masonry__item--height2">
+  <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Contemporary_07.jpg" alt="FrenchTables Gallery Contemporary">
    <div class="masonry__image">
       <img src="../images/FrenchTables_Gallery_Contemporary_07.jpg" alt="FrenchTables Gallery Contemporary">
     </div>
@@ -1317,7 +1320,7 @@
     </div>
   </div>
 
-  <div class="masonry__item">
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_08.jpg">
    <div class="masonry__image">
       <img src="../images/FrenchTables_Gallery_Contemporary_08.jpg" alt="FrenchTables Gallery Contemporary">
     </div>
@@ -1326,7 +1329,7 @@
     </div>
   </div>
 
-  <div class="masonry__item">
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_09.jpg">
    <div class="masonry__image">
       <img src="../images/FrenchTables_Gallery_Contemporary_09.jpg" alt="FrenchTables Gallery Contemporary">
     </div>
@@ -1335,35 +1338,35 @@
     </div>
   </div>
 
-  <div class="masonry__item masonry__item--height2">
+  <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Contemporary_10.jpg" alt="FrenchTables Gallery Contemporary">
   <div class="masonry__image">  <img src="../images/FrenchTables_Gallery_Contemporary_10.jpg" alt="FrenchTables Gallery Contemporary">
 </div>    <div class="masonry__bg">
       <a class="icon-resize"></a>
     </div>
   </div>
 
-  <div class="masonry__item masonry__item--height2">
+  <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Classic_11.jpg" alt="FrenchTables Gallery Classic">
    <div class="masonry__image"> <img src="../images/FrenchTables_Gallery_Classic_11.jpg" alt="FrenchTables Gallery Classic">
    </div> <div class="masonry__bg">
       <a class="icon-resize"></a>
     </div>
   </div>
 
-  <div class="masonry__item">
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_12.jpg">
    <div class="masonry__image"> <img src="../images/FrenchTables_Gallery_Contemporary_12.jpg" alt="FrenchTables Gallery Contemporary"></div>
     <div class="masonry__bg">
       <a class="icon-resize"></a>
     </div>
   </div>
-
-  <div class="masonry__item">
+  
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_13.jpg">
    <div class="masonry__image"> <img src="../images/FrenchTables_Gallery_Contemporary_13.jpg" alt="FrenchTables Gallery Contemporary"></div>
     <div class="masonry__bg">
       <a class="icon-resize"></a>
     </div>
   </div>
 
-  <div class="masonry__item">
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Classic_14.jpg">
     <div class="masonry__image"><img src="../images/FrenchTables_Gallery_Classic_14.jpg" alt="FrenchTables Gallery Classic"></div>
     <div class="masonry__bg">
       <a class="icon-resize"></a>
@@ -2021,6 +2024,462 @@
       </div>
     </div>
   </div>
+
+  <div class="component--item" id="masonry">
+    <h2 class="component--title">masonry</h2>
+    <div class="component--demo">
+      <div class="masonry js-lightbox">
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Classic_01.jpg">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Classic_01.jpg" alt="FrenchTables Gallery Classic">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Classic_02.jpg">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Classic_02.jpg" alt="FrenchTables Gallery Classic">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Contemporary_03.jpg">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_03.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_04.jpg" alt="FrenchTables Gallery Contemporary">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_04.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_05.jpg" alt="FrenchTables Gallery Contemporary">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_05.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_06.jpg" alt="FrenchTables Gallery Contemporary">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_06.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Contemporary_07.jpg" alt="FrenchTables Gallery Contemporary">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_07.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_08.jpg">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_08.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_09.jpg">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_09.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Contemporary_10.jpg" alt="FrenchTables Gallery Contemporary">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_10.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Classic_11.jpg" alt="FrenchTables Gallery Classic">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Classic_11.jpg" alt="FrenchTables Gallery Classic">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_12.jpg">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_12.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_13.jpg">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Contemporary_13.jpg" alt="FrenchTables Gallery Contemporary">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+
+        <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Classic_14.jpg">
+          <div class="masonry__image">
+            <img src="../images/FrenchTables_Gallery_Classic_14.jpg" alt="FrenchTables Gallery Classic">
+          </div>
+          <div class="masonry__bg">
+            <a class="icon-resize"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <button class="show-code">Show/Hide Code</button>
+      <div class="component--source element-invisible">
+        <div class="component--html">
+          <h4 class="component--source--title">Markup</h4>
+          <pre class="brush: php"><div class="masonry js-lightbox">
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Classic_01.jpg">
+   <div class="masonry__image"> 
+      <img src="../images/FrenchTables_Gallery_Classic_01.jpg" alt="FrenchTables Gallery Classic">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Classic_02.jpg">
+    <div class="masonry__image">
+     <img src="../images/FrenchTables_Gallery_Classic_02.jpg" alt="FrenchTables Gallery Classic">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Contemporary_03.jpg">
+   <div class="masonry__image"> 
+      <img src="../images/FrenchTables_Gallery_Contemporary_03.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_04.jpg" alt="FrenchTables Gallery Contemporary">
+   <div class="masonry__image"> 
+      <img src="../images/FrenchTables_Gallery_Contemporary_04.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_05.jpg" alt="FrenchTables Gallery Contemporary">
+   <div class="masonry__image">
+      <img src="../images/FrenchTables_Gallery_Contemporary_05.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_06.jpg" alt="FrenchTables Gallery Contemporary">
+   <div class="masonry__image">
+      <img src="../images/FrenchTables_Gallery_Contemporary_06.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Contemporary_07.jpg" alt="FrenchTables Gallery Contemporary">
+   <div class="masonry__image">
+      <img src="../images/FrenchTables_Gallery_Contemporary_07.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_08.jpg">
+   <div class="masonry__image">
+      <img src="../images/FrenchTables_Gallery_Contemporary_08.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_09.jpg">
+   <div class="masonry__image">
+      <img src="../images/FrenchTables_Gallery_Contemporary_09.jpg" alt="FrenchTables Gallery Contemporary">
+    </div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Contemporary_10.jpg" alt="FrenchTables Gallery Contemporary">
+  <div class="masonry__image">  <img src="../images/FrenchTables_Gallery_Contemporary_10.jpg" alt="FrenchTables Gallery Contemporary">
+</div>    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item masonry__item--height2" data-src="../images/FrenchTables_Gallery_Classic_11.jpg" alt="FrenchTables Gallery Classic">
+   <div class="masonry__image"> <img src="../images/FrenchTables_Gallery_Classic_11.jpg" alt="FrenchTables Gallery Classic">
+   </div> <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_12.jpg">
+   <div class="masonry__image"> <img src="../images/FrenchTables_Gallery_Contemporary_12.jpg" alt="FrenchTables Gallery Contemporary"></div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+  
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Contemporary_13.jpg">
+   <div class="masonry__image"> <img src="../images/FrenchTables_Gallery_Contemporary_13.jpg" alt="FrenchTables Gallery Contemporary"></div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+
+  <div class="masonry__item" data-src="../images/FrenchTables_Gallery_Classic_14.jpg">
+    <div class="masonry__image"><img src="../images/FrenchTables_Gallery_Classic_14.jpg" alt="FrenchTables Gallery Classic"></div>
+    <div class="masonry__bg">
+      <a class="icon-resize"></a>
+    </div>
+  </div>
+</div>
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component--item" id="box-hero--width-slider">
+    <h2 class="component--title">box hero  width slider</h2>
+    <div class="component--demo">
+      <!-- box hero width slider -->
+      <div class="box-hero box-hero--width-slider ">
+        <div class="box-hero__inner js-slider">
+          <div class="box-hero__item">
+            <div class="box-hero__image">
+              <img src="../images/banner01.jpg" alt="">
+            </div>
+
+            <div class="box-hero__content">
+              <h2 class="box-hero__title">French Tables <br class="break-mobile" /> by <br class="break" /> Mark Alexander  Design Artistry</h2>
+              <div class="box-hero__link">
+                <a href="#" class="btn btn--longer btn--bg-white">VIEW TABLES</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-hero__item">
+            <div class="box-hero__image">
+              <img src="../images/banner02.jpg" alt="">
+            </div>
+
+            <div class="box-hero__content">
+              <h2 class="box-hero__title">French Tables <br class="break-mobile" /> by <br class="break" /> Mark Alexander  Design Artistry</h2>
+
+              <div class="box-hero__link">
+                <a href="#" class="btn btn--longer btn--bg-white">VIEW TABLES</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-hero__item">
+            <div class="box-hero__image">
+              <img src="../images/banner03.jpg" alt="">
+            </div>
+
+            <div class="box-hero__content">
+              <h2 class="box-hero__title">French Tables <br class="break-mobile" /> by <br class="break" /> Mark Alexander  Design Artistry</h2>
+
+              <div class="box-hero__link">
+                <a href="#" class="btn btn--longer btn--bg-white">VIEW TABLES</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-hero__item">
+            <div class="box-hero__image">
+              <img src="../images/banner04.jpg" alt="">
+            </div>
+
+            <div class="box-hero__content">
+              <h2 class="box-hero__title">French Tables <br class="break-mobile" /> by <br class="break" /> Mark Alexander  Design Artistry</h2>
+
+              <div class="box-hero__link">
+                <a href="#" class="btn btn--longer btn--bg-white">VIEW TABLES</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-hero__item">
+            <div class="box-hero__image">
+              <img src="../images/banner05.jpg" alt="">
+            </div>
+
+            <div class="box-hero__content">
+              <h2 class="box-hero__title">French Tables <br class="break-mobile" /> by <br class="break" /> Mark Alexander  Design Artistry</h2>
+
+              <div class="box-hero__link">
+                <a href="#" class="btn btn--longer btn--bg-white">VIEW TABLES</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-hero__item">
+            <div class="box-hero__image">
+              <img src="../images/banner06.jpg" alt="">
+            </div>
+
+            <div class="box-hero__content">
+              <h2 class="box-hero__title">French Tables <br class="break-mobile" /> by <br class="break" /> Mark Alexander  Design Artistry</h2>
+
+              <div class="box-hero__link">
+                <a href="#" class="btn btn--longer btn--bg-white">VIEW TABLES</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-element">
+          <i class="icon-scroll js-scroll-down"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <button class="show-code">Show/Hide Code</button>
+      <div class="component--source element-invisible">
+        <div class="component--html">
+          <h4 class="component--source--title">Markup</h4>
+          <pre class="brush: php"><!-- box hero width slider -->
+<div class="box-hero box-hero--width-slider ">
+  <div class="box-hero__inner js-slider">
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner01.jpg" alt="">
+      </div>
+
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">French Tables <br class="break-mobile" /> by <br class="break" /> Mark Alexander  Design Artistry</h2>
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--bg-white">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner02.jpg" alt="">
+      </div>
+
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">French Tables <br class="break-mobile" /> by <br class="break" /> Mark Alexander  Design Artistry</h2>
+
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--bg-white">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner03.jpg" alt="">
+      </div>
+
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">French Tables <br class="break-mobile" /> by <br class="break" /> Mark Alexander  Design Artistry</h2>
+
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--bg-white">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner04.jpg" alt="">
+      </div>
+
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">French Tables <br class="break-mobile" /> by <br class="break" /> Mark Alexander  Design Artistry</h2>
+
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--bg-white">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner05.jpg" alt="">
+      </div>
+
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">French Tables <br class="break-mobile" /> by <br class="break" /> Mark Alexander  Design Artistry</h2>
+
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--bg-white">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner06.jpg" alt="">
+      </div>
+
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">French Tables <br class="break-mobile" /> by <br class="break" /> Mark Alexander  Design Artistry</h2>
+
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--bg-white">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-element">
+    <i class="icon-scroll js-scroll-down"></i>
+  </div>
+</div>
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="footer text--small">
     <div class="container">
       <div class="footer__top">
@@ -2069,6 +2528,10 @@
   <script src="../js/lib/jquery.imagesloaded.min.js"></script>
   <script src="../js/lib/jquery.masonry.min.js"></script>
   <script src="../js/lib/slick.min.js"></script>
+  <script type="text/javascript" src="../js/lib/jquery.lightgallery.min.js"></script>
+  <script type="text/javascript" src="../js/lib/lg-share.min.js"></script>
+  <script type="text/javascript" src="../js/lib/lg-fullscreen.min.js"></script>
+  <script type="text/javascript" src="../js/lib/lg-zoom.min.js"></script>
   <script src="../js/script.js"></script>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shCore.js"></script>
