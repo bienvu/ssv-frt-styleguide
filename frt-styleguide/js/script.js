@@ -78,6 +78,14 @@
         }]
       });
 
+      //js lightbox where click to icon-resize
+      $('.icon-resize').click(function() {
+        $(this).parents(".js-lightbox").lightGallery({
+          mode: 'lg-fade',
+          getCaptionFromTitleOrAlt: false
+        });
+      });
+
       // slider box-gallery
       $('.js-slider--default').slick({
         asNavFor: '.js-slider--thumnail',
