@@ -109,14 +109,18 @@
 
   @if ($place == top) {
     border-top: $size solid $color;
+    border-bottom: none;
   }
   @else if($place == bottom) {
     border-bottom: $size solid $color;
+    border-top: none;
   }
   @else if($place == left) {
     border-left: $size solid $color;
+    border-right: none;
   }
   @else {
     border-right: $size solid $color;
+    border-left: none;
   }
 }
