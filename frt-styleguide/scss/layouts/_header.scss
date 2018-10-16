@@ -4,6 +4,8 @@
   z-index: 999;
   width: 100%;
   background: #fff;
+  top: 0;
+  left: 0;
 
   @media only screen and (min-width: 1240px) {
     height: 85px;
@@ -39,7 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 71px;
+    height: 65px;
       
     @media only screen and (min-width: 1240px) {
       padding: 0;
@@ -63,7 +65,7 @@
     overflow: auto;
     position: fixed;
     width: 100%;
-    height: calc(100% - 71px);
+    height: calc(100% - 65px);
     background: $white;
     padding-top: 5px;
 
