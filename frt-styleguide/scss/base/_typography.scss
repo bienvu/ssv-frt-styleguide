@@ -129,6 +129,12 @@ h6 {
       color: $link-color-hover;
     }
   }
+  
+  &--large {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    line-height: 1.2857;
+  }
 
   &--large {
     font-size: 14px;
