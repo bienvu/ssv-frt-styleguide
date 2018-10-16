@@ -116,7 +116,8 @@
 
       //scroll an element
       $('.js-scroll-down').click(function() {
-        var $next = $(this).parents('.box-hero').next().offset().top;
+        var $temp = $('.header').height();
+        var $next = $(this).parent().parent().next().offset().top - $temp;
         $('html, body').animate({
           scrollTop: $next
         }, 'slow');
@@ -135,6 +136,7 @@
       });
     });
   })();
+<<<<<<< HEAD
 
   
   // //Table responsive
@@ -147,5 +149,7 @@
   //     }
   //   }
   // };
+=======
+>>>>>>> 40f050a68fd0bd060af3065d3438526aac8b6227
 
 }(this, this.document, this.jQuery));
