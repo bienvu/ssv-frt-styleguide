@@ -11,32 +11,34 @@ h6,
   @include didot;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .96px;
-  line-height: 1.19;
-  margin-bottom: 13px;
+  letter-spacing: 1.2px;
+  line-height: 1.286;
+  // margin-bottom: 13px;
 }
 
 h1,
 %h1 {
   font-size: 22px;
-  line-height: 1.1812;
+  line-height: 1.1818;
+  letter-spacing: .66px;
 
   @media only screen and (min-width: 768px) {
     font-size: 26px;
-    line-height: 1.1875;
   }
 
   @media only screen and (min-width: 1024px) {
     font-size: 32px;
+    line-height: 1.1875;
+    letter-spacing: .96;
   }
 }
 
 h2,
 %h2 {
   font-size: 20px;
-  line-height: 1.286;
-  margin-bottom: 18px;
-  letter-spacing: .84px;
+  line-height: 1.2;
+  letter-spacing: .6px;
+  // margin-bottom: 18px;
 
   @media only screen and (min-width: 1024px) {
     font-size: 24px;
@@ -44,6 +46,8 @@ h2,
 
   @media only screen and (min-width: 1024px) {
     font-size: 28px;
+    letter-spacing: 1.286px;
+    letter-spacing: .84px;
   }
 }
 
@@ -65,26 +69,45 @@ h4 {
 
 h5 {
   font-size: 14px;
+  line-height: 1.2857;
+  letter-spacing: 1.4px;
 }
 
 h6 {
   font-size: 12px;
-  margin-bottom: 19px;
+  line-height: initial;
+  letter-spacing: 1.2px;
+  // margin-bottom: 19px;
+}
+
+%h5 {
+  font-size: 14px;
+  line-height: 1.2857;
+  letter-spacing: 1.4px;
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: initial;
+  }
 }
 
 .text--bold {
+  // gotham medium
   @include gotham;
   font-weight: 400;
 }
 
 .text--small {
+  // gotham book
   @include gotham;
   font-weight: 500;
-  letter-spacing: 1.2px;
 }
 
-.text--long {
-  letter-spacing: 1.68px;
+.text--tiny {
+  font-size: 10px;
+  line-height: initial;
+  letter-spacing: 1px;
 }
 
 %link,
@@ -94,21 +117,27 @@ h6 {
   text-decoration: none;
   transition: all .3s ease;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.2px;
   display: inline-block;
-  white-space: nowrap;
-  line-height: 1.286;
+  line-height: initial;
 
   @media only screen and(min-width: 1024px) {
-    font-size: 12px;
-    letter-spacing: 1.2px;
+    &:active,
+    &:hover {
+      color: $link-color-hover;
+    }
   }
 
-  &:active,
-  &:hover {
-    color: $link-color-hover;
+  &--large {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    line-height: 1.2857;
+  }
+
+  &--read-more {
+    line-height: 2;
   }
 
   &--white {
@@ -127,6 +156,7 @@ a {
 
 p {
   margin-bottom: 16px;
+  letter-spacing: 0;
 }
 
 em {
@@ -156,9 +186,7 @@ small {
 }
 
 br {
-  @media only screen and (min-width: 768px) {
-    display: inline;
-  }
+
 }
 
 abbr {

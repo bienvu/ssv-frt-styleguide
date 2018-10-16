@@ -48,7 +48,7 @@
   &__form {
     input[type='submit'] {
       @extend .btn;
-      @extend .btn--border-black;
+      @extend .btn--border-primary;
     }
     
     .form-item {
