@@ -136,20 +136,4 @@
       });
     });
   })();
-<<<<<<< HEAD
-
-  
-  // //Table responsive
-  // Drupal.behaviors.tableResponsive = {
-  //   attach: function (context, settings) {
-  //     var $table = $('table', context);
-  //     if ($table.length &&
-  //       !$table.parent().hasClass('table-responsive')) {
-  //       $table.not($table.find('table')).wrap('<div class="table-responsive"></div>');
-  //     }
-  //   }
-  // };
-=======
->>>>>>> 40f050a68fd0bd060af3065d3438526aac8b6227
-
 }(this, this.document, this.jQuery));
