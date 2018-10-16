@@ -18,32 +18,21 @@
 
     @media only screen and (min-width: 768px) {
       text-align: center;
-      margin-left: -19px;
-    }
-
-    &__sub {
-      .btn {
-        display: none;
-      }
-    }
-
-
-    .btn {
-      padding: 0;
-      width: 100%;
-
-      @media only screen and (min-width: 768px) {
-      padding: 0 22px;
-      width: auto;
-      margin: 3px;
-
-      }
     }
   }
 
   &--2but {
-    .box-text__link__sub {
-      display: inline-block;
+    .box-text__link {
+      @media only screen and (min-width: 768px) {
+        text-align: left;
+        margin-left: -10px;
+        
+      }
+    }
+    .btn {
+      @media only screen and (min-width: 768px) {
+        margin: 0 10px;
+      }
     }
   }
 }

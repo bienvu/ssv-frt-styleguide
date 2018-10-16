@@ -136,16 +136,10 @@
     .box-image-text__content {
       width: 100%;
     }
-
-  &__button {
-    display: none;
-
-    @media only screen and (min-width: 768px) {
-      display: block;
-    }
-  }  
-
+    
     .btn {
+      display: none;
+
       @media only screen and (min-width: 768px) {
         margin-right: 26px;
       }
