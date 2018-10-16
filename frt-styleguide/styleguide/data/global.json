@@ -94,6 +94,10 @@
       "group":"components"
     },
     {
+      "name":"box-hero",
+      "group":"components"
+    },
+    {
       "name":"list-image",
       "group":"components"
     },
