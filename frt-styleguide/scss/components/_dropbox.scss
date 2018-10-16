@@ -26,7 +26,7 @@
     }
 
     .box-image-text__image {
-      margin: 0;
+      margin-bottom: 20px;
 
       img {
         width: 100%;
@@ -37,17 +37,8 @@
     .box-image-text__content {
       width: 100%;
       padding-right: 0;
-      
-      .morecontent span {
-        display: none;
-      }
-      .morelink {
-          display: block;
-      }
 
       p {
-        margin-bottom: 0;
-
         @media only screen and (min-width: 768px) {
           margin-bottom: 10px;
         }
@@ -56,14 +47,6 @@
       @media only screen and (min-width: 768px) {
         width: 50%;
         padding-right: 112px;
-      }
-    }
-
-    .box-image-text__expand {
-      display: block;
-
-      @media only screen and (min-width: 768px) {
-        display: none;
       }
     }
   }
@@ -76,7 +59,7 @@
     
     .box-image-text__grid {
       display: flex;
-      margin: 0 -2.5px;
+      margin: 0 -2.5px 20px -2.5px;
 
       @media only screen and (min-width: 768px) {
         display: flex;
@@ -109,14 +92,6 @@
     .box-image-text__content {
       width: 100%;
     }
-
-    .box-image-text__expand {
-      display: block;
-
-      @media only screen and (min-width: 768px) {
-        display: none;
-      }
-    }
   }
 
 
@@ -128,11 +103,11 @@
 
     .box-image-text__grid {
       display: flex;
-      margin: 0 -2.5px;
+      margin: 0 -2.5px 20px -2.5px;
 
       @media only screen and (min-width: 768px) {
         display: flex;
-        margin: 0 -5px;
+        margin: 0 -5px 20px -5px;
       }
     }
 
@@ -162,16 +137,39 @@
       width: 100%;
     }
 
-    .box-image-text__expand {
-      display: block;
+  &__button {
+    display: none;
 
-      @media only screen and (min-width: 768px) {
-        display: none;
-      }
+    @media only screen and (min-width: 768px) {
+      display: block;
     }
+  }  
 
     .btn {
-      margin-right: 26px;
+      @media only screen and (min-width: 768px) {
+        margin-right: 26px;
+      }
+
+      margin-bottom: 10px;
     }
+  }
+}
+
+.read-more {
+  display: none;
+  margin-top: 16px;
+  
+  @media only screen and (min-width: 768px) {
+    display: block;
+  }
+
+  &.is-show {
+    display: block;
+  }
+}
+
+.js-read-more {
+  @media only screen and (min-width: 768px) {
+    display: none;
   }
 }
