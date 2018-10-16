@@ -1,4 +1,3 @@
-// Navigation.
 .main-menu {
   @media only screen and (min-width: 1240px) {
     display: flex;
@@ -37,7 +36,6 @@
       > li {
         border-bottom: none;
 
-        // fix height: li 100% for hover
         @media only screen and (min-width: 1240px) {
           height: 100%;
           display: flex;
