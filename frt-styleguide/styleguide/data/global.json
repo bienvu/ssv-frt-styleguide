@@ -112,6 +112,10 @@
     {
       "name":"masonry",
       "group":"components"
+    },
+    {
+      "name":"box-hero--width-slider",
+      "group":"components"
     }
   ]
 }

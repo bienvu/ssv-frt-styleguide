@@ -40,10 +40,8 @@
         e.preventDefault();
         if($(this).hasClass('is-show')) {
           $(this).removeClass('is-show');
-          $(this).children('.menu').slideUp();
         }else {
           $(this).addClass('is-show');
-          $(this).children('.menu').slideDown();
         }
       });
 
@@ -64,7 +62,7 @@
         return false;
       });
 
-      //banner 
+      //slick for box-hero
       $('.js-slider').slick({
         dots: true,
         autoplay: true,

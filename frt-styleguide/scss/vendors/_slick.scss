@@ -109,20 +109,20 @@
   cursor: pointer;
 
   &.slick-next {
-    right:-10px;
+    right: 10px;
 
     &:before {
-      content: "\e908";
-      font-size: 60px;
+      content: "\e90a";
+      font-size: 34px;
     }
   }
 
   &.slick-prev {
-    left: -10px;
+    left: 10px;
 
     &:before {
-      content: "\e909";
-      font-size: 60px;
+      content: "\e90b";
+      font-size: 34px;
     }
   }
 
