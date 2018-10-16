@@ -116,23 +116,13 @@
 
       //scroll an element
       $('.js-scroll-down').click(function() {
-        var $next = $(this).parents('.box-hero').next().offset().top;
+        var $temp = $('.header').height();
+        var $next = $(this).parent().parent().next().offset().top - $temp;
         $('html, body').animate({
           scrollTop: $next
         }, 'slow');
       });
     });
   })();
-  
-  // //Table responsive
-  // Drupal.behaviors.tableResponsive = {
-  //   attach: function (context, settings) {
-  //     var $table = $('table', context);
-  //     if ($table.length &&
-  //       !$table.parent().hasClass('table-responsive')) {
-  //       $table.not($table.find('table')).wrap('<div class="table-responsive"></div>');
-  //     }
-  //   }
-  // };
 
 }(this, this.document, this.jQuery));

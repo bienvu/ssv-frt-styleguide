@@ -17,14 +17,12 @@
   <body>
     {% block header %}
       {% include '../layouts/header.twig' %}
-      {% include '../layouts/navigation.twig' %}
     {% endblock %}
     <main>
-      {% include '../components/box-hero--width-slider.twig' %}
-      {% include '../components/box-image-text.twig' %}
+      {% include '../components/box-hero.twig' %}
+      {% include '../components/box-filter.twig' %}
+      {% include '../components/list-image1.twig' %}
       {% include '../components/list-image.twig' %}
-      {% include '../components/cta.twig' %}
-      {% include '../components/box-text.twig' %}
     </main>
     {% block content %}
     {% endblock %}
