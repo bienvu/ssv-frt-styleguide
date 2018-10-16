@@ -1,0 +1,10 @@
+.lg-fullscreen {
+    &:after {
+        content: "\e912";
+        font-size: 30px;
+
+        .lg-fullscreen-on & {
+            content: "\e914";
+        }
+    }
+}

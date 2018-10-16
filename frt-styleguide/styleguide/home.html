@@ -16,70 +16,134 @@
 
 <body>
   <div class="header">
-    <div class="header__logo">
-      <a href="#" class="logo">
-        <img src="../images/logo.svg">
-      </a>
-      <span class="button-menu">
-          <span class="button-menu__row"></span>
-      <span class="button-menu__row"></span>
-      <span class="button-menu__row"></span>
-      </span>
-    </div>
-
-    <div class="header__menu">
-      <ul class="main-menu">
-        <li class="menu-extend">
-          <a href="#">TABLES</a>
-          <ul class="menu">
-            <li><a href="#">Rectangle Dining Tables</a>
-            </li>
-            <li><a href="#">Round Dining Tables</a>
-            </li>
-            <li><a href="#">Extension Tables</a>
-            </li>
-            <li><a href="#">Coffee Tables</a>
-            </li>
-          </ul>
-        </li>
-
-        <li><a href="#">DINING CHAIRS</a>
-        </li>
-        <li><a href="#">SIDEBOARDS</a>
-        </li>
-        <li><a href="#">WORK</a>
-        </li>
-
-        <li class="menu-extend">
-          <a href="#">ABOUT</a>
-          <ul class="menu">
-            <li><a href="#">French Tables</a>
-            </li>
-            <li><a href="#">Design Process</a>
-            </li>
-          </ul>
-        </li>
-
-        <li><a href="#">CONTACT</a>
-        </li>
-        <li><a class="book-link" href="#">BOOK A CONSULTATION</a>
-        </li>
-      </ul>
-
-      <div class="box-search">
-        <div class="form-search">
-          <form action="#">
-            <div class="form-item">
-              <input type="text" placeholder="SEARCH">
-            </div>
-          </form>
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header__logo">
+          <a href="#" class="logo">
+            <img src="../images/logo.svg">
+          </a>
+          <span class="menu-bars">
+          <span class="menu-bars__row"></span>
+          <span class="menu-bars__row"></span>
+          <span class="menu-bars__row"></span>
+          </span>
         </div>
 
-        <a href="#" class="icon-search"></a>
+        <div class="header__menu">
+          <ul class="main-menu main-menu--has-child">
+            <li class="menu-expend">
+              <a href="#">TABLES</a>
+              <ul class="menu">
+                <li><a href="#">Rectangle Dining Tables</a>
+                </li>
+                <li><a href="#">Round Dining Tables</a>
+                </li>
+                <li><a href="#">Extension Tables</a>
+                </li>
+                <li><a href="#">Coffee Tables</a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#">DINING CHAIRS</a>
+            </li>
+            <li><a href="#">SIDEBOARDS</a>
+            </li>
+            <li><a href="#">WORK</a>
+            </li>
+
+            <li class="menu-expend">
+              <a href="#">ABOUT</a>
+              <ul class="menu">
+                <li><a href="#">French Tables</a>
+                </li>
+                <li><a href="#">Design Process</a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#">CONTACT</a>
+            </li>
+            <li><a class="book-link btn btn--long btn--border-primary-v2" href="https://www.frenchtables/contact/">BOOK A CONSULTATION</a>
+            </li>
+          </ul>
+
+          <div class="box-search">
+            <form action="#" class="form-search">
+              <div class="form-item">
+                <input type="text" placeholder="SEARCH">
+              </div>
+            </form>
+
+            <div class="item-icon"><i href="#" class="icon-search"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <main>
+    <!-- <div class="box-hero box-hero--width-slider ">
+  <div class="box-hero__inner js-slider">
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner01.jpg" alt="">
+      </div>
+
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">French Tables <br /> by <br /> Mark Alexander <br />  Design Artistry</h2>
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner02.jpg" alt="">
+      </div>
+
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br />  DESIGN ARTISTRY</h2>
+
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-hero__item">
+      <div class="box-hero__image">
+        <img src="../images/banner03.jpg" alt="">
+      </div>
+
+      <div class="box-hero__content">
+        <h2 class="box-hero__title">FRENCH TABLES <br /> BY <br /> MARK ALEXANDER <br />  DESIGN ARTISTRY</h2>
+
+        <div class="box-hero__link">
+          <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+        </div>
+      </div>
+<!-- box hero no slider -->
+    <div class="box-hero">
+      <div class="box-hero__item">
+        <div class="box-hero__image">
+          <img src="../images/banner01.jpg" alt="">
+        </div>
+
+        <div class="box-hero__content">
+          <h2 class="box-hero__title">Rectangle <br /> Dining Tables</h2>
+          <div class="box-hero__link">
+            <a href="#" class="btn btn--longer btn--border">VIEW TABLES</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-element">
+        <i class="icon-scroll js-scroll-down"></i>
+      </div>
+    </div>
+    -->
     <div class="box-image-text">
       <div class="container">
         <div class="box-image-text__wrap">
@@ -270,6 +334,7 @@
   <script src="../js/lib/jquery.imagesloaded.min.js"></script>
   <script src="../js/lib/jquery.masonry.min.js"></script>
   <script src="../js/lib/slick.min.js"></script>
+  <script src="../js/lib/jquery.lightgallery.min.js"></script>
   <script src="../js/script.js"></script>
 </body>
 
