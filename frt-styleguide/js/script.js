@@ -79,7 +79,10 @@
       });
 
       //lightbox gallery masonry
-      $(".masonry").lightGallery();
+      $(".js-lightbox").lightGallery({
+        mode: 'lg-fade',
+        getCaptionFromTitleOrAlt: false
+      });
 
       // slider box-gallery
       $('.js-slider--default').slick({
