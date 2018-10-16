@@ -62,7 +62,7 @@
         return false;
       });
 
-      //banner 
+      //slick for box-hero
       $('.js-slider').slick({
         dots: true,
         autoplay: true,
