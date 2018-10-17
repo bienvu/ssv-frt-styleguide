@@ -102,26 +102,6 @@
   }
 
   &__link {
-    a {
-      display: block;
-      margin-bottom: 10px;
-
-      @media only screen and (min-width: 768px) {
-        margin-right: 29px;
-        display: inline-block;
-      }
-
-      @media only screen and (min-width: 768px) {
-        display: block;
-        margin-bottom: 10px;
-      }
-
-      @media only screen and (min-width: 1366px) {
-        margin-right: 29px;
-        display: inline-block;
-      }
-    }
-
     .icon-share {
       &:before {
         content: "\e905";

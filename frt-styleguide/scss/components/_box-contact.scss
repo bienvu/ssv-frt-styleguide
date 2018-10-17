@@ -76,7 +76,7 @@
   &__form {
     input[type='submit'] {
       @extend .btn;
-      @extend .btn--border-primary;
+      @extend .btn--border-black;
     }
 
     p {
