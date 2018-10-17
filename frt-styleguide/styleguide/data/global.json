@@ -124,6 +124,14 @@
     {
       "name":"article-detail",
       "group":"components"
+    },
+    {
+      "name":"modifier-box-text",
+      "group":"components"
+    },
+    {
+      "name":"thank-you",
+      "group":"components"
     }
   ]
 }
