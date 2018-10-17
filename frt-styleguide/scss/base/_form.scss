@@ -1,26 +1,3 @@
-form{
-  display: flex;
-  flex-direction: column;
-  
-  .form-list {
-    margin-bottom: 44px;
-  }
-
-  .form-item {
-    display: flex;
-    margin-bottom: 11px;
-
-    label {
-      width: 100%;
-      padding: 10px 0;
-      text-transform: capitalize;
-      display: block;
-      margin-bottom: 20px;
-      font-weight: normal;
-    }
-  }
-}
-
 button,
 input[type='submit'] {
   @extend .btn;
@@ -44,34 +21,93 @@ input[type='submit'] {
   line-height: 1.8571;
   letter-spacing: 0;
 
-  &--oversize {
-    padding: 0 0 15px 0;
+  &::-ms-clear {
+    display: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: lighten($text-color, 10%);
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: lighten($text-color, 10%);
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: lighten($text-color, 10%);
+    opacity: 1;
   }
 
   &:focus {
     box-shadow: none;
+    outline: 0 none;
   }
 
-  &::placeholder {
-    color: $text-color;
+  &.error {
+    border-color: $red;
+    color: $red;
+
+    &::-webkit-input-placeholder {
+      color: $red;
+    }
+
+    &::-moz-placeholder {
+      color: $red;
+    }
+
+    &:-ms-input-placeholder {
+      color: $red;
+    }
+
+    &:-moz-placeholder {
+      color: $red;
+    }
+
+    &:focus {
+      box-shadow: 0 0 rem(5px) rgba($red, 1);
+      outline: 0 none;
+    }
   }
 
-  &:disabled {
-    background: rgba($text-color, .5);
+  &[disabled] {
+    cursor: not-allowed;
   }
 }
 
 input[type="text"],
-input[type="tel"] {
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="search"] {
   @extend %form-text;
+}
 
-  &.error {
-    background: rgba(red,.8);
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-wrap {
+  overflow: hidden;
+  width: 100%;
+
+  input {
+    width: calc(100% + 30px);
+    padding-right: 30px;
   }
 }
 
 textarea {
   @extend %form-text;
+  transition: .5s;
+  height: 25px;
+  resize: none;
+
+  &:focus {
+    min-height: 75px;
+  }
 }
 
 select {
@@ -83,4 +119,128 @@ select {
   text-align-last: center;
   color: $text-color;
   background: $white;
+}
+
+%invisible,
+.invisible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: rem(1px);
+  margin: rem(-1px);
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: rem(1px);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  @extend %invisible;
+
+  + label{
+    cursor: pointer;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 2px 0 2px 23px;
+
+    &:focus,
+    &:hover,
+    &:active{
+      border-color: $primary-color;
+    }
+
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 14px;
+      height: 14px;
+      border: 1px solid #c6c9cc;
+    }
+
+    &:after {
+      content: "";
+      left: 2.5px;
+      opacity: 0;
+      position: absolute;
+      top: 3px;
+      transition: opacity .3s ease;
+    }
+  }
+
+  &:checked {
+    & + label {
+      &:before {
+        border-color: $primary-color;
+      }
+    }
+  }
+}
+
+// Checkbox and radio button.
+input[type="radio"] {
+  + label {
+    &:before {
+      border-radius: 50%;
+    }
+  }
+
+  &:checked {
+    & + label {
+      &:after {
+        width: 14px;
+        height: 14px;
+        opacity: 1;
+        background: $primary-color;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+input[type="checkbox"] {
+  &:checked {
+    & + label {
+      &:before {
+        background-color: $primary-color;
+        border-color: $primary-color;
+      }
+
+      &:after {
+        opacity: 1;
+        @extend %icons;
+        // @extend .icon-check:before;
+        color: $white;
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+
+  .form-list {
+    margin-bottom: 44px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-item {
+    display: flex;
+    margin-bottom: 11px;
+
+    label {
+      width: 100%;
+      text-transform: capitalize;
+      display: block;
+      font-weight: normal;
+    }
+  }
 }

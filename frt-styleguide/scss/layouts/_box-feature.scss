@@ -7,7 +7,7 @@
     text-align: left;
     padding-top: 30px;
     margin-bottom: 121px;
-  } 
+  }
 
   &__wrap {
     @media only screen and (min-width: 768px) {
@@ -46,11 +46,11 @@
   }
 
   &__form {
-    input[type='submit'] {
-      @extend .btn;
-      @extend .btn--border-primary;
-    }
-    
+    // input[type='submit'] {
+    //   @extend .btn;
+    //   @extend .btn--border-black;
+    // }
+
     .form-item {
       margin: 0 auto;
 
@@ -69,7 +69,8 @@
         }
       }
 
-      input[type="text"] {
+      input[type="text"],
+      input[type="email"] {
         width: 300px;
         margin-bottom: 9px;
 
@@ -79,7 +80,7 @@
 
         @media only screen and (min-width: 768px) {
           width: 416px;
-        }    
+        }
       }
 
       &:nth-last-of-type(2) {
@@ -117,7 +118,7 @@
 }
 
 .list-icon {
-  
+
   display: flex;
   justify-content: center;
 
@@ -128,10 +129,6 @@
 
   li {
     margin: 0 11px 0 0;
-
-    a {
-      font-size: 20px;
-    }
   }
 
   .icon-facebook {

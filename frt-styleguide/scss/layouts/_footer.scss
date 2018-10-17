@@ -1,6 +1,10 @@
 .footer {
   text-align: center;
 
+  .sub-menu {
+    display: none;
+  }
+
   .container {
     @media only screen and (max-width: 480px) {
       width: 100%;
@@ -9,7 +13,7 @@
     }
   }
 
-  &__top { 
+  &__top {
     margin-bottom: 36px;
 
     @media only screen and (min-width: 1024px) {
@@ -31,7 +35,7 @@
       }
     }
   }
-  
+
   &__bottom {
     margin-bottom: 28px;
 
@@ -92,13 +96,13 @@
 
         &.symbol-change {
           display: none;
-          
+
           @media only screen and (min-width: 1024px) {
             &.symbol-change {
               display: inline;
             }
           }
-        }      
+        }
       }
     }
   }
@@ -113,7 +117,7 @@
 
     img {
       width: 213px;
-      
+
       @media only screen and (min-width: 1024px) {
         width: 156px;
       }
@@ -143,14 +147,5 @@
       right: -8px;
       transform: translateY(-50%);
     }
-  }
-}
-
-.breakpoint {
-  margin-bottom: 16px;
-  display: inline-block;
-
-  @media only screen and (min-width: 1024px) {
-    margin: 0;
   }
 }

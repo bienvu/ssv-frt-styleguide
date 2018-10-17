@@ -7,13 +7,12 @@ h3,
 h4,
 h5,
 h6,
-%typography {
+%heading {
   @include didot;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   line-height: 1.286;
-  // margin-bottom: 13px;
 }
 
 h1,
@@ -21,8 +20,8 @@ h1,
   font-size: 22px;
   line-height: 1.1818;
   letter-spacing: .66px;
-  margin-bottom: 45px;
-  
+  margin-bottom: 31px;
+
   @media only screen and (min-width: 768px) {
     font-size: 26px;
   }
@@ -30,7 +29,8 @@ h1,
   @media only screen and (min-width: 1024px) {
     font-size: 32px;
     line-height: 1.1875;
-    letter-spacing: .96;
+    letter-spacing: .96px;
+    margin-bottom: 32px;
   }
 }
 
@@ -39,16 +39,17 @@ h2,
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: .6px;
-  // margin-bottom: 18px;
+  margin-bottom: 13px;
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     font-size: 24px;
   }
 
   @media only screen and (min-width: 1024px) {
     font-size: 28px;
-    letter-spacing: 1.286px;
+    line-height: 1.2857;
     letter-spacing: .84px;
+    margin-bottom: 19px;
   }
 }
 
@@ -78,7 +79,11 @@ h6 {
   font-size: 12px;
   line-height: initial;
   letter-spacing: 1.2px;
-  // margin-bottom: 19px;
+  margin-bottom: 13px;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
 }
 
 %h5 {
@@ -130,7 +135,7 @@ h6 {
       color: $link-color-hover;
     }
   }
-  
+
   &--large {
     font-size: 14px;
     letter-spacing: 1.4px;
@@ -192,8 +197,10 @@ small {
   font-size: smaller;
 }
 
-br {
-
+p br {
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 abbr {

@@ -20,10 +20,12 @@
     {% endblock %}
     <main>
       {% include '../components/box-hero.twig' %}
+      {% include '../components/article-detail.twig' %}
     </main>
     {% block content %}
     {% endblock %}
     {% block footer %}
+      {% include '../layouts/box-feature.twig' %}
       {% include '../layouts/footer.twig' %}
     {% endblock %}
     {% block footer_scripts %}

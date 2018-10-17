@@ -4,6 +4,8 @@
   z-index: 999;
   width: 100%;
   background: #fff;
+  top: 0;
+  left: 0;
 
   @media only screen and (min-width: 1240px) {
     height: 85px;
@@ -39,8 +41,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 71px;
-      
+    height: 65px;
+
     @media only screen and (min-width: 1240px) {
       padding: 0;
     }
@@ -63,7 +65,7 @@
     overflow: auto;
     position: fixed;
     width: 100%;
-    height: calc(100% - 71px);
+    height: calc(100% - 65px);
     background: $white;
     padding-top: 5px;
 
@@ -76,7 +78,7 @@
       min-width: initial;
       overflow: initial;
     }
-  
+
 
     .main-menu {
       margin-bottom: 35px;
@@ -166,13 +168,12 @@
 
       input[type="text"] {
         @extend %link;
-        @extend %form-text--oversize;
         cursor: auto;
-        padding-right: 20px;
+        padding: 0 20px 15px 0;
       }
     }
   }
-  
+
   .item-icon {
     position: absolute;
     right: 20px;
@@ -211,7 +212,7 @@
     background: $primary-color;
     height: 3px;
     transition: .2s;
-    
+
     &:nth-child(2) {
       height: 2px;
     }
