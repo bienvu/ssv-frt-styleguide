@@ -1,10 +1,8 @@
 .box-filter {
   &__wrapper {
     position: relative;
-    @extend %typography;
-    @extend %h2;
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -12,24 +10,9 @@
   }
 
   &__title {
-    @extend %link;
-    width: 100%;
     padding: 20px;
     position: relative;
     margin: 0;
-
-    @media only screen and (min-width: 1024px) {
-      font-family: inherit;
-      font-size: inherit;
-      font-weight: inherit;
-      color: inherit;
-      line-height: inherit;
-      letter-spacing: inherit;
-      width: auto;
-      padding: 0;
-      cursor: none;
-      user-select: none
-    }
 
     &:after {
       @extend %icons;
@@ -40,7 +23,7 @@
       top: 50%;
       transform: translateY(-50%);
 
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 768px) {
         display: none;
       }
     }
@@ -51,14 +34,13 @@
     top: 100%;
     left: 0;
     background: #fff;
-    width: 100%;
     overflow: hidden;
 
     &.is-show {
       display: none;
     }
 
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 768px) {
       display: flex !important;
       position: static;
       justify-content: flex-end;
@@ -69,31 +51,17 @@
         margin-left: none;
       }
 
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 768px) {
         margin-left: 20px;
       }
 
-      @media only screen and (min-width: 1366px) {
+      @media only screen and (min-width: 1280px) {
         margin-left: 30px;
       }
 
-      .btn {
-        text-align: left;
-        padding: 0 20px;
-        width: 100%;
-
-        @media only screen and (min-width: 1024px) {
-          border: 1px solid $primary-color;
-          text-align: center;
-          
-          &:hover {
-            border: 1px solid $second-color;
-          }
-        }
-
-        &.active {
-          color: $second-color;
-          background: $primary-color;
+      a {
+        @media only screen and (max-width: 1023px) {
+          min-width: 168px;
         }
       }
     }

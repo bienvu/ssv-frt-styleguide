@@ -7,7 +7,7 @@
     text-align: left;
     padding-top: 30px;
     margin-bottom: 121px;
-  } 
+  }
 
   &__wrap {
     @media only screen and (min-width: 768px) {
@@ -46,11 +46,11 @@
   }
 
   &__form {
-    input[type='submit'] {
-      @extend .btn;
-      @extend .btn--border-black;
-    }
-    
+    // input[type='submit'] {
+    //   @extend .btn;
+    //   @extend .btn--border-black;
+    // }
+
     .form-item {
       margin: 0 auto;
 
@@ -80,7 +80,7 @@
 
         @media only screen and (min-width: 768px) {
           width: 416px;
-        }    
+        }
       }
 
       &:nth-last-of-type(2) {
@@ -118,7 +118,7 @@
 }
 
 .list-icon {
-  
+
   display: flex;
   justify-content: center;
 

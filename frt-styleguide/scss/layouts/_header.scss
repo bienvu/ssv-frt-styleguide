@@ -42,7 +42,7 @@
     align-items: center;
     justify-content: space-between;
     height: 65px;
-      
+
     @media only screen and (min-width: 1240px) {
       padding: 0;
     }
@@ -78,7 +78,7 @@
       min-width: initial;
       overflow: initial;
     }
-  
+
 
     .main-menu {
       margin-bottom: 35px;
@@ -168,13 +168,12 @@
 
       input[type="text"] {
         @extend %link;
-        @extend %form-text--oversize;
         cursor: auto;
-        padding-right: 20px;
+        padding: 0 20px 15px 0;
       }
     }
   }
-  
+
   .item-icon {
     position: absolute;
     right: 20px;
@@ -213,7 +212,7 @@
     background: $primary-color;
     height: 3px;
     transition: .2s;
-    
+
     &:nth-child(2) {
       height: 2px;
     }
