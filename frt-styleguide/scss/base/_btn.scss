@@ -9,7 +9,7 @@
   box-shadow: none;
   text-transform: uppercase;
   outline: none;
-  padding: 13px 22px 12px;
+  padding: 14px 22px 13px;
   text-align: center;
   text-shadow: none;
   transition: all .3s ease;
@@ -44,7 +44,7 @@
   &--border-white {
     border: 1px solid $white;
     color: $white;
-    padding: 12px 22px 11px;
+    padding: 13px 22px 12px;
 
     @media only screen and (min-width: 768px) {
       &:hover {
@@ -57,7 +57,7 @@
   &--border-black {
     border: 1px solid $primary-color;
     color: $primary-color;
-    padding: 12px 22px 11px;
+    padding: 13px 22px 12px;
 
     @media only screen and (min-width: 768px) {
       &:hover {
@@ -68,18 +68,20 @@
   }
 
   &--bg-white {
-    border: 1px solid $white;
-    color: $white;
-    
-    @media only screen and (min-width: 768px) {
-      background: $white;
-      color: $primary-color;
-      border: none;
+    background: $white;
+    color: $primary-color;
+    border: none;
 
-      &:hover {
-        background: $primary-color;
-        color: $white;
-      }
+    &:hover {
+      background: $primary-color;
+      color: $white;
+    }
+
+    @media only screen and (max-width: 767px) {
+      border: 1px solid $white;
+      color: $white;
+      padding: 12px 22px 11px;
+      background: transparent;
     }
   }
 

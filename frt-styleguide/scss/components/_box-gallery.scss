@@ -23,10 +23,26 @@
   }
 
   &__thumnail {
-    height: 143px;
+    height: 93px;
     overflow: hidden;
+    
+    @media only screen and (min-width: 768px) {
+      height: 120px;
+    }
 
-    &__item {
+    @media only screen and (min-width: 1024px) {
+      height: 143px;
+
+      .slick-arrow {
+        display: none !important;
+      }
+
+      &:hover .slick-arrow {
+        display: inline !important;
+      }
+    }
+
+    .box-gallery__item {
       padding: 10px 5px;
       overflow: hidden;
       height: 100%;
@@ -34,21 +50,6 @@
       @media only screen and (min-width: 768px) {
         padding: 20px 11.5px;
         position: relative;
-      }
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-        max-width: initial;
-
-        @media only screen and (min-width: 768px) {
-          height: 100%;
-          width: auto;
-        }
       }
     }
 
@@ -62,40 +63,71 @@
       margin: 0 -5px;
 
       @media only screen and (min-width: 768px) {
-        margin: 0 0 0 -11.5px;
+        margin: 0 -11.5px;
       }
     }
   }
 
   &__slider {
     overflow: hidden;
+    height: 229px;
 
     @media only screen and (min-width: 768px) {
       height: 435px;
     }
-    &__item {
+    .box-gallery__item {
       @media only screen and (min-width: 768px) {
         overflow: hidden;
         position: relative;
         height: 100%;
         overflow: hidden;
-      }
-      img {
-        @media only screen and (min-width: 768px) {
-          max-width: initial;
-          position: absolute;
-          height: 100%;
-          width: auto;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+
+        &:hover .icon-resize{
+          display: block;
+          cursor: pointer;
         }
       }
     }
   }
   
+  &__image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+
+
+    @media only screen and (min-width: 768px) {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  img {
+    height: 100%;
+    width: auto;
+    max-width: initial;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (min-width: 480px) {
+      width: 100%;
+      height: auto;
+    }
+
+    @media only screen and (min-width: 768px) {
+      height: 100%;
+      width: auto;
+    }
+  }
+  
   &__content {
     overflow: hidden;
+
     @media only screen and (min-width: 768px) {
       margin-bottom: 22px;
     }
@@ -103,10 +135,22 @@
 
   &__link {
     .icon-share {
-      &:before {
-        content: "\e905";
-        margin-right: 12px;
+      margin-top: 19px;
+
+      @media only screen and (min-width: 768px) {
+        margin: 0 0 0 29px;
       }
-    }
+
+      &:before {
+        margin-right: 10px;
+      }
+    }  
+  }
+}
+
+.icon-share {
+  &:before {
+    content: "\e905";
+    font-size: 19px;
   }
 }

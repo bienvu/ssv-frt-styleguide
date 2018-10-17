@@ -40,10 +40,8 @@
         e.preventDefault();
         if($(this).hasClass('is-show')) {
           $(this).removeClass('is-show');
-          $(this).children('.menu').slideUp();
         }else {
           $(this).addClass('is-show');
-          $(this).children('.menu').slideDown();
         }
       });
 
@@ -64,10 +62,11 @@
         return false;
       });
 
-      //banner 
+      //slick for box-hero
       $('.js-slider').slick({
         dots: true,
         autoplay: true,
+        fade: true,
         autoplaySpeed: 3000,
         responsive: [{
           breakpoint: 1024,
@@ -76,6 +75,14 @@
             arrows: false
           }
         }]
+      });
+
+      //js lightbox where click to icon-resize
+      $('.icon-resize').click(function() {
+        $(this).parents(".js-lightbox").lightGallery({
+          mode: 'lg-fade',
+          getCaptionFromTitleOrAlt: false
+        });
       });
 
       // slider box-gallery
@@ -110,23 +117,24 @@
 
       //scroll an element
       $('.js-scroll-down').click(function() {
-        var $next = $(this).parents('.box-hero').next().offset().top;
+        var $temp = $('.header').height();
+        var $next = $(this).parent().parent().next().offset().top - $temp;
         $('html, body').animate({
           scrollTop: $next
         }, 'slow');
       });
+
+      //js read more
+      $('.js-read-more').click(function(e) {
+        e.preventDefault();
+        if($('.read-more').hasClass('is-show')) {
+          $('.read-more').removeClass('is-show');
+          $(this).text('READ MORE >');
+        }else {
+          $('.read-more').addClass('is-show');
+          $(this).text('READ LESS >');
+        }
+      });
     });
   })();
-  
-  //Table responsive
-  Drupal.behaviors.tableResponsive = {
-    attach: function (context, settings) {
-      var $table = $('table', context);
-      if ($table.length &&
-        !$table.parent().hasClass('table-responsive')) {
-        $table.not($table.find('table')).wrap('<div class="table-responsive"></div>');
-      }
-    }
-  };
-
 }(this, this.document, this.jQuery));

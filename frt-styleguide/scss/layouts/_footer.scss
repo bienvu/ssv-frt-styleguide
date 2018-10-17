@@ -1,50 +1,62 @@
 .footer {
   text-align: center;
-  font-size: 12px;
 
-  @media only screen and (min-width: 1024px) {
-    font-size: 10px;
-
+  .container {
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+    }
   }
-  &__top {
-    margin-bottom: 52px;
-    
+
+  &__top { 
+    margin-bottom: 36px;
+
     @media only screen and (min-width: 1024px) {
       display: flex;
       justify-content: space-between;
       flex-direction: row-reverse;
-      padding-bottom: 25px;
+      padding-bottom: 33px;
       border-bottom: 1px solid $primary-color;
-      margin-bottom: 29px;
-      border-bottom: 1px solid $black;
+      margin-bottom: 32px;
     }
 
     .main-menu {
-      li {
-        a {
-          font-size: 12px;
-          padding-bottom: 14.5px;
-        }
-        
-        @media only screen and (min-width: 1024px) {
-          margin-right: 29px;
-        }
+      padding: 31px 0 27px;
+      border-bottom: 1px solid $primary-color;
+
+      @media only screen and (min-width: 1024px) {
+        padding: 0;
+        border: none;
       }
     }
   }
   
   &__bottom {
+    margin-bottom: 28px;
+
     @media only screen and (min-width: 1024px) {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    background: $bg-primary;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (min-width: 480px) {
+      display: none;
     }
   }
 
   &__content {
-    font-size: 10px;
-    letter-spacing: 1px;
-    margin-bottom: 61px;
+    margin-bottom: 64px;
 
     @media only screen and (min-width: 1024px) {
       text-align: left;
@@ -52,39 +64,41 @@
     }
 
     p {
-      margin: 0;
-      overflow: hidden;
+      @extend .text--tiny;
 
-      @media only screen and (min-width: 768px) {
-        margin-bottom: 11px;
+      br {
+        @media only screen and (min-width: 480px) {
+          display: none;
+        }
       }
     }
 
     span {
-      display: block;
-      margin: 11px 0;
+      &.text--bold {
+        margin-top: 16px;
+        display: inline-block;
 
-      @media only screen and (min-width: 1024px) {
-        display: inline;
+        @media only screen and (min-width: 1024px) {
+          margin: 0 4px;
+        }
       }
 
       &.symbol {
-        margin: 0 10px 0px 1px;
-        display: inline-block;
+        margin: 0 7px 0 5px;
+
+        @media only screen and (min-width: 1024px) {
+          margin: 0 8px 0 3px;
+        }
 
         &.symbol-change {
-          visibility: hidden;
-          display: block;
-          margin-bottom: -8px;
-        }
-
-        @media only screen and (min-width: 768px) {
-          &.symbol-change {
-            display: inline-block;
-            visibility: visible;
-            margin-bottom: 0;
+          display: none;
+          
+          @media only screen and (min-width: 1024px) {
+            &.symbol-change {
+              display: inline;
+            }
           }
-        }
+        }      
       }
     }
   }
@@ -108,10 +122,12 @@
 }
 
 .scroll-up {
-  margin-bottom: 69px;
+  border-bottom: 1px solid $primary-color;
+  padding-bottom: 33px;
 
   @media only screen and (min-width: 1024px) {
-    margin: 0;
+    border: none;
+    padding: 0;
   }
 
   .icon-arrow-up {
@@ -127,5 +143,14 @@
       right: -8px;
       transform: translateY(-50%);
     }
+  }
+}
+
+.breakpoint {
+  margin-bottom: 16px;
+  display: inline-block;
+
+  @media only screen and (min-width: 1024px) {
+    margin: 0;
   }
 }

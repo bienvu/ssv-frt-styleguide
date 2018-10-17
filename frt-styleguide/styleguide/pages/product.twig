@@ -17,18 +17,17 @@
   <body>
     {% block header %}
       {% include '../layouts/header.twig' %}
-      {% include '../layouts/navigation.twig' %}
     {% endblock %}
     <main>
+      {% include '../components/box-hero.twig' %}
       {% include '../components/box-gallery.twig' %}
-      {% include '../components/box-image-text.twig' %}
-      {% include '../components/list-image.twig' %}
-      {% include '../components/cta.twig' %}
+      {% include '../components/list-image3.twig' %}
       {% include '../components/box-text.twig' %}
-      {% include '../components/box-contact.twig' %}
     </main>
-    {% block content %}{% endblock %}
+    {% block content %}
+    {% endblock %}
     {% block footer %}
+    {% include '../layouts/box-feature.twig' %}
       {% include '../layouts/footer.twig' %}
     {% endblock %}
     {% block footer_scripts %}
@@ -37,6 +36,10 @@
       <script src="../js/lib/jquery.imagesloaded.min.js"></script>
       <script src="../js/lib/jquery.masonry.min.js"></script>
       <script src="../js/lib/slick.min.js"></script>
+      <script src="../js/lib/jquery.lightgallery.min.js"></script>
+      <script type="text/javascript" src="../js/lib/lg-share.min.js"></script>
+      <script type="text/javascript" src="../js/lib/lg-fullscreen.min.js"></script>
+      <script type="text/javascript" src="../js/lib/lg-zoom.min.js"></script>
       <script src="../js/script.js"></script>
     {% endblock %}
   </body>
