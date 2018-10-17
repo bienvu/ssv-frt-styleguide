@@ -1,5 +1,6 @@
 .box-image-text {
   margin-bottom: 72px;
+
   @media only screen and (min-width: 768px) {
     margin-bottom: 50px;
     padding-top: 58px;
@@ -21,59 +22,12 @@
     }
   }
 
-  &__title {
-    margin-bottom: 5px;
-    margin-left: -3px;
-
-    .white-space {
-      display: block;
-
-      @media only screen and (min-width: 768px) {
-        display: none;
-      }
-    }
-
-    .text {
-      display: block;
-
-      @media only screen and (min-width: 768px) {
-        display: none;
-      }
-    }
-
-    br {
-      display: none;
-
-      @media only screen and (min-width: 768px) {
-        display: block;
-      }
-    }
-
-    @media only screen and (min-width: 768px) {
-      margin-bottom: 17px;
-      line-height: 1.3;
-    }
-  }
-
-  &__sub-title {
-    margin-bottom: 12px;
-
-    @media only screen and (min-width: 768px) {
-      margin-bottom: 19px;
-    }
-  }
-
   &__description {
     margin-bottom: 27px;
-    margin-left: -3px;
 
     @media only screen and (min-width: 768px){ 
-      margin-bottom: 36px;
+      margin-bottom: 58px;
     }
-  }
-
-  &__link {
-    margin-left: -3px;
   }
 
   &__image {

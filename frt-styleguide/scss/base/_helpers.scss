@@ -39,3 +39,34 @@
     background-color: $white;
   }
 }
+
+.hidden-on-desktop {
+  @media only screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.hidden-on-tablet {
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.hidden-on-mobile {
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+//combination width js-read-more
+.read-more {
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+  }
+
+  &.is-show {
+    display: block;
+  }
+}

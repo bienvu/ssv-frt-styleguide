@@ -66,6 +66,7 @@
       $('.js-slider').slick({
         dots: true,
         autoplay: true,
+        fade: true,
         autoplaySpeed: 3000,
         responsive: [{
           breakpoint: 1024,

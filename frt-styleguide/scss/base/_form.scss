@@ -12,10 +12,8 @@ form{
 
     label {
       width: 100%;
-      padding: 10px 0;
       text-transform: capitalize;
       display: block;
-      margin-bottom: 20px;
       font-weight: normal;
     }
   }
@@ -62,7 +60,9 @@ input[type='submit'] {
 }
 
 input[type="text"],
-input[type="tel"] {
+input[type="number"],
+input[type="email"],
+input[type="search"] {
   @extend %form-text;
 
   &.error {
@@ -70,8 +70,18 @@ input[type="tel"] {
   }
 }
 
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 textarea {
   @extend %form-text;
+  transition: .5s;
+  height: 25px;
+   
+ &:focus {
+  min-height: 75px;
+ }
 }
 
 select {
