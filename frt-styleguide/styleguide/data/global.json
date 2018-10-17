@@ -124,6 +124,10 @@
     {
       "name":"modifier-box-text",
       "group":"components"
+    },
+    {
+      "name":"thank-you",
+      "group":"components"
     }
   ]
 }
