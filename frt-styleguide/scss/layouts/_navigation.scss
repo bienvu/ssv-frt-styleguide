@@ -17,7 +17,7 @@
     }
   }
 
-  .menu {
+  .sub-menu {
     display: none;
   }
 
@@ -42,7 +42,7 @@
           align-items: center;
 
           &:hover {
-            .menu {
+            .sub-menu {
               display: block;
             }
           }
@@ -89,6 +89,10 @@
         @media only screen and (min-width: 1240px) {
           padding: 0;
         }
+
+        &.book-link {
+          padding: 14px 16px 13px;
+        }
       }
 
       &.menu-expend {
@@ -111,7 +115,7 @@
           }
         }
 
-        .menu {
+        .sub-menu {
           padding-bottom: 3px;
           display: none;
 
@@ -173,14 +177,14 @@
         }
 
         &:hover {
-          .menu {
+          .sub-menu {
             display: block;
           }
         }
 
         @media only screen and (max-width: 1239px) {
           &.is-show {
-            .menu {
+            .sub-menu {
               display: block;
             }
 
