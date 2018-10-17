@@ -9,61 +9,43 @@
   box-shadow: none;
   text-transform: uppercase;
   outline: none;
-  padding: 0;
+  padding: 14px 22px 13px;
   text-align: center;
   text-shadow: none;
   transition: all .3s ease;
   background: transparent;
+  display: inline-block;
   cursor: pointer;
-  height: 40px;
   box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 193px;
+  min-width: 193px;
   color: $primary-color;
   
-  &--hover {
-    @media only screen and (min-width: 768px) {
-      &:hover {
-        background: $primary-color;
-        color: $second-color;
-      }
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      color: $white;
+      background: $primary-color;
     }
   }
 
-  &--long {
-    width: 208px;
-  }
-
-  &--longer {
-    width: 160px;
+  &--large {
+    min-width: 175px;
 
     @media only screen and (min-width: 768px) {
-      width: 223px;
+      min-width: 223px;
     }
   }
 
-  &--longer-v2 {
-    width: 175px;
-
-    @media only screen and (min-width: 768px) {
-      width: 223px;
-    }
-  }
-
-  &--max {
-    width: 335px;
-
-    @media only screen and (min-width: 768px) {
-      width: 336px;
+  &--full {
+    @media only screen and (max-width: 767px) {
+      width: 100%;
     }
   }
 
   &--border-white {
-    border: 1px solid $second-color;
-    color: $second-color;
-    
+    border: 1px solid $white;
+    color: $white;
+    padding: 13px 22px 12px;
+
     @media only screen and (min-width: 768px) {
       &:hover {
         border: 1px solid $primary-color;
@@ -72,59 +54,45 @@
     }
   }
 
-  &--border-primary {
+  &--border-black {
     border: 1px solid $primary-color;
     color: $primary-color;
-    
+    padding: 13px 22px 12px;
+
     @media only screen and (min-width: 768px) {
       &:hover {
         background: $primary-color;
-        color: $second-color;
+        color: $white;
       }
     }
   }
 
-  &--border-primary-v2 {
-    border: 1px solid $primary-color;
-    color: $primary-color;
-  }
-
   &--bg-white {
-    border: 1px solid $second-color;
-    color: $second-color;
-    
-    @media only screen and (min-width: 768px) {
-      background: $second-color;
-      color: $primary-color;
-      border: none;
+    background: $white;
+    color: $primary-color;
+    border: none;
 
-      &:hover {
-        background: $primary-color;
-        color: $second-color;
-      }
+    &:hover {
+      background: $primary-color;
+      color: $white;
+    }
+
+    @media only screen and (max-width: 767px) {
+      border: 1px solid $white;
+      color: $white;
+      padding: 12px 22px 11px;
+      background: transparent;
     }
   }
 
   &--bg-white-v2 {
-    background: $second-color;
+    background: $white;
     color: $primary-color;
 
     @media only screen and (min-width: 768px) {
       &:hover {
         background: $primary-color;
-        color: $second-color;
-      }
-    }
-  }
-
-  &--bg-primary {
-    background: $primary-color;
-    color: $second-color;
-    
-    @media only screen and (min-width: 768px) {
-      &:hover {
-        background: $second-color;
-        color: $primary-color;
+        color: $white;
       }
     }
   }
@@ -132,13 +100,6 @@
   &:active,
   &.active, {
     background: $primary-color;
-    color: $second-color;
-    
-    @media only screen and (min-width: 768px) {
-      &:hover {
-        background: $second-color;
-        color: $primary-color;
-      }
-    }
+    color: $white;
   }
 }

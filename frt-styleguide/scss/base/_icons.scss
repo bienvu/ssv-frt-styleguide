@@ -46,3 +46,23 @@
 [class*=' icon-'] {
     @extend %icons;
 }
+
+.icon-search:before {
+  content: "\e906";
+}
+
+.icon-facebook:before {
+  content: "\ea90"; 
+}
+
+.icon-instagram:before {
+  content: "\ea92"; 
+}
+
+.icon-youtube:before {
+  content: "\e904"; 
+}
+
+.icon-pinterest:before {
+  content: "\e902"; 
+}

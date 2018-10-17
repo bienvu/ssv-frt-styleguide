@@ -1,16 +1,18 @@
 .box-hero {
   position: relative;
-  // height: calc(100vh - 65px);
-  // margin-bottom: 40px;
   height: 195px;
+  margin-top: 65px;
   
   @media only screen and (min-width: 768px) {
     height: 350px;
   }
 
   @media only screen and (min-width: 1024px) {
-    // height: calc(100vh - 85px);
     height: 500px;
+  }
+
+  @media only screen and (min-width: 1240px) {
+    margin-top: 85px;
   }
 
   &__inner {
@@ -51,6 +53,11 @@
     width: 100%;
     transform: translateY(-50%);
     text-align: center;
+
+    .btn {
+      @extend .btn--bg-white;
+      @extend .btn--large;
+    }
   }
 
   &__title {

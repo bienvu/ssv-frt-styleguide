@@ -48,7 +48,7 @@
   &__form {
     input[type='submit'] {
       @extend .btn;
-      @extend .btn--border-primary;
+      @extend .btn--border-black;
     }
     
     .form-item {
@@ -128,10 +128,6 @@
 
   li {
     margin: 0 11px 0 0;
-
-    a {
-      font-size: 20px;
-    }
   }
 
   .icon-facebook {
