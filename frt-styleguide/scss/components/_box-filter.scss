@@ -1,17 +1,42 @@
 .box-filter {
+  background: #fff;
+  margin: 30px 0;
+
+  @media only screen and (min-width: 1024px) {
+    background: #f8f8f8;
+    padding: 48px 0;
+    margin: 0 0 70px 0;
+  }
+
   &__wrapper {
     position: relative;
+    padding: 0 15px;
+    background: #f8f8f8;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1023px) {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 0;
     }
   }
 
   &__title {
-    padding: 20px;
-    position: relative;
+    @media only screen and (max-width: 1023px) {
+      padding: 20px 0;
+      position: relative;
+      margin: 0;
+      font-size: 14px;
+      font-family: "gotham", Arial, sans-serif;
+      font-weight: 500;
+      letter-spacing: 1.4px;
+      line-height: 1.2857;
+
+      &.is-show:after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+
     margin: 0;
 
     &:after {
@@ -19,50 +44,43 @@
       content: "\e901";
       font-size: 40px;
       position: absolute;
-      right: 0;
+      right: -9px;
       top: 50%;
-      transform: translateY(-50%);
+      transform: translateY(-50%) rotate(0);
 
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1024px) {
         display: none;
       }
     }
   }
 
   &__list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #fff;
     overflow: hidden;
+    display: none;
+    margin-top: 5px;
 
-    &.is-show {
-      display: none;
-    }
-
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1024px) {
       display: flex !important;
       position: static;
       justify-content: flex-end;
+      margin: 0;
     }
 
     li {
+      margin-bottom: 19px;
+
       &:first-of-type {
         margin-left: none;
       }
 
-      @media only screen and (min-width: 768px) {
-        margin-left: 20px;
+      @media only screen and (min-width: 1024px) {
+        margin: 0 0 0 28px;
       }
+    }
 
-      @media only screen and (min-width: 1280px) {
-        margin-left: 30px;
-      }
-
-      a {
-        @media only screen and (max-width: 1023px) {
-          min-width: 168px;
-        }
+    .btn {
+      @media only screen and (max-width: 1023px) {
+        width: 100%;
       }
     }
   }
