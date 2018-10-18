@@ -16,9 +16,10 @@
   </head>
   <body>
     {% block header %}
-     {#  {% include '../layouts/header.twig' %} #}
+     {% include '../layouts/header.twig' %} 
     {% endblock %}
-    <main>
+    <main>{# 
+      {% include '../components/box-text--with-title.twig' %} #}
       {% include '../components/thank-you.twig' %}
     </main>
     {% block content %}

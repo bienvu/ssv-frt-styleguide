@@ -70,3 +70,10 @@
     display: block;
   }
 }
+
+.breakpoint {
+  @media only screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 16px;
+  }
+}

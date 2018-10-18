@@ -17,6 +17,9 @@
 
   (function () {
     $('document').ready(function () {
+      // Input number
+      $('input[type="number"], input[type="tel"]').wrap( "<div class='number-wrap'></div>" );
+
       //Toggle Menu
       $('.menu-bars').click(function (e) {
         if ($(this).hasClass('is-show')) {
@@ -26,7 +29,7 @@
           $(this).addClass('is-show');
           $(this).parent().next().slideDown();
         }
-       
+
         //body scroll hidden
         if($('body').hasClass('no-scroll')) {
           $('body').removeClass('no-scroll');
