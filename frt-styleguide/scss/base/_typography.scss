@@ -102,6 +102,8 @@ h6 {
   // gotham medium
   @include gotham;
   font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.7143;
 }
 
 .text--small {

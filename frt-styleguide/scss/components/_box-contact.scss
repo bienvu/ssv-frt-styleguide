@@ -1,9 +1,11 @@
 .box-contact {
   margin-bottom: 30px;
   text-align: left;
+  padding: 24px 0;
 
   @media only screen and (min-width: 768px) {
     text-align: left;
+    padding: 53px 0;
   }
 
   &__wrapper {
@@ -16,11 +18,7 @@
   }
 
   &__subtitle {
-    margin-bottom: 4px;
-
-    @media only screen and (min-width: 768px) {
-      margin-bottom: 4px;
-    }
+    @extend .text--bold;
   }
 
   &__info {
@@ -32,10 +30,13 @@
   }
 
   &__list {
-    margin-bottom: 68px;
+    border-bottom: 1px solid $primary-color;
+    padding-bottom: 17px;
+    margin-bottom: 37px;
 
     @media only screen and (min-width: 768px) {
-      margin-bottom: 38px;
+      margin-bottom: 5px;
+      border: none;
     }
   }
 
@@ -50,19 +51,7 @@
   }
 
   &__item {
-    margin-bottom: 21px;
-
-    @media only screen and (min-width: 768px) {
-      margin-bottom: 3px;
-    }
-
     p{
-      margin-left: -1px;
-
-      @media only screen and (min-width: 768px) {
-        margin-left: 1px;
-      }
-
       span {
         margin: 0 13px;
 
@@ -70,15 +59,14 @@
           margin: 0 13px;
         }
       }
+
+      br {
+        display: inline;
+      }
     }
   }
 
   &__form {
-    input[type='submit'] {
-      // @extend .btn;
-      // @extend .btn--border-black;
-    }
-
     p {
       display: none;
 
@@ -92,6 +80,16 @@
 
       @media only screen and (min-width: 768px) {
         margin-top: 0;
+      }
+
+      .form-list {
+        margin-bottom: 19px;
+
+        @media only screen and (min-width: 768px) {
+          &:nth-last-child(2) {
+            margin-bottom: 30px;
+          }
+        }
       }
     }
   }
