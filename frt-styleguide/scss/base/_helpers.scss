@@ -71,6 +71,15 @@
   }
 }
 
+.js-read-more {
+  line-height: 2;
+  @extend %link;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .breakpoint {
   @media only screen and (max-width: 767px) {
     display: block;
@@ -80,5 +89,9 @@
 
 .section-title {
   text-align: center;
-  margin-bottom: 52px;
+  margin-bottom: 36px;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 52px;
+  }
 }

@@ -40,10 +40,11 @@
 
       // toggle menu expend
       $('.menu-expend').click(function(e) {
-        e.preventDefault();
+        // e.preventDefault();
         if($(this).hasClass('is-show')) {
           $(this).removeClass('is-show');
         }else {
+          $('.menu-expend').removeClass('is-show');
           $(this).addClass('is-show');
         }
       });
