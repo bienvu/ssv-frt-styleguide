@@ -1,127 +1,135 @@
 .list-image {
   text-align: center;
   background: #f8f8f8;
-  padding: 38px 0 32px;
 
   @media only screen and (min-width: 768px) {
-    margin-bottom: 55px;
-    padding: 60px 0;
+    padding: 55px 0 60px;
   }
 
-  .container {
-    @media only screen and (min-width: 768px) {
-      padding: 0 29px;
-      max-width: 100%;
-      margin: 0;
-    }
-  }
-
-  &__inner {
-    @media only screen and (min-width: 768px) {
-      display: flex;
-      margin: 0 -8px;
-    }
-  }
-  
-  &__title {
-    margin-bottom: 39px;
-
-    @media only screen and (min-width: 768px) {
-
-    }
-  }
-
-  &__item {
-    margin-bottom: 10px;
-
-    @media only screen and (min-width: 768px) {
-      padding: 0 8px;
-      width: calc(100% / 3);
-
-      &:hover .list-image__body{
-        display: flex;
-      }
-    }
+  &__link {
+    @extend .btn;
+    @extend .btn--border-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: initial;
+    display: none;
   }
 
   &__content {
-    line-height: 0;
-    position: relative;
 
-    img {
-      width: 100%;
-      height: auto;
+    a {
+      line-height: 0;
+      display: block;
+      position: relative;
+
+      &:hover:before {
+        visibility: visible;
+      }
+
+      &:hover .list-image__link {
+        display: block;
+      }
+
+      &:before {
+        @media only screen and (min-width: 768px) {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba($black, .3);
+          visibility: hidden;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
     }
   }
 
-  &__body {
-    background: rgba($black, .2);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    display: none;
+  &__title {
+    @extend .text--small;
+    padding: 18px 0 13px;
+  }
 
-    .btn {
-      @extend .btn--border-white;
+  &__item {
+    margin-bottom: 12px;
+
+    @media only screen and (min-width: 768px) {
+      width: calc(100% / 2);
+      padding: 0 5px;
+      margin-bottom: 24px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      width: calc(100% / 3);
+      padding: 0 5px;
+    }
+  }
+  
+  &__wrap {
+    margin-bottom: 24px;
+
+    @media only screen and (min-width: 768px) {
+      margin: 0 -5px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
     }
   }
 
-  &--2c-with-title {
+  &--2col {
+    background: transparent;
+    padding: 30px 0 0;
+
+    @media only screen and (min-width: 768px) {
+      padding: 60px 0 0;
+    }
 
     .list-image__item {
-      .btn {
-        top: 40%;
-        left: 53%;
-        transform: translate(-50%, -50%);
-      }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1024px) {
         width: calc(100% / 2);
-      }
+        padding: 0 7.5px;
+      } 
     }
-  }
-
-  &--2col-with-title {
-    .list-image__item {
-      padding-left: 20px;
-      overflow: hidden;
-
-      .btn {
-        top: 40%;
-        left: 53%;
-        transform: translate(-50%, -50%);
-      }
 
     .list-image__wrap {
-      @media only screen and (min-width: 768px){
-        padding: 0;
-        margin-left: -16px;
-      }
-    }
-
       @media only screen and (min-width: 768px) {
-        width: calc(100% / 2);
+        margin: 0 -7.5px;
+        border-bottom: 1px solid $primary-color;
+        padding-bottom: 18px;
       }
     }
   }
 
-  &--with-title {
+  &--no-title {
+    .list-image__wrap {
+      margin: 0 -4px;
+    }
+
     .list-image__item {
-
-
-      .btn {
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
       @media only screen and (min-width: 768px) {
-        width: calc(100% / 3);
+        padding: 0 4px;
+        margin: 0;
       }
     }
+
+    .container {
+      @media only screen and (min-width: 768px) and (max-width: 1920px) {
+        padding: 0 29px;
+        max-width: initial;
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  .js-read-more {
+    @extend .btn;
+    @extend .btn--border-black;
   }
 }
