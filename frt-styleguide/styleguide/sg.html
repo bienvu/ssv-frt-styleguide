@@ -68,7 +68,7 @@
 
             <li><a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/contact.html">CONTACT</a>
             </li>
-            <li><a class="book-link btn btn--border-black" href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/contact.html/">BOOK A CONSULTATION</a>
+            <li class="book-link"><a class="btn btn--border-black" href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/contact.html/">BOOK A CONSULTATION</a>
             </li>
           </ul>
 
@@ -981,17 +981,21 @@
       <div class="box-image-text">
         <div class="container">
           <div class="box-image-text__wrap">
-            <div class="box-image-text__image">
-              <img class="main-image" src="../images/Layer-011.jpg" alt="">
-              <img class="sub-image" src="../images/Sub-image.svg" alt="">
+            <div class="box-image-text__list">
+              <div class="box-image-text__image">
+                <img class="main-image" src="../images/Layer-011.jpg" alt="">
+                <img class="sub-image" src="../images/Sub-image.svg" alt="">
+              </div>
             </div>
+
             <div class="box-image-text__content">
-              <h6 class="box-image-text__sub-title text--small">WELCOME</h6>
+              <h6 class="box-image-text__subtitle text--small">WELCOME</h6>
               <h2 class="box-image-text__title">ULLAMCORPER <br class="break" /> MALES<br class="break-mobile" />UADA PROIN<br class="break" /> LIBERO NUNC<span class="break-mobile"> <br />IPSUM TEMPOR</span>.</h2>
-              <div class="box-image-text__description">
+              <div class="box-image-text__body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   <br />Fringilla ut morbi tincidunt augue interdum velit euismod in. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Sodales ut eu sem integer.</p>
               </div>
+
               <div class="box-image-text__link">
                 <a class="btn btn--border-black" href="#">LEARN MORE</a>
               </div>
@@ -1008,16 +1012,20 @@
           <pre class="brush: php"><div class="box-image-text">
   <div class="container">
     <div class="box-image-text__wrap">
-      <div class="box-image-text__image">
+      <div class="box-image-text__list">
+        <div class="box-image-text__image">
           <img class="main-image" src ="../images/Layer-011.jpg" alt="">
           <img class="sub-image" src="../images/Sub-image.svg" alt="">
+        </div>
       </div>
+      
       <div class="box-image-text__content">
-        <h6 class="box-image-text__sub-title text--small">WELCOME</h6>
+        <h6 class="box-image-text__subtitle text--small">WELCOME</h6>
         <h2 class="box-image-text__title">ULLAMCORPER <br class="break" /> MALES<br class="break-mobile" />UADA PROIN<br class="break" /> LIBERO NUNC<span class="break-mobile"> <br />IPSUM TEMPOR</span>.</h2>
-        <div class="box-image-text__description">
+        <div class="box-image-text__body">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />Fringilla ut morbi tincidunt augue interdum velit euismod in. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Sodales ut eu sem integer.</p>
         </div>
+
         <div class="box-image-text__link">
           <a class="btn btn--border-black" href="#">LEARN MORE</a>
         </div>
@@ -1774,16 +1782,16 @@
   <div class="component--item" id="list-image">
     <h2 class="component--title">list image</h2>
     <div class="component--demo">
-      <h2 class="caption">VIEW OUR COLLECTION</h2>
-
-      <div class="list-image">
+      <div class="list-image list-image--no-title">
         <div class="container">
+          <h2 class="section-title">VIEW OUR COLLECTION</h2>
+
           <div class="list-image__wrap">
             <div class="list-image__item">
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/category-tables.html">
                   <img src="../images/FrenchTable_Image_16.jpg" alt="">
-                  <span href="#">VIEW TABLES</span>
+                  <span href="#" class="list-image__link">VIEW TABLES</span>
                 </a>
               </div>
             </div>
@@ -1792,7 +1800,7 @@
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
                   <img src="../images/FrenchTable_Image_17.jpg" alt="">
-                  <span href="#">VIEW CHAIRS</span>
+                  <span href="#" class="list-image__link">VIEW CHAIRS</span>
                 </a>
               </div>
             </div>
@@ -1801,7 +1809,7 @@
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/sideboards.html">
                   <img src="../images/FrenchTable_Image_18.jpg" alt="">
-                  <span href="#">VIEW SIDEBOARDS</span>
+                  <span href="#" class="list-image__link">VIEW SIDEBOARDS</span>
                 </a>
               </div>
             </div>
@@ -1814,16 +1822,16 @@
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><h2 class="caption">VIEW OUR COLLECTION</h2>
-
-<div class="list-image">
+          <pre class="brush: php"><div class="list-image list-image--no-title">
   <div class="container">
+    <h2 class="section-title">VIEW OUR COLLECTION</h2>
+
     <div class="list-image__wrap">
       <div class="list-image__item">
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/category-tables.html">
             <img src="../images/FrenchTable_Image_16.jpg" alt="">
-            <span href="#">VIEW TABLES</span>
+            <span href="#" class="list-image__link">VIEW TABLES</span>
           </a>
         </div>
       </div>
@@ -1832,7 +1840,7 @@
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
             <img src="../images/FrenchTable_Image_17.jpg" alt="">
-            <span href="#">VIEW CHAIRS</span>
+            <span href="#" class="list-image__link">VIEW CHAIRS</span>
           </a>
         </div>
       </div>
@@ -1841,7 +1849,7 @@
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/sideboards.html">
             <img src="../images/FrenchTable_Image_18.jpg" alt="">
-            <span href="#">VIEW SIDEBOARDS</span>
+            <span href="#" class="list-image__link">VIEW SIDEBOARDS</span>
           </a>
         </div>
       </div>
@@ -1857,112 +1865,110 @@
   <div class="component--item" id="list-image1">
     <h2 class="component--title">list image1</h2>
     <div class="component--demo">
-      <div class="list-image list-image--with-title">
+      <div class="list-image list-image--3col">
         <div class="container">
           <div class="list-image__wrap">
             <div class="list-image__item">
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
                   <img src="../images/FrenchTable_Image_01.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span class="list-image__link" href="#">VIEW MORE</span>
                 </a>
               </div>
 
-              <h5 class="list-image__title">Curved Arm Dining Chair With Optional Ring Detail</h5>
+              <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
             </div>
 
             <div class="list-image__item">
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
                   <img src="../images/FrenchTable_Image_02.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span class="list-image__link" href="#">VIEW MORE</span>
                 </a>
               </div>
 
-              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+              <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
             </div>
 
             <div class="list-image__item">
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
                   <img src="../images/FrenchTable_Image_03.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span class="list-image__link" href="#">VIEW MORE</span>
                 </a>
               </div>
 
-              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+              <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
             </div>
 
             <div class="list-image__item">
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
                   <img src="../images/FrenchTable_Image_04.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span class="list-image__link" href="#">VIEW MORE</span>
                 </a>
               </div>
 
-              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+              <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
             </div>
 
             <div class="list-image__item">
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
                   <img src="../images/FrenchTable_Image_05.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span class="list-image__link" href="#">VIEW MORE</span>
                 </a>
               </div>
 
-              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+              <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
             </div>
 
             <div class="list-image__item">
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
                   <img src="../images/FrenchTable_Image_06.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span class="list-image__link" href="#">VIEW MORE</span>
                 </a>
               </div>
 
-              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+              <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
             </div>
 
             <div class="list-image__item">
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
                   <img src="../images/FrenchTable_Image_07.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span class="list-image__link" href="#">VIEW MORE</span>
                 </a>
               </div>
 
-              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+              <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
             </div>
 
             <div class="list-image__item">
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
                   <img src="../images/FrenchTable_Image_02.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span class="list-image__link" href="#">VIEW MORE</span>
                 </a>
               </div>
 
-              <h5 class="list-image__title">Rectangle Dining Table Product Titlet</h5>
+              <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detailt</h5>
             </div>
 
             <div class="list-image__item">
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
                   <img src="../images/FrenchTable_Image_02.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span class="list-image__link" href="#">VIEW MORE</span>
                 </a>
               </div>
 
-              <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+              <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
             </div>
           </div>
 
-          <div class="list-image__link">
-            <a href="#">LEARN MORE</a>
-          </div>
+          <a class="js-read-more" href="#">LOAD MORE</a>
         </div>
       </div>
     </div>
@@ -1971,112 +1977,110 @@
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><div class="list-image list-image--with-title" >
+          <pre class="brush: php"><div class="list-image list-image--3col" >
   <div class="container">
     <div class="list-image__wrap">
       <div class="list-image__item">
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
             <img src="../images/FrenchTable_Image_01.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span class="list-image__link" href="#">VIEW MORE</span>
           </a>
         </div>
         
-        <h5 class="list-image__title">Curved Arm Dining Chair With Optional Ring Detail</h5>
+        <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
       </div>
 
       <div class="list-image__item">
-         <div class="list-image__content">
+        <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
             <img src="../images/FrenchTable_Image_02.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span class="list-image__link" href="#">VIEW MORE</span>
           </a>
         </div>
         
-        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+        <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
       </div>
 
       <div class="list-image__item">
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
             <img src="../images/FrenchTable_Image_03.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span class="list-image__link" href="#">VIEW MORE</span>
           </a>
         </div>
 
-        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+        <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
       </div>
 
       <div class="list-image__item">
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
             <img src="../images/FrenchTable_Image_04.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span class="list-image__link" href="#">VIEW MORE</span>
           </a>
         </div>
 
-        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+        <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
       </div>
 
       <div class="list-image__item">
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
             <img src="../images/FrenchTable_Image_05.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span class="list-image__link" href="#">VIEW MORE</span>
           </a>
         </div>
 
-        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+        <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
       </div>
 
       <div class="list-image__item">
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
             <img src="../images/FrenchTable_Image_06.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span class="list-image__link" href="#">VIEW MORE</span>
           </a>
         </div>
 
-        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+        <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
       </div>
 
       <div class="list-image__item">
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
             <img src="../images/FrenchTable_Image_07.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span class="list-image__link" href="#">VIEW MORE</span>
           </a>
         </div>
 
-        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+        <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
       </div>
 
       <div class="list-image__item">
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
             <img src="../images/FrenchTable_Image_02.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span class="list-image__link" href="#">VIEW MORE</span>
           </a>
         </div>
 
-        <h5 class="list-image__title">Rectangle Dining Table Product Titlet</h5>
+        <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detailt</h5>
       </div>
 
       <div class="list-image__item">
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/dining-chairs.html">
             <img src="../images/FrenchTable_Image_02.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span class="list-image__link" href="#">VIEW MORE</span>
           </a>
         </div>
 
-        <h5 class="list-image__title">Rectangle Dining Table Product Title</h5>
+        <h5 class="list-image__title">Curved Arm Dining Chair <br /> With Optional Ring Detail</h5>
       </div>
     </div>
-    
-    <div class="list-image__link">
-      <a href="#">LEARN MORE</a>
-    </div>
+
+    <a class="js-read-more" href="#">LOAD MORE</a>
   </div>
 </div>
 </pre>
@@ -2088,14 +2092,14 @@
   <div class="component--item" id="list-image2">
     <h2 class="component--title">list image2</h2>
     <div class="component--demo">
-      <div class="list-image list-image--2col-with-title">
+      <div class="list-image list-image--2col">
         <div class="container">
           <div class="list-image__wrap">
             <div class="list-image__item">
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/category-tables.html">
                   <img src="../images/FrenchTable_Image_12.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span href="#" class="list-image__link">VIEW MORE</span>
                 </a>
               </div>
 
@@ -2105,7 +2109,7 @@
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/category-tables.html">
                   <img src="../images/FrenchTable_Image_13.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span href="#" class="list-image__link">VIEW MORE</span>
                 </a>
               </div>
 
@@ -2115,7 +2119,7 @@
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/category-tables.html">
                   <img src="../images/FrenchTable_Image_14.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span href="#" class="list-image__link">VIEW MORE</span>
                 </a>
               </div>
 
@@ -2125,7 +2129,7 @@
               <div class="list-image__content">
                 <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/category-tables.html">
                   <img src="../images/FrenchTable_Image_15.jpg" alt="">
-                  <span href="#">VIEW MORE</span>
+                  <span href="#" class="list-image__link">VIEW MORE</span>
                 </a>
               </div>
 
@@ -2140,14 +2144,14 @@
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><div class="list-image list-image--2col-with-title" >
+          <pre class="brush: php"><div class="list-image list-image--2col" >
   <div class="container">
     <div class="list-image__wrap">
       <div class="list-image__item">
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/category-tables.html">
             <img src="../images/FrenchTable_Image_12.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span href="#" class="list-image__link">VIEW MORE</span>
           </a>
         </div>
 
@@ -2157,7 +2161,7 @@
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/category-tables.html">
             <img src="../images/FrenchTable_Image_13.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span href="#" class="list-image__link">VIEW MORE</span>
           </a>
         </div>
 
@@ -2167,7 +2171,7 @@
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/category-tables.html">
             <img src="../images/FrenchTable_Image_14.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span href="#" class="list-image__link">VIEW MORE</span>
           </a>
         </div>
 
@@ -2177,7 +2181,7 @@
         <div class="list-image__content">
           <a href="https://bienvu.github.io/ssv-frt-styleguide/frt-styleguide/styleguide/category-tables.html">
             <img src="../images/FrenchTable_Image_15.jpg" alt="">
-            <span href="#">VIEW MORE</span>
+            <span href="#" class="list-image__link">VIEW MORE</span>
           </a>
         </div>
 
