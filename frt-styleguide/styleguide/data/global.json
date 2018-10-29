@@ -132,6 +132,14 @@
     {
       "name":"thank-you",
       "group":"components"
+    },
+    {
+      "name":"box-text--with-title",
+      "group":"components"
+    },
+    {
+      "name":"list-image4",
+      "group":"components"
     }
   ]
 }
