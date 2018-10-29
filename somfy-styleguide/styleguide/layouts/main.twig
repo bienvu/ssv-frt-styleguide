@@ -1,0 +1,22 @@
+<div class="container">
+  <!-- Not Bem -->
+  <div class="componentsss">
+    <div class="group-content">
+      <h2 class="content-title">Component title</h2>
+      <div class="content-body">Component Body</div>
+      <div class="content-link"><a href="#">Read More</a></div>
+    </div>
+  </div>
+
+  <!-- With Bem -->
+  {% set title = 'title' %}
+  <div class="box-texts">
+    <div class="box-text__item">
+      {% if title is not empty %}
+        <h2 class="box-text__title">{{title}}</h2>
+      {% endif %}
+      <div class="box-text__body">Component text body</div>
+      <div class="box-text__link"><a href="#">Read More</a></div>
+    </div>
+  </div>
+</div>
