@@ -16,13 +16,14 @@
   </head>
   <body>
     {% block header %}
-      {% include '../layouts/navigation.twig' %}
-      <h1>{% block title %}{% endblock %}</h1>
+      {% include '../layouts/header.twig' %}
     {% endblock %}
     {% block content %}
-      {% include '../layouts/main.twig' %}
+      {% include '../components/box-video-text.twig' %}
+      {% include '../components/box-contact.twig' %}
     {% endblock %}
     {% block footer %}
+      {% include '../layouts/footer.twig' %}
     {% endblock %}
     {% block footer_scripts %}
       <script src="../js/lib/media.match.min.js"></script>

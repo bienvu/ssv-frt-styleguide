@@ -64,6 +64,14 @@
     {
       "name":"boxtext",
       "group":"component"
+    },
+    {
+      "name":"box-video-text",
+      "group":"component"
+    },
+    {
+      "name":"box-contact",
+      "group":"component"
     }
   ]
 }

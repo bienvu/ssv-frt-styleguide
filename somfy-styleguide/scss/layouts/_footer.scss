@@ -1,0 +1,14 @@
+.footer {
+  padding: 27px 0;
+
+  &__content {
+    text-align: center;
+
+    p {
+      @include Georgia;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 1.83333;
+    }
+  }
+}
