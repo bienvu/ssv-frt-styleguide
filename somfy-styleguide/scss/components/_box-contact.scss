@@ -1,6 +1,6 @@
 .box-contact {
   background: #e9e9e9;
-  padding: 55px 0;
+  padding: 55px 0 38px;
 
   &__wrap {
     display: flex;
@@ -12,7 +12,6 @@
       font-size: 28px;
       letter-spacing: 0.32px;
       font-weight: 400;
-      margin-bottom: 20px;
       text-transform: capitalize;
   }
 
@@ -26,7 +25,7 @@
 
   &__right {
     width: 50%;
-    padding-left: 13px;
+    padding-left: 16px;
   }
 
   &__item {
@@ -34,24 +33,25 @@
     padding: 5px 0;
     align-items: center;
 
-    img {
-      width: auto;
-      height: auto;
+    li {
+      list-style-type: none;
+      margin: 20px 0;
     }
 
-    p {
-      padding-left: 15px;
-    }
-  }
-
-  &__content {
     a {
-      line-height: 0;
-      display: block;
+      padding-left: 35px;
+    }
 
-      @media only screen and (min-width: 768px) {
-        pointer-events: none;
-      }
+    li:nth-of-type(1) {
+      background: url("../images/phone.png") no-repeat;
+    }
+
+    li:nth-of-type(2) {
+      background: url("../images/email.png") no-repeat;
+    }
+
+    li:nth-of-type(3) {
+      background: url("../images/ins.png") no-repeat;
     }
   }
 }

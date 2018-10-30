@@ -1,5 +1,5 @@
 .footer {
-  padding: 27px 0;
+  padding: 24px 0;
 
   &__content {
     text-align: center;
@@ -9,6 +9,10 @@
       font-size: 12px;
       letter-spacing: 0;
       line-height: 1.83333;
+    }
+
+    span {
+      margin: 0 5px;
     }
   }
 }

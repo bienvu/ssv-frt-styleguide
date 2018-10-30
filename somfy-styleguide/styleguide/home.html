@@ -17,15 +17,15 @@
 <body>
   <div class="header">
     <div class="container">
-      <div class="header__image">
-        <img src="../images/Trawla_Logo.png" alt="">
+      <div class="header__logo">
+        <img src="../images/Trawla_Logo1.svg" alt="">
       </div>
     </div>
   </div>
   <div class="box-video-text">
     <div class="container">
       <div class="box-video-text__video">
-        <video width="698" height="400" controls autoplay and muted>
+        <video width="698" height="395" id="my-video" class="video-js" poster="MY_VIDEO_POSTER.jpg" data-setup="{}" controls autoplay and muted and preload="auto">
           <source src="../videos/Trawla_Website_Video.MOV" type="video/mp4">
         </video>
       </div>
@@ -50,36 +50,14 @@
 
             <div class="box-contact__list">
               <div class="box-contact__item">
-                <a href="tel:0434 033 602">
-                  <img src="../images/phone.png" alt="">
-                </a>
-                <div class="box-contact__item__content">
-                  <a href="tel:0434 033 602">
-                    <p>0434 033 602</p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="box-contact__item">
-                <a href="mailto:trawla.enquiries@gmail.com" target="_top">
-                  <img src="../images/email.png" alt="">
-                </a>
-                <div class="box-contact__item__content">
-                  <a href="mailto:trawla.enquiries@gmail.com" target="_top">
-                    <p>trawla.enquiries@gmail.com</p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="box-contact__item">
-                <a href="https://www.instagram.com/trawla/">
-                  <img src="../images/ins.png" alt="">
-                </a>
-                <div class="box-contact__item__content">
-                  <a href="https://www.instagram.com/trawla/">
-                    <p>instagram.com/trawla</p>
-                  </a>
-                </div>
+                <ul>
+                  <li><a href="tel:0434 033 602">0434 033 602</a>
+                  </li>
+                  <li><a href="mailto:trawla.enquiries@gmail.com" target="_top">trawla.enquiries@gmail.com</a>
+                  </li>
+                  <li><a href="https://www.instagram.com/trawla/">instagram.com/trawla</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -100,8 +78,8 @@
             </div>
           </form>
 
-          <div class="box-contact__button">
-            <a href="#" class="btn">SUBMIT</a>
+          <div class="form-item">
+            <input type="submit"></input>
           </div>
         </div>
       </div>
@@ -110,7 +88,7 @@
   <div class="footer">
     <div class="container">
       <div class="footer__content">
-        <p>© 2018 Trawla | Website strategy, design & development by Sentius</p>
+        <p>&copy; 2018 Trawla <span>|</span> Website strategy, design &amp; development by Sentius</p>
       </div>
     </div>
   </div>
