@@ -4,23 +4,21 @@
 <head>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="../favicon.ico">
-  <title>Normal Styleguide -</title>
+  <title>Trawla</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
-  <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
   <link rel="stylesheet" href="../css/styles.css">
   <!-- Base js library from drupal -->
   <script src="script/jquery.min.js"></script>
-  <script src="script/drupal/jquery.once.js"></script>
-  <script src="script/drupal/drupal.js"></script>
-  <script src="script/drupal/picturefill.js"></script>
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
 </head>
 
 <body>
   <header>
     <div class="container">
       <div class="header__logo">
-        <img width: "300"; src="../images/Trawla_Logo1.svg" alt="">
+        <img width: "300"; src="../images/Trawla_Logo1.svg" alt="Trawla">
       </div>
     </div>
   </header>
@@ -28,7 +26,7 @@
     <div class="box-video-text">
       <div class="container">
         <div class="box-video-text__video">
-          <video width="698" height="395" id="my-video" class="video-js" poster="../images/Video-Thumbnail1.jpg" data-setup="{}" controls autoplay and muted and preload="auto">
+          <video width="698" height="395" id="my-video" class="video-js" poster="../images/Video-Thumbnail1.jpg" data-setup="{}" controls loop autoplay and muted and preload="auto">
             <source src="../videos/Trawla_Website_Video.MOV" type="video/mp4">
           </video>
         </div>
@@ -68,17 +66,13 @@
             <h5 class="box-contact__title">keep me in the loop</h5>
 
             <form action="" method="POST">
-              <div class="form-list">
-                <div class="form-item">
-                  <input type="text" placeholder="Name">
-                </div>
-
-                <div class="form-item">
-                  <input type="email" placeholder="Email">
-                </div>
-              </div>
-
               <div class="form-item">
+                <input type="text" placeholder="Name">
+              </div>
+              <div class="form-item">
+                <input type="email" placeholder="Email">
+              </div>
+              <div class="form-action">
                 <input type="submit"></input>
               </div>
             </form>
@@ -95,8 +89,7 @@
       </div>
     </div>
   </footer>
-  <script src="../js/lib/media.match.min.js"></script>
-  <script src="../js/lib/enquire.min.js"></script>
+  <script src="https://vjs.zencdn.net/7.2.4/video.js"></script>
   <script src="../js/script.js"></script>
 </body>
 

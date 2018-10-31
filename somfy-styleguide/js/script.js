@@ -19,9 +19,7 @@
   };
 
   $(document).ready( function () {
-   $('video').click(function( e ){
-      $(“.image”).append(“bạn đã click”);
-   });
+   videojs('my-video');
   });
 
 }(this, this.document, this.jQuery));

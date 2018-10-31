@@ -3,17 +3,15 @@
   <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="../favicon.ico">
-    <title>{{ site_title }} - {% block title %}{% endblock %}</title>
+    <title>{{ site_title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
-    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
     {% block head %}
       <link rel="stylesheet" href="../css/styles.css">
       <!-- Base js library from drupal -->
       <script src="script/jquery.min.js"></script>
-      <script src="script/drupal/jquery.once.js"></script>
-      <script src="script/drupal/drupal.js"></script>
-      <script src="script/drupal/picturefill.js"></script>
+      <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+      <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
     {% endblock %}
   </head>
   <body>
@@ -30,8 +28,7 @@
       {% include '../layouts/footer.twig' %}
     {% endblock %}
     {% block footer_scripts %}
-      <script src="../js/lib/media.match.min.js"></script>
-      <script src="../js/lib/enquire.min.js"></script>
+      <script src="https://vjs.zencdn.net/7.2.4/video.js"></script>
       <script src="../js/script.js"></script>
     {% endblock %}
   </body>
