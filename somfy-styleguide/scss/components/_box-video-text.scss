@@ -1,17 +1,17 @@
 .box-video-text {
   padding-bottom: 42px;
 
-  &__media {
-    position: relative;
-
-    img {
-      position: absolute;
+  &__video {
+    video {
+      display: inline-block;
+      width: 100%;
+      height: auto;
     }
   }
 
   &__title {
     text-align: center;
-    padding: 36px 0 28px 0;
+    padding: 43px 0 28px 0;
   }
 
   &__content {

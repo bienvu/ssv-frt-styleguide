@@ -3,8 +3,10 @@
   padding: 55px 0 38px;
 
   &__wrap {
-    display: flex;
-    flex-direction: row;
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   &__name {
@@ -20,18 +22,27 @@
   }
 
   &__left {
-    width: 50%;
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+    }
   }
 
   &__right {
-    width: 50%;
-    padding-left: 16px;
+    width: 100%;
+    padding: 0;
+
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+      padding-left: 16px;
+    }
   }
 
-  &__item {
-    display: flex;
-    padding: 5px 0;
-    align-items: center;
+  &__list {
+    @media only screen and (min-width: 768px) {
+      padding-top: -10px;
+    }
 
     li {
       list-style-type: none;
@@ -44,14 +55,21 @@
 
     li:nth-of-type(1) {
       background: url("../images/phone.png") no-repeat;
+      background-position: left-center;
     }
 
     li:nth-of-type(2) {
       background: url("../images/email.png") no-repeat;
+      background-position: left-center;
     }
 
     li:nth-of-type(3) {
       background: url("../images/ins.png") no-repeat;
+      background-position: left-center;
     }
   }
+}
+
+.form-item {
+  margin-bottom: 18px;
 }
