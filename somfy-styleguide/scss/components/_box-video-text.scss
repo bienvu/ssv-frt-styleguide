@@ -1,0 +1,24 @@
+.box-video-text {
+  padding-bottom: 42px;
+
+  &__video {
+    video {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    padding: 43px 0 28px 0;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__video {
+    padding: 0 9px;
+  }
+}

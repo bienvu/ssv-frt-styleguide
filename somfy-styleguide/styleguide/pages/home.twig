@@ -5,6 +5,8 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <title>{{ site_title }} - {% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
     {% block head %}
       <link rel="stylesheet" href="../css/styles.css">
       <!-- Base js library from drupal -->
@@ -16,13 +18,16 @@
   </head>
   <body>
     {% block header %}
-      {% include '../layouts/navigation.twig' %}
-      <h1>{% block title %}{% endblock %}</h1>
+      {% include '../layouts/header.twig' %}
     {% endblock %}
     {% block content %}
-      {% include '../layouts/main.twig' %}
+      <main>
+        {% include '../components/box-video-text.twig' %}
+        {% include '../components/box-contact.twig' %}
+      </main>
     {% endblock %}
     {% block footer %}
+      {% include '../layouts/footer.twig' %}
     {% endblock %}
     {% block footer_scripts %}
       <script src="../js/lib/media.match.min.js"></script>

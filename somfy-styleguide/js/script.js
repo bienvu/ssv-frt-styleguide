@@ -18,4 +18,10 @@
     }
   };
 
+  $(document).ready( function () {
+   $('video').click(function( e ){
+      $(“.image”).append(“bạn đã click”);
+   });
+  });
+
 }(this, this.document, this.jQuery));

@@ -1,0 +1,18 @@
+footer {
+  padding: 21px 0;
+
+  .footer__content {
+    text-align: center;
+
+    p {
+      @include Georgia;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 1.83333;
+    }
+
+    span {
+      margin: 0 5px;
+    }
+  }
+}
