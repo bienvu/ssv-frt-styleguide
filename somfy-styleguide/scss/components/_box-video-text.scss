@@ -22,3 +22,29 @@
     padding: 0 9px;
   }
 }
+
+.vjs-control-bar,
+.vjs-big-play-button {
+  opacity: 0 !important;
+}
+
+video {
+  opacity: 0;
+}
+
+.loaded video {
+  opacity: 1;
+}
+
+.video-js {
+  background: none !important;
+
+  @media screen and (max-width: 767px) {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.video-js .vjs-tech {
+  position: relative;
+}

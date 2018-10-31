@@ -39,19 +39,3 @@
     background-color: $white;
   }
 }
-
-
-.vjs-control-bar,
-.vjs-big-play-button {
-  opacity: 0 !important;
-}
-
-.video-js {
-  background: none !important;
-  width: 100% !important;
-  height: auto !important;
-}
-
-.video-js .vjs-tech {
-  position: relative;
-}
