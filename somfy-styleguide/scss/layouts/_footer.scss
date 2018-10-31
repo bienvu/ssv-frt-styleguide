@@ -14,5 +14,12 @@ footer {
     span {
       margin: 0 5px;
     }
+
+    a {
+      @include Georgia;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 1.83333;
+    }
   }
 }
