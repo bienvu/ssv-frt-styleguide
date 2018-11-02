@@ -10,11 +10,11 @@
   display: inline-block;
   font-size: 14px;
   outline: none;
-  padding: 15px;
+  padding: 10px 39px 12px 15px;
   text-align: center;
   text-shadow: none;
   transition: all .3s ease;
-  background: $green url('../../../../images/arrow.png') no-repeat right;
+  background: $green url('../../../../images/arrow.png') no-repeat right 16px center;
   color: $white;
   cursor: pointer;
   outline: 0;
@@ -25,4 +25,29 @@
     border-color: $btn-color-hover;
     color: $white;
   }
+}
+
+.btn--icon {
+  @extend .btn;
+  padding: 15px 24px 15px 15px;
+}
+
+.btn--pink {
+  @extend .btn;
+  background: #b41433;
+}
+
+.btn--blue {
+  @extend .btn;
+  background: $blue;
+}
+
+.btn--light-blue {
+  @extend .btn;
+  background: #97c5e8;
+}
+
+.btn--orange {
+  @extend .btn;
+  background: #f3af86;
 }

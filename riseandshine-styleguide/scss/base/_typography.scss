@@ -21,6 +21,7 @@ h2,
   @include niramit;
   font-size: 37px;
   line-height: 1.081;
+  letter-spacing: 0;
 }
 
 h3,
@@ -28,6 +29,8 @@ h3,
   @include niramit;
   font-size: 28px;
   line-height: 0.85714;
+  margin-bottom: 22px;
+  letter-spacing: 0;
 }
 
 h4,
@@ -35,12 +38,14 @@ h4,
   @include niramit;
   font-size: 21px;
   line-height: 1.14285;
+  letter-spacing: 0;
 }
 
 h6,
 .h6 {
   @include niramit;
   font-size: 14px;
+  letter-spacing: 0;
 }
 
 %link,
@@ -70,7 +75,6 @@ a {
 }
 
 p {
-  @include niramit;
   margin-bottom: 20px;
 }
 

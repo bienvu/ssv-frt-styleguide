@@ -6,7 +6,7 @@ input[type='submit'] {
 %form-text {
   @include niramit;
   appearance: none;
-  background-color: $form;
+  background-color: $gray;
   border-radius: 0;
   border: 1px solid $white;
   box-shadow: inherit;
@@ -14,11 +14,11 @@ input[type='submit'] {
   color: $text-color;
   font-size: 16px;
   font-weight: 400;
-  height: 43px;
   padding: 15px;
   transition: all .3s ease-in-out;
   width: 100%;
   line-height: 1.5;
+  letter-spacing: 0;
 
   &::-ms-clear {
     display: none;
@@ -78,6 +78,12 @@ input[type='submit'] {
   &[disabled] {
     cursor: not-allowed;
   }
+
+  &--small {
+    font-size: 12px;
+    line-height: normal;
+    padding: 6px 32px
+  }
 }
 
 input[type="text"],
@@ -107,8 +113,8 @@ input[type="number"]::-webkit-inner-spin-button {
 textarea {
   @extend %form-text;
   height: auto;
-  min-height: rem(200px);
-  padding: rem(15px 25px);
+  min-height: 100px;
+  padding: 15px;
 }
 
 .form-item,
@@ -135,7 +141,7 @@ textarea {
 }
 
 select {
-  border: 1px solid $text-color;;
+  border: 1px solid $white;
   outline: none;
   box-shadow: none;
   padding: 5px;
