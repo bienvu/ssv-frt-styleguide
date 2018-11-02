@@ -6,33 +6,41 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-weight: 700;
-  margin-bottom: rem(15px);
+h6
+
+h1,
+.h1 {
+  @include niramit;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
-h1 {
-  font-size: rem(36px);
+h2,
+.h2 {
+  @include niramit;
+  font-size: 37px;
+  line-height: 1.081;
 }
 
-h2 {
-  font-size: rem(30px);
+h3,
+.h3 {
+  @include niramit;
+  font-size: 28px;
+  line-height: 0.85714;
 }
 
-h3 {
-  font-size: rem(24px);
+h4,
+.h4 {
+  @include niramit;
+  font-size: 21px;
+  line-height: 1.14285;
 }
 
-h4 {
-  font-size: rem(16px);
-}
-
-h5 {
-  font-size: rem(14px);
-}
-
-h6 {
-  font-size: rem(12px);
+h6,
+.h6 {
+  @include niramit;
+  font-size: 14px;
 }
 
 %link,
@@ -62,7 +70,8 @@ a {
 }
 
 p {
-  margin-bottom: rem(15px);
+  @include niramit;
+  margin-bottom: 20px;
 }
 
 em {

@@ -16,14 +16,20 @@ $red: #8c1515;
 
 $blue: #112146;
 
+$form: #f2f6f5;
+
+$green: #6da896;
+
+$main: #243d50;
+
 // Brand colors
 $primary-color: $blue;
-$text-color: $black;
+$text-color: $main;
 
 // Link color
 $link-color: $primary-color;
 $link-color-hover: lighten($primary-color, 25%);
 
 // Button color
-$btn-color: $primary-color;
-$btn-color-hover: lighten($primary-color, 25%);
+$btn-color: $white;
+$btn-color-hover: $black;
