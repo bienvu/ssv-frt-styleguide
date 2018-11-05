@@ -28,8 +28,12 @@ body {
   // @include show-breakpoints;
   text-size-adjust: none;
   font-weight: 400;
-  font-size: $base-font-size; // Don't modify static unit.
+  font-size: 14px; // Don't modify static unit.
   color: $text-color;
   line-height: $base-line-height;
   letter-spacing: 0;
+
+  @media only screen and (min-width: 768px) {
+    font-size: $base-font-size;
+  }
 }

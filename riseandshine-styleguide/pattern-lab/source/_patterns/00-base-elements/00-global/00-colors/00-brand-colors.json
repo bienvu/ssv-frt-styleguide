@@ -8,11 +8,31 @@
             "colors": [
               {
                 "variable": "$primary-color",
-                "code": "#112146"
+                "code": "#243d50"
               },
               {
-                "variable": "$text-color",
-                "code": "#000000"
+                "variable": "$green",
+                "code": "#62baa2"
+              },
+              {
+                "variable": "$gray",
+                "code": "#f2f6f5"
+              },
+              {
+                "variable": "$light-violet",
+                "code": "#bdaaa4"
+              },
+              {
+                "variable": "$indigo",
+                "code": "#182936"
+              },
+              {
+                "variable": "$dark-blue",
+                "code": "#253e51"
+              },
+              {
+                "variable": "$light-blue",
+                "code": "#396682"
               }
             ]
           }

@@ -6,46 +6,68 @@ h2,
 h3,
 h4,
 h5,
-h6
+h6 {
+  @include niramit;
+  letter-spacing: 0;
+  line-height: 1;
+  margin-bottom: 20px;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+}
 
 h1,
 .h1 {
-  @include niramit;
-  font-size: 50px;
-  line-height: 1;
-  letter-spacing: 0;
+  font-size: 28px;
+  line-height: 1.785;
+
+  @media only screen and (min-width: 768px){
+    font-size: 50px;
+  }
 }
 
 h2,
 .h2 {
-  @include niramit;
-  font-size: 37px;
-  line-height: 1.081;
-  letter-spacing: 0;
+  font-size: 28px;
+  line-height: 1.071;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 37px;
+    line-height: 1.081;
+  }
 }
 
 h3,
 .h3 {
-  @include niramit;
-  font-size: 28px;
-  line-height: 0.85714;
-  margin-bottom: 22px;
-  letter-spacing: 0;
+  font-size: 21px;
+  line-height: 1;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 0.857;
+  }
 }
 
 h4,
 .h4 {
-  @include niramit;
-  font-size: 21px;
-  line-height: 1.14285;
-  letter-spacing: 0;
+  font-size: 16px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 21px;
+    line-height: 1.142;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 14px;
 }
 
 h6,
 .h6 {
-  @include niramit;
-  font-size: 14px;
-  letter-spacing: 0;
+  font-size: 12px;
+  line-height: 1.167;
 }
 
 %link,
@@ -68,10 +90,6 @@ h6,
       color: darken($white, 15%);
     }
   }
-}
-
-a {
-  @extend %link;
 }
 
 p {

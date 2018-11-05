@@ -16,9 +16,13 @@ $blue: #243d50;
 
 $green: #62baa2;
 
-$second-color: #bdaaa4;
+$light-violet: #bdaaa4;
 
+$indigo: #182936;
 
+$dark-blue: #253e51;
+
+$light-blue: #396682;
 
 // Brand colors
 $primary-color: $blue;
@@ -30,9 +34,9 @@ $link-color-hover: lighten($primary-color, 25%);
 
 // Button color
 $btn-color: $white;
-$btn-color-hover: $black;
+$btn-color-hover: darken($green, 10%);
 
 //background
-$bg-dark-blue: #182936;
+$bg-indigo: $indigo;
 
 $bg-gray: $gray;
