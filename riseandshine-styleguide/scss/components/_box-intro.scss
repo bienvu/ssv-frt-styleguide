@@ -1,0 +1,42 @@
+.box-intro {
+  padding: 50px 0;
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__image {
+    margin-left: -125px;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    padding-left: 32px;
+    padding-top: 25px;
+  }
+
+  &__title {
+    width: 20%;
+  }
+
+  &__body {
+    padding-left: 90px;
+    width: 80%;
+  }
+
+  &__multilink {
+    padding: 53px 0 0 570px;
+  }
+
+  .btn {
+    margin-bottom: 25px;
+    background: $dark-blue;
+  }
+}
