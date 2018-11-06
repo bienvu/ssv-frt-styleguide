@@ -1,0 +1,21 @@
+.box-info {
+  padding: 70px 0;
+  background: url('../../images/Layer-119.jpg');
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    text-align: center;
+    margin: 0 -25px;
+  }
+
+  &__item {
+    width: calc(100%/ 3);
+    background: #fff;
+    padding: 20px;
+    margin: 0 15px;
+  }
+}
