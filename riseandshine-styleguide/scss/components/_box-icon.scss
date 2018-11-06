@@ -1,0 +1,23 @@
+.box-icon {
+  background: $dark-blue;
+  padding: 50px 0;
+
+  &__content {
+    display: flex;
+  }
+
+  &__item {
+    width: 20%;
+  }
+
+  &__image {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  &__title {
+    line-height: 1;
+    text-align: center;
+    color: $white;
+  }
+}
