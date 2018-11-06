@@ -1,69 +1,88 @@
 %btn,
 .btn {
   @include niramit;
+  line-height: normal;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: $white;
   appearance: none;
   background-image: none;
   border-radius: 0;
-  border: 1px solid $green;
+  border: 0;
   box-shadow: none;
   text-transform: lowercase;
   display: inline-block;
-  font-size: 14px;
   outline: none;
-  padding: 12px 38px 15px 14px;
+  padding: 11px 38px 14px 16px;
   text-align: center;
   text-shadow: none;
   transition: all .3s ease;
-  background: $green url('../../../../images/arrow.png') no-repeat right 16px center;
-  color: $white;
   cursor: pointer;
   outline: 0;
-  line-height: 1;
-  letter-spacing: 0;
   text-decoration: none;
+  background: $btn-bg;
+
+  span {
+    position: relative;
+  }
+
+  i {
+    position: absolute;
+    right: -31px;
+    top: calc( 50% + 2px );
+    transform: translateY(-50%);
+  }
   
   &:active,
   &:hover {
-    background-color: $btn-color-hover;
-    border-color: $btn-color-hover;
-    color: $white;
-  }
-
-  &--large-with-cart {
-    background: $green url('../../../../images/cart.png') no-repeat left 106px center;
-    padding: 14px 110px 14px 145px;
-  }
-
-  &--large-with-arrow {
-    background: $green url('../../../../images/arrow.png') no-repeat right 66px center;
-    padding: 13px 90px 13px 68px;
-  }
-
-  &--icon {
-    padding: 15px 24px 15px 15px;
-  }
-
-  &--text {
-    padding: 15px;
-    background: $green;
-    font-size: 12px;
-    line-height: 1;
-  }
-
-  &--pink {
-    background: #b41433;
+    background: lighten($btn-bg, 5%);
   }
 
   &--blue {
     background: $blue;
-  }
 
-  &--light-blue {
-    background: #97c5e8;
+    &:active,
+    &:hover {
+      background: lighten($blue, 5%);
+    }
   }
 
   &--orange {
-    background: #f3af86;
+    background: $orange;
+
+    &:active,
+    &:hover {
+      background: lighten($orange, 5%);
+    }
+  }
+
+  &--red {
+    background: $red;
+
+    &:active,
+    &:hover {
+      background: lighten($red, 5%);
+    }
+  }
+
+  &--light-indigo {
+    background: $light-indigo;
+
+    &:active,
+    &:hover {
+      background: lighten($light-indigo, 5%);
+    }
+  }
+
+  // modifier size
+  &--full {
+    width: 100%;
+  }
+
+  &--large {
+    min-width: 209px;
   }
 }
 

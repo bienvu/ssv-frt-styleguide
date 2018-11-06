@@ -10,19 +10,21 @@ $pigeon-post-light: rgba($pigeon-post, .75);
 
 $gray: #f2f6f5;
 
-$red: #e61c25;
+$red: #b41433;
 
 $blue: #243d50;
 
-$green: #62baa2;
+$cyan: #62baa2;
 
 $light-violet: #bdaaa4;
 
-$indigo: #182936;
+$light-indigo: #97c5e8;
 
-$dark-blue: #253e51;
+// $dark-blue: #253e51;
 
-$light-blue: #396682;
+// $light-blue: #396682;
+
+$orange : #f3af86;
 
 // Brand colors
 $primary-color: $blue;
@@ -33,10 +35,9 @@ $link-color: $primary-color;
 $link-color-hover: lighten($primary-color, 25%);
 
 // Button color
-$btn-color: $white;
-$btn-color-hover: darken($green, 10%);
+$btn-bg: $cyan;
 
 //background
-$bg-indigo: $indigo;
+$bg-indigo: $light-indigo;
 
 $bg-gray: $gray;

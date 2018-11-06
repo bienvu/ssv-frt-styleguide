@@ -3,11 +3,12 @@
 %icons {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: 'sentius';
+  font-family: 'riseandshine';
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
+  font-size: 24px;
   speak: none;
   text-transform: none;
 }
@@ -19,8 +20,8 @@
   }
 }
 
-.icon-shopping-cart1:before {
-  content: "\e917";
+.icon-shopping-cart:before {
+  content: "\e905";
 }
 .icon-cart:before {
   content: "\e916";
@@ -29,7 +30,7 @@
   content: "\e900";
 }
 .icon-checkmark:before {
-  content: "\e90c";
+  content: "\e908";
 }
 .icon-zoom-out:before {
   content: "\e915";
@@ -59,7 +60,7 @@
   content: "\e90a";
 }
 .icon-search:before {
-  content: "\e903";
+  content: "\e900";
 }
 .icon-maximize-2:before {
   content: "\e907";
@@ -77,13 +78,13 @@
   content: "\e901";
 }
 .icon-facebook:before {
-  content: "\ea90";
+  content: "\e901";
 }
 .icon-twitter:before {
   content: "\e90f";
 }
 .icon-instagram:before {
-  content: "\ea92";
+  content: "\e902";
 }
 .icon-pinterest-p:before {
   content: "\e902";
@@ -92,8 +93,21 @@
   content: "\e910";
 }
 .icon-youtube:before {
-  content: "\e904";
+  content: "\e903";
 }
 .icon-share:before {
   content: "\e905";
+}
+
+.icon-heart:before {
+  content: "\e907";
+}
+
+.icon-diamond:before {
+  content: "\e906";
+}
+
+.icon-arrow:before {
+  content: "\e904";
+  font-size: 24px;
 }

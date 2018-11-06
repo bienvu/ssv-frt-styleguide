@@ -8,6 +8,8 @@ h4,
 h5,
 h6 {
   @include niramit;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: 0;
   line-height: 1;
   margin-bottom: 20px;
@@ -21,9 +23,12 @@ h1,
 .h1 {
   font-size: 28px;
   line-height: 1.785;
+  margin: 0;
 
   @media only screen and (min-width: 768px){
     font-size: 50px;
+    line-height: 1;
+    margin-bottom: 17px;
   }
 }
 
@@ -31,10 +36,12 @@ h2,
 .h2 {
   font-size: 28px;
   line-height: 1.071;
+  margin: 0;
 
   @media only screen and (min-width: 768px) {
     font-size: 37px;
     line-height: 1.081;
+    margin-bottom: 28px;
   }
 }
 
@@ -42,20 +49,25 @@ h3,
 .h3 {
   font-size: 21px;
   line-height: 1;
+  margin: 0;
 
   @media only screen and (min-width: 768px) {
     font-size: 28px;
     line-height: 0.857;
+    margin-bottom: 18px;
   }
 }
 
 h4,
 .h4 {
-  font-size: 16px;
+  font-size: 14px;
+  line-height: normal;
+  margin-bottom: 0;
 
   @media only screen and (min-width: 768px) {
     font-size: 21px;
-    line-height: 1.142;
+    line-height: 1.333;
+    margin-bottom: 7px;
   }
 }
 

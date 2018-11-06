@@ -16,6 +16,8 @@
 //Enable font-smoothing
 html {
   @include niramit;
+  font-weight: 400;
+  font-style: normal;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -27,7 +29,6 @@ body {
   // Disable in production mode;
   // @include show-breakpoints;
   text-size-adjust: none;
-  font-weight: 400;
   font-size: 14px; // Don't modify static unit.
   color: $text-color;
   line-height: $base-line-height;
