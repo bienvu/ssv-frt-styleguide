@@ -11,28 +11,44 @@
                 "code": "#243d50"
               },
               {
-                "variable": "$green",
+                "variable": "$black",
+                "code": "#000"
+              },
+              {
+                "variable": "$white",
+                "code": "#fff"
+              },
+              {
+                "variable": "$red",
+                "code": "#b41433"
+              },
+              {
+                "variable": "$blue",
+                "code": "#243d50"
+              },
+              {
+                "variable": "$cyan",
                 "code": "#62baa2"
               },
               {
-                "variable": "$gray",
-                "code": "#f2f6f5"
+                "variable": "$orange",
+                "code": "#f3af86"
               },
               {
-                "variable": "$light-violet",
+                "variable": "$dark-red",
+                "code": "#ba6262"
+              },
+              {
+                "variable": "$light-indigo",
+                "code": "#97c5e8"
+              },
+              {
+                "variable": "$light-crown",
+                "code": "#d1c5c5"
+              },
+              {
+                "variable": "$crown",
                 "code": "#bdaaa4"
-              },
-              {
-                "variable": "$indigo",
-                "code": "#182936"
-              },
-              {
-                "variable": "$dark-blue",
-                "code": "#253e51"
-              },
-              {
-                "variable": "$light-blue",
-                "code": "#396682"
               }
             ]
           }
