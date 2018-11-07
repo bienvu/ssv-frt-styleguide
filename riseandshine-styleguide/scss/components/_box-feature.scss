@@ -1,0 +1,18 @@
+.box-feature {
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+  background: #6eb0b5;
+  
+  &__content {
+    display: flex;
+
+    &__left {
+      width: 50%;
+    }
+
+    &__right {
+      width: 50%;
+    }
+  }
+}
