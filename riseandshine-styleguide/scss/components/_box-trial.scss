@@ -1,18 +1,27 @@
 .box-trial {
   padding: 40px 0;
-  text-align: center;
-  color: #fff;
-  background: #6eb0b5;
+  background: #f2f6f5;
   
-  &__content {
+  &__list {
     display: flex;
+    margin: 0 -30px;
+  }
 
-    &__left {
-      width: 50%;
-    }
+  &__image {
+    margin-bottom: 30px;
+  }
 
-    &__right {
-      width: 50%;
-    }
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    width: calc(100% / 4);
+    padding: 0 30px;
+  }
+
+  &__bottom {
+    text-align: center;
+    background: transparent;
   }
 }
