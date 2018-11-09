@@ -7,32 +7,79 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  margin-bottom: rem(15px);
+  @include niramit;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 1;
+  margin-bottom: 20px;
+
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
 }
 
-h1 {
-  font-size: rem(36px);
+h1,
+.h1 {
+  font-size: 28px;
+  line-height: 1.785;
+  margin: 0;
+
+  @media only screen and (min-width: 768px){
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 17px;
+  }
 }
 
-h2 {
-  font-size: rem(30px);
+h2,
+.h2 {
+  font-size: 28px;
+  line-height: 1.071;
+  margin: 0;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 37px;
+    line-height: 1.081;
+    margin-bottom: 28px;
+  }
 }
 
-h3 {
-  font-size: rem(24px);
+h3,
+.h3 {
+  font-size: 21px;
+  line-height: 1;
+  margin: 0;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 0.857;
+    margin-bottom: 18px;
+  }
 }
 
-h4 {
-  font-size: rem(16px);
+h4,
+.h4 {
+  font-size: 14px;
+  line-height: normal;
+  margin-bottom: 0;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 21px;
+    line-height: 1.333;
+    margin-bottom: 7px;
+  }
 }
 
-h5 {
-  font-size: rem(14px);
+h5,
+.h5 {
+  font-size: 14px;
 }
 
-h6 {
-  font-size: rem(12px);
+h6,
+.h6 {
+  font-size: 12px;
+  line-height: 1.167;
 }
 
 %link,
@@ -57,12 +104,8 @@ h6 {
   }
 }
 
-a {
-  @extend %link;
-}
-
 p {
-  margin-bottom: rem(15px);
+  margin-bottom: 20px;
 }
 
 em {
