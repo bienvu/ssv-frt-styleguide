@@ -1,0 +1,22 @@
+.request-form {
+  padding: 70px 0;
+
+  &__title {
+    text-align: center;
+  }
+
+  .form-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px;
+  }
+
+  .form-item {
+    width: 100%;
+    padding: 0 10px;
+
+    &--submit {
+      width: auto;
+    }
+  }
+}
