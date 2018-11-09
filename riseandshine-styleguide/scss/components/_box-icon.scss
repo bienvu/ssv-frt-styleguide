@@ -1,5 +1,4 @@
 .box-icon {
-  background: $dark-blue;
   padding: 50px 0;
 
   &__content {
@@ -16,8 +15,6 @@
   }
 
   &__title {
-    line-height: 1;
     text-align: center;
-    color: $white;
   }
 }
