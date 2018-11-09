@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="margin-top: 100px">
   <form>
     <div class="form-item form-type-select form-item-select">
       <label for="edit-select">Select</label>
@@ -14,10 +14,13 @@
         <option value="Saturday">Saturday</option>
       </select>
     </div>
-
     <div class="form-item form-type-textfield form-item-name">
       <label for="edit-name" class="form-required">Text Input Normal</label>
-      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="255" class="form-text required" placeholder="Input text">
+      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="255" class="form-text required  form--small" placeholder="last name">
+    </div>
+    <div class="form-item form-type-textfield form-item-name">
+      <label for="edit-name" class="form-required">Text Input Normal</label>
+      <input type="text" id="edit-name" name="name" value="" size="60" maxlength="255" class="form-text required" placeholder="first name">
     </div>
     <div class="form-item form-type-textfield form-item-name">
       <label for="edit-name2" class="form-required">Text Input Focused</label>
@@ -37,13 +40,13 @@
     <div class="form-item form-type-textarea form-item-message">
       <label for="edit-message" class="form-required">Text area</label>
       <div class="form-textarea-wrapper">
-        <textarea id="edit-message" name="message" rows="5" cols="60" class="form-textarea required resize-vertical"></textarea>
+        <textarea id="edit-message" name="message" rows="5" cols="60" class="form-textarea required resize-vertical" placeholder="message"></textarea>
       </div>
     </div>
     <div class="form-item form-type-textarea form-item-message">
       <label for="edit-message" class="form-required">Text area Focused</label>
       <div class="form-textarea-wrapper">
-        <textarea id="edit-message" name="message" rows="5" cols="60" class="form-textarea required resize-vertical focused"></textarea>
+        <textarea id="edit-message" name="message" rows="5" cols="60" class="form-textarea required resize-vertical focused" placeholder="what is the first letter of rise?"></textarea>
       </div>
     </div>
 
