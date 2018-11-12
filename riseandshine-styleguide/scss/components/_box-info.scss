@@ -4,18 +4,35 @@
 
   &__title {
     text-align: center;
+    color: $white;
+    margin-bottom: 20px;
+  }
+
+  &__sub-title {
+    color: $bg-indigo;
   }
 
   &__list {
     display: flex;
     text-align: center;
-    margin: 0 -25px;
+    flex-wrap: wrap;
+
+    @media only screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__item {
-    width: calc(100%/ 3);
-    background: #fff;
-    padding: 20px;
-    margin: 0 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    background: $white;
+    padding: 20px 0;
+
+    @media only screen and (min-width: 768px) {
+      width: calc(100%/ 3);
+      background: $white;
+      padding: 20px;
+      margin: 0 20px;
+    }
   }
 }
