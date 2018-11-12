@@ -88,20 +88,27 @@ h6,
   text-decoration: none;
   transition: all .3s ease;
   cursor: pointer;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0;
+  display: inline-block;
 
-  &:active,
-  &:hover {
-    color: $link-color-hover;
+  &--small {
+    font-size: 12px;
   }
 
-  &--white {
-    color: $white;
-
-    &:active,
-    &:hover {
-      color: darken($white, 15%);
+  &--large-mobile {
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
     }
   }
+
+  &--largest-mobile {
+    @media only screen and (max-width: 768px) {
+      font-size: 21px;
+    }
+  }
+
 }
 
 p {
@@ -144,8 +151,16 @@ samp {
 
 ol,
 ul {
-  padding-left: rem(18px);
-  margin-bottom: rem(15px);
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  @extend %link;
 }
 
 label {

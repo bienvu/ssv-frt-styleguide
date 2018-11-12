@@ -22,7 +22,39 @@
     // Add placeholder to quiz.
     $('.wpcf7-quiz').attr('placeholder', 'text here');
 
-    //Code here
+    //toggle class
+    $('.menu-bars').click(function(event) {
+      $('.menu-bars').toggleClass('active');
+
+      if($('.header__body').hasClass('active')) {
+        $('.header__body').removeClass('active');
+        $('.header__body').slideUp('slow');
+      } else {
+        $('.header__body').addClass('active');
+        $('.header__body').slideDown('slow');
+      }
+    });;
+
+    $('.js-show-menu').click(function(event) {
+      var that = $(this).parent().parent();
+      var sums = $('.js-show-menu').parent().parent();
+
+      if(that.hasClass('active')) {
+        that.removeClass('active');
+      } else {
+        sums.removeClass('active');
+        that.addClass('active');
+      }
+    });
+
+    $(window).click(function(e) {
+      console.log($('.js-detect').has(e.target).length);
+      if($('.js-detect').has(e.target).length == 0 && !$('.js-detect').is(e.target)) {
+        $('.js-detect').removeClass('active');
+      } else {
+         $('.js-detect').addClass('active');
+      }
+    });
   });
 
 }(this, this.document, this.jQuery));

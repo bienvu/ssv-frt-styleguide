@@ -20,11 +20,9 @@
   }
 }
 
-.icon-shopping-cart:before {
-  content: "\e905";
-}
 .icon-cart:before {
   content: "\e90a";
+  font-size: 17px;
 }
 .icon-checkmark:before {
   content: "\e908";
@@ -107,4 +105,9 @@
 .icon-arrow:before {
   content: "\e909";
   font-size: 13px;
+}
+
+.icon-location:before {
+  content: "\e902";
+  font-size: 21px;
 }
