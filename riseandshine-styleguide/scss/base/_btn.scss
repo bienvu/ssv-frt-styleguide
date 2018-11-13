@@ -34,6 +34,21 @@
     top: calc( 50% + 1px );
     transform: translateY(-50%);
   }
+
+  &--only-icon {
+    padding: 0;
+    width: 61px;
+    height: 61px;
+
+    @media only screen and (min-width: 768px) {
+      width: 39px;
+      height: 39px;
+    }
+
+    i {
+      position: static;
+    }
+  }
   
   &:active,
   &:hover {
@@ -84,8 +99,4 @@
   &--large {
     min-width: 209px;
   }
-}
-
-a {
-  @extend .text--center;
 }

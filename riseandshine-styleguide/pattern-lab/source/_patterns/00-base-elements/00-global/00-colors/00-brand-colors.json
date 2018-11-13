@@ -49,6 +49,18 @@
               {
                 "variable": "$crown",
                 "code": "#bdaaa4"
+              },
+              {
+                "variable": "$dark-blue",
+                "code": "#253e51"
+              },
+              {
+                "variable": "$light-blue",
+                "code": "#396682"
+              },
+              {
+                "variable": "$dark-cyan",
+                "code": "#182936"
               }
             ]
           }
