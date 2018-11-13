@@ -84,6 +84,16 @@ input[type='submit'] {
     line-height: 1;
     padding: 6px 5px 6px 32px;
   }
+
+  &--smallest {
+    font-size: 12px;
+    line-height: normal;
+    padding: 16px 14px;
+
+    @media only screen and (min-width: 768px) {
+      padding: 7px 12px 8px 15px;
+    }
+  }
 }
 
 input[type="text"],
@@ -127,7 +137,11 @@ textarea {
 
 .form-item,
 .form-actions {
-  margin: 0 0 26px;
+  margin: 0 0 10px;
+
+  &:last-child {
+    margin: 0;
+  }
 
   &.form-type-checkbox,
   &.form-type-radio {

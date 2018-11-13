@@ -1,6 +1,12 @@
 .header {
   box-shadow: 1px 1px black;
 
+  &.active {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
   &__image {
     @media only screen and (min-width: 1024px) {
       position: absolute;
@@ -115,6 +121,11 @@
   &__body {
     position: relative;
     display: none;
+
+    &.active {
+      max-height: 100%;
+      overflow-y: auto;
+    }
 
     @media only screen and (min-width: 1024px) {
       display: flex !important;
