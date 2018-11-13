@@ -10,11 +10,15 @@ $pigeon-post-light: rgba($pigeon-post, .75);
 
 $gray: #f2f6f5;
 
+$light-gray: #769ab5;
+
 $red: #b41433;
 
 $blue: #243d50;
 
 $cyan: #62baa2;
+
+$dark-cyan: #182936;
 
 $dark-red: #ba6262;
 
@@ -26,7 +30,7 @@ $crown: #bdaaa4;
 
 $dark-blue: #253e51;
 
-// $light-blue: #396682;
+$light-blue: #396682;
 
 $orange : #f3af86;
 
@@ -35,7 +39,7 @@ $primary-color: $blue;
 $text-color: $primary-color;
 
 // Link color
-$link-color: $primary-color;
+$link-color: $dark-blue;
 $link-color-hover: lighten($primary-color, 25%);
 
 // Button color
