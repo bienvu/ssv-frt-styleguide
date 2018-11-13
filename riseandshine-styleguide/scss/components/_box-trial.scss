@@ -3,21 +3,36 @@
   background: #f2f6f5;
   
   &__list {
-    display: flex;
-    margin: 0 -30px;
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      margin: 0 -30px;     
+    }
   }
 
   &__image {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__item {
-    width: calc(100% / 4);
-    padding: 0 30px;
+    width: 100%;
+    padding: 0;
+
+    @media only screen and (min-width: 768px) {
+      width: calc(100% / 4);
+      padding: 0 30px;
+    }
   }
 
   &__bottom {
